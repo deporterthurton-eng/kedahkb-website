@@ -2216,3 +2216,13 @@ body.rtl .footer-links a:hover {
   border-top-color: var(--border-light);
   padding-top: 1rem;
 }
+
+/* --------------------------------------------------------------------------
+   20. Mobile iOS Form Zoom Prevention & Smooth Inputs
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  input, select, textarea, .form-control {
+    font-size: 16px !important; /* Prevents auto-zoom on mobile Safari */
+  }
+}
+
