@@ -283,4 +283,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (catParam) {
     window.filterProducts(catParam);
   }
+
+  // 6. FAQ Accordion Toggle Interaction
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      if (item) {
+        item.classList.toggle('active');
+      }
+    });
+  });
 });
