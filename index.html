@@ -124,14 +124,14 @@
   </div>
 
   <!-- ===================================================================
-       SECTION 1 - HERO: High Visual Fidelity Tailwind Re-creation
-       - Layer 0 (BG): absolute inset-0, black background with unsplash image
-       - Layer 1 (Overlay): absolute inset-0, gradient from black/90 to black/30
+       HERO SECTION: 3-Layer Visual Architecture
+       - Layer 0 (BG Image): scale-110 opacity-50 on load, transition to scale-100 opacity-100 over 2000ms
+       - Layer 1 (Dark Overlay): from-black/90 via-black/60 to-black/30
        - Layer 2 (Header): absolute top-0 w-full z-20 (Playfair Display text logo + single hamburger)
        - Layer 3 (Content): relative z-10, flex-centered vertically
        - Specific delay pattern: 200ms, 300ms, 500ms, 700ms staggered entry
        =================================================================== -->
-  <section class="relative h-screen min-h-[720px] max-h-[1080px] flex items-center justify-center overflow-hidden bg-black text-white">
+  <section class="relative min-h-screen lg:h-screen lg:min-h-[720px] lg:max-h-[1080px] flex items-center justify-center overflow-hidden bg-black text-white py-24 lg:py-0">
 
     <!-- Layer 0 (BG) -->
     <div class="absolute inset-0 bg-black overflow-hidden z-0">
@@ -148,6 +148,17 @@
       <a href="index.html" class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-white hover:text-emerald-400 transition duration-300">
         KEDAH KITCHEN &amp; BATH
       </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-white/90">
+        <a href="index.html" class="hover:text-emerald-400 transition text-emerald-400" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:text-emerald-400 transition" data-i18n="nav.about">About Us</a>
+        <a href="products.html" class="hover:text-emerald-400 transition" data-i18n="nav.products">Products</a>
+        <a href="about.html#oem-section" class="hover:text-emerald-400 transition" data-i18n="nav.oem">OEM / ODM</a>
+        <a href="about.html#certifications" class="hover:text-emerald-400 transition" data-i18n="nav.certs">Certifications</a>
+        <a href="faq.html" class="hover:text-emerald-400 transition" data-i18n="nav.faq">FAQ</a>
+        <a href="contact.html" class="hover:text-emerald-400 transition" data-i18n="nav.contact">Contact Us</a>
+      </nav>
 
       <div class="flex items-center gap-4">
         <!-- Language Switcher Dropdown -->
@@ -694,20 +705,20 @@
         <!-- Left: 2 Offset Images -->
         <div class="grid grid-cols-2 gap-4 md:gap-6">
           <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50 cursor-pointer" onclick="openLightbox('assets/images/showcase/showcase-faucet-gold.jpg', '01. Optical Surface Inspection: 24-Hour ASS Grade 10 Plating Finish')">
               <img src="assets/images/showcase/showcase-faucet-gold.jpg" 
                    alt="Precision Sanitary Fixture Optical Inspection" 
                    class="w-full h-72 md:h-96 object-cover object-center hover:scale-105 transition duration-500">
             </div>
-            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">01. Optical Surface Inspection</div>
+            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">01. Optical Surface Inspection · Click to Zoom</div>
           </div>
           <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700 delay-200 md:mt-12">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50 cursor-pointer" onclick="openLightbox('assets/images/showcase/showcase-shower-system.jpg', '02. Hydrostatic Pressure Testing: 100% 0.8 MPa Air & Water Pressure Testing')">
               <img src="assets/images/showcase/showcase-shower-system.jpg" 
                    alt="Hydrostatic Pressure Testing on Shower Column" 
                    class="w-full h-72 md:h-96 object-cover object-center hover:scale-105 transition duration-500">
             </div>
-            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">02. Hydrostatic Pressure Testing</div>
+            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">02. Hydrostatic Pressure Testing · Click to Zoom</div>
           </div>
         </div>
 
@@ -785,7 +796,7 @@
 
       <!-- 4 Live Production Workshop Stages -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/process/1-casting.jpg', '01. Gravity Casting: High-Purity DZR Low-Lead Brass')">
           <div class="overflow-hidden">
             <img src="assets/images/process/1-casting.jpg" alt="Gravity Brass Casting Live Workshop" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -795,7 +806,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/process/2-machining.jpg', '02. CNC Machining: Automated CNC Machining Center')">
           <div class="overflow-hidden">
             <img src="assets/images/process/2-machining.jpg" alt="Automated CNC Machining Center" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -805,7 +816,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/process/3-polishing.jpg', '03. Mirror Polishing: Robotic Multi-Grit Surface Finishing')">
           <div class="overflow-hidden">
             <img src="assets/images/process/3-polishing.jpg" alt="Robotic Mirror Polishing Cell" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -815,7 +826,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/process/5-assembly.jpg', '04. Clean Assembly: Clean-Room Final Assembly & QA')">
           <div class="overflow-hidden">
             <img src="assets/images/process/5-assembly.jpg" alt="Clean-Room Final Assembly & QA" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -1394,31 +1405,31 @@
       <ul class="navsheet__list">
         <li style="--i:0">
           <a class="navsheet__link" href="about.html">
-            <span>About Us &amp; Heritage</span>
+            <span data-i18n="nav.about">About Us &amp; Heritage</span>
             <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:1">
           <a class="navsheet__link" href="products.html">
-            <span>Products Catalog</span>
+            <span data-i18n="nav.products">Products Catalog</span>
             <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:2">
           <a class="navsheet__link" href="about.html#certifications">
-            <span>cUPC &amp; CE Certifications</span>
+            <span data-i18n="nav.certs">cUPC &amp; CE Certifications</span>
             <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:3">
           <a class="navsheet__link" href="faq.html">
-            <span>Contractor FAQ</span>
+            <span data-i18n="nav.faq">Contractor FAQ</span>
             <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:4">
           <a class="navsheet__link" href="contact.html">
-            <span>Contact Factory Team</span>
+            <span data-i18n="nav.contact">Contact Factory Team</span>
             <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
@@ -1426,7 +1437,7 @@
 
       <div class="navsheet__foot">
         <button class="navsheet__cta" onclick="openRFQModal()" style="background: #10b981;">
-          <span>Talk to us · Fast Quote</span>
+          <span data-i18n="nav.rfq">Talk to us · Fast Quote</span>
           <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
         </button>
 
