@@ -376,18 +376,325 @@
   </section>
 
   <!-- ===================================================================
+       FEATURED PRODUCT COLLECTIONS: Real Products & Filterable Gallery
+       Padding: py-24 md:py-28 (Unified Rhythm)
+       =================================================================== -->
+  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="featured-products">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">FEATURED EXPORT COLLECTIONS</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          Certified Sanitary Products Engineered for Global Projects
+        </h2>
+        <p class="text-base text-gray-600 leading-relaxed">
+          Direct factory supply of cUPC &amp; CE certified lead-free brass faucets, intelligent touchless valves, and thermostatic luxury shower systems. Tested with 24-hour ASS salt spray for 50+ export destinations.
+        </p>
+      </div>
+
+      <!-- Interactive Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 mb-14 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100">
+        <button type="button" onclick="filterHomeProducts('all', this)" class="home-filter-btn active px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-sm bg-emerald-500 text-white">
+          All Featured (8)
+        </button>
+        <button type="button" onclick="filterHomeProducts('basin', this)" class="home-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-sm bg-white text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 border border-gray-200">
+          Basin Mixers
+        </button>
+        <button type="button" onclick="filterHomeProducts('kitchen', this)" class="home-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-sm bg-white text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 border border-gray-200">
+          Commercial Kitchen
+        </button>
+        <button type="button" onclick="filterHomeProducts('sensor', this)" class="home-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-sm bg-white text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 border border-gray-200">
+          Smart Sensor &amp; Valves
+        </button>
+        <button type="button" onclick="filterHomeProducts('shower', this)" class="home-filter-btn px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-sm bg-white text-gray-700 hover:bg-emerald-50 hover:text-emerald-700 border border-gray-200">
+          Thermostatic Showers
+        </button>
+      </div>
+
+      <!-- 8 Featured Product Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14" id="homeProductsGrid">
+        
+        <!-- Product 1: Basin Faucet -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="basin">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/basin/2022 fancy gold basin faucet.jpg" alt="KD-BG2022 Fancy Brushed Gold Basin Mixer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-emerald-500 text-white text-[11px] font-bold shadow-md">Best Seller</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">cUPC Ready</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Basin Faucet</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-emerald-700 transition">
+                KD-BG2022 Fancy Brushed Gold Mixer
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Refined knurled brass handle with anti-fingerprint PVD brushed gold coating. Tested for 500,000 cycles.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Material</span><strong class="text-gray-800">Lead-Free DZR Brass</strong></div>
+                <div class="flex items-center justify-between"><span>Cartridge</span><strong class="text-gray-800">Sedal 35mm Ceramic</strong></div>
+                <div class="flex items-center justify-between"><span>Salt Spray</span><strong class="text-emerald-600 font-bold">24H ASS Grade 10</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-BG2022 Gold Basin Mixer')" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Square Basin -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="basin">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/basin/Square Basin Faucet 2.jpg" alt="KD-SQ1020 Modern Square Basin Mixer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gray-900 text-white text-[11px] font-bold shadow-md">Modern Style</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">ASME Compliant</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Basin Faucet</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-emerald-700 transition">
+                KD-SQ1020 Modern Square Basin Mixer
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Geometric clean-cut lines engineered for luxury hospitality suites and modern architectural residential projects.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Material</span><strong class="text-gray-800">Solid DZR Brass</strong></div>
+                <div class="flex items-center justify-between"><span>Cartridge</span><strong class="text-gray-800">Wanhai Ceramic Core</strong></div>
+                <div class="flex items-center justify-between"><span>Finish</span><strong class="text-gray-800">Chrome / Matte Black</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-SQ1020 Square Basin Faucet')" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Kitchen Faucet -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="kitchen">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/kitchen/KD-A1002 Square kitchen Faucet.jpg" alt="KD-A1002 Pull-Down Kitchen Mixer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-emerald-500 text-white text-[11px] font-bold shadow-md">Dual Spray</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">360° Swivel</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-sky-600 uppercase tracking-wider block mb-1">Kitchen Faucet</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-sky-700 transition">
+                KD-A1002 Commercial Pull-Down Mixer
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Dual stream and high-pressure aerated spray with high-density anti-kink braided hose for high-traffic kitchens.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Function</span><strong class="text-gray-800">Stream &amp; Spray Pull-Down</strong></div>
+                <div class="flex items-center justify-between"><span>Cartridge</span><strong class="text-gray-800">Wanhai 40mm Ceramic</strong></div>
+                <div class="flex items-center justify-between"><span>Certification</span><strong class="text-emerald-600 font-bold">cUPC / ASME A112.18.1</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-A1002 Pull-Down Kitchen Faucet')" class="w-full rounded-full bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Matte Gold Kitchen -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="kitchen">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/kitchen/L8002-MG.jpg" alt="KD-L8002 Matte Gold Pull-Down Faucet" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-500 text-white text-[11px] font-bold shadow-md">PVD Matte Gold</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">High Arc</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-sky-600 uppercase tracking-wider block mb-1">Kitchen Faucet</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-sky-700 transition">
+                KD-L8002 High-Arc Pull-Down Mixer
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Elegant gooseneck spout with counter-balanced docking and anti-scratch PVD electroplated gold finish.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Spout</span><strong class="text-gray-800">High-Arc 360° Swivel</strong></div>
+                <div class="flex items-center justify-between"><span>Testing</span><strong class="text-gray-800">100% Hydrostatic QA</strong></div>
+                <div class="flex items-center justify-between"><span>Salt Spray</span><strong class="text-emerald-600 font-bold">24H ASS Grade 10</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-L8002 Matte Gold Kitchen Faucet')" class="w-full rounded-full bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5: Wall Mounted Sensor Faucet -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="sensor">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/sensor/KD-A608A Wall mounted sensor faucet.jpg" alt="KD-A608A Wall-Mounted Touchless Sensor Tap" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-amber-500 text-white text-[11px] font-bold shadow-md">Touchless Smart</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">ADA Compliant</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-amber-600 uppercase tracking-wider block mb-1">Sensor Tap</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-amber-700 transition">
+                KD-A608A Wall-Mounted Touchless Tap
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Hygienic infrared proximity sensor with concealed wall-mounting box. Instant &lt;0.5s response with anti-scald mixing valve.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Power</span><strong class="text-gray-800">AC 110V-220V &amp; DC 6V</strong></div>
+                <div class="flex items-center justify-between"><span>Sensing</span><strong class="text-gray-800">10-15 cm Auto IR</strong></div>
+                <div class="flex items-center justify-between"><span>Body</span><strong class="text-emerald-600 font-bold">Solid Brass Casting</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-A608A Wall Sensor Faucet')" class="w-full rounded-full bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6: Automatic Urinal Flush Valve -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="sensor">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/sensor/KD-A612A urinal sensor flush valve.jpg" alt="KD-A612A Automatic Urinal Sensor Flush Valve" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gray-900 text-white text-[11px] font-bold shadow-md">Commercial QA</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">Manual Override</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-amber-600 uppercase tracking-wider block mb-1">Flush Valve</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-amber-700 transition">
+                KD-A612A Urinal Sensor Flush Valve
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Heavy-duty commercial brass flush valve with anti-vandal lock and mechanical override button for airports and transit hubs.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Override</span><strong class="text-gray-800">Mechanical Button</strong></div>
+                <div class="flex items-center justify-between"><span>Pressure</span><strong class="text-gray-800">0.05 - 0.8 MPa Work</strong></div>
+                <div class="flex items-center justify-between"><span>Standard</span><strong class="text-emerald-600 font-bold">CE / Heavy Commercial</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-A612A Urinal Flush Valve')" class="w-full rounded-full bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 7: Thermostatic Shower System -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="shower">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/shower/thermostat shower system.jpg" alt="KD-S8005 Thermostatic Rainfall Shower System" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-emerald-500 text-white text-[11px] font-bold shadow-md">38°C Safety Core</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">Rainfall Head</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Shower System</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-emerald-700 transition">
+                KD-S8005 Thermostatic Shower System
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Constant 38°C anti-scald temperature lock with ultra-thin stainless steel rain shower head and 3-mode handheld spray.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Core</span><strong class="text-gray-800">Precision Thermostatic</strong></div>
+                <div class="flex items-center justify-between"><span>Diverter</span><strong class="text-gray-800">Solid Brass 3-Way</strong></div>
+                <div class="flex items-center justify-between"><span>Standard</span><strong class="text-emerald-600 font-bold">EN 1111 / SASO Compliant</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-S8005 Thermostatic Shower System')" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 8: Piano Key Digital LED Shower -->
+        <div class="home-product-card group rounded-3xl bg-white border border-gray-200/80 shadow-md hover:shadow-2xl hover:border-emerald-200 transition-all duration-300 flex flex-col justify-between overflow-hidden" data-cat="shower">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-gray-100">
+              <img src="assets/images/products/shower/piano shower set LED.jpg" alt="KD-S9002 Piano Key Digital LED Shower Column" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gray-900 text-white text-[11px] font-bold shadow-md">Digital LED</span>
+              <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px] font-mono">Piano Keys</span>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Shower System</span>
+              <h3 class="font-serif text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-emerald-700 transition">
+                KD-S9002 Piano Key Digital LED Column
+              </h3>
+              <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                Hydroelectric water-flow powered digital temperature display with intuitive independent piano keys and spray bidet.
+              </p>
+              <div class="space-y-1.5 text-[11px] text-gray-500 border-t border-gray-100 pt-3">
+                <div class="flex items-center justify-between"><span>Display</span><strong class="text-gray-800">Hydroelectric No Battery</strong></div>
+                <div class="flex items-center justify-between"><span>Control</span><strong class="text-gray-800">4-Key Piano Buttons</strong></div>
+                <div class="flex items-center justify-between"><span>Plating</span><strong class="text-emerald-600 font-bold">Gunmetal PVD ASS-10</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button onclick="openRFQModal('KD-S9002 Piano Key Shower Set')" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold py-2.5 inline-flex items-center justify-center gap-1.5 transition shadow-sm hover:shadow-md">
+              <span>Inquire Fast</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Explore Full Catalog CTA Bar -->
+      <div class="text-center animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-white px-8 py-5 rounded-3xl border border-gray-200/80 shadow-lg">
+          <div class="text-left">
+            <strong class="text-sm text-gray-900 block">Looking for specific contractor models or custom OEM tooling?</strong>
+            <span class="text-xs text-gray-500">Over 24+ certified plumbing series available with full CAD drawings and test reports.</span>
+          </div>
+          <a href="products.html" class="rounded-full bg-slate-900 hover:bg-emerald-600 text-white font-bold px-7 py-3 text-xs inline-flex items-center gap-2 transition duration-300 whitespace-nowrap shadow-md">
+            <span>Explore Full 2026 Catalog (24+ Models)</span>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
        SECTION 3 - SHOWCASE: Offset Dual Images & Rigorous Engineering Checklist
        - Left: Grid of 2 images with offset (one image has md:mt-12), initial state scale-95 opacity-0
        - Right: Text with check-mark list and border-b border-gray-200
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-gray-50 overflow-hidden border-y border-gray-200" id="showcase">
+  <section class="py-24 md:py-28 bg-white overflow-hidden" id="showcase">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
         <!-- Left: 2 Offset Images -->
         <div class="grid grid-cols-2 gap-4 md:gap-6">
           <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-white">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50">
               <img src="https://images.unsplash.com/photo-1651213084058-c3420ea21852?w=800&q=80" 
                    alt="Precision Sanitary Fixture Finishing" 
                    class="w-full h-72 md:h-96 object-cover hover:scale-105 transition duration-500">
@@ -395,7 +702,7 @@
             <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">01. Optical Surface Inspection</div>
           </div>
           <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700 delay-200 md:mt-12">
-            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-white">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-gray-50">
               <img src="https://images.unsplash.com/photo-1721222204128-3f8262e14f35?w=800&q=80" 
                    alt="Robotic Plating and Quality Testing" 
                    class="w-full h-72 md:h-96 object-cover hover:scale-105 transition duration-500">
@@ -464,7 +771,7 @@
   <!-- ===================================================================
        Inside Our Factory — Live Production & Nanan Industrial Base
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-white" id="live-factory">
+  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="live-factory">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
         <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">LIVE PRODUCTION · NANAN SANITARY INDUSTRIAL BASE</span>
@@ -478,7 +785,7 @@
 
       <!-- 4 Live Production Workshop Stages -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <div class="group rounded-3xl overflow-hidden bg-gray-50 border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
           <div class="overflow-hidden">
             <img src="assets/images/process/1-casting.jpg" alt="Gravity Brass Casting Live Workshop" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -488,7 +795,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-gray-50 border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
           <div class="overflow-hidden">
             <img src="assets/images/process/2-machining.jpg" alt="Automated CNC Machining Center" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -498,7 +805,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-gray-50 border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
           <div class="overflow-hidden">
             <img src="assets/images/process/3-polishing.jpg" alt="Robotic Mirror Polishing Cell" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -508,7 +815,7 @@
           </div>
         </div>
 
-        <div class="group rounded-3xl overflow-hidden bg-gray-50 border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
+        <div class="group rounded-3xl overflow-hidden bg-white border border-gray-200/80 shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all duration-300">
           <div class="overflow-hidden">
             <img src="assets/images/process/5-assembly.jpg" alt="Clean-Room Final Assembly & QA" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -521,27 +828,27 @@
 
       <!-- 6 Live Manufacturing Metrics -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">50,000 m²</div>
           <div class="text-xs text-gray-500 mt-1">Facility Footprint</div>
         </div>
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">120+ Sets</div>
           <div class="text-xs text-gray-500 mt-1">Casting &amp; CNC Units</div>
         </div>
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">180,000+</div>
           <div class="text-xs text-gray-500 mt-1">Monthly Output (Pcs)</div>
         </div>
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">0.01 mm</div>
           <div class="text-xs text-gray-500 mt-1">Machining Precision</div>
         </div>
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">100%</div>
           <div class="text-xs text-gray-500 mt-1">Air &amp; Water Tested</div>
         </div>
-        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
+        <div class="bg-white p-5 rounded-2xl border border-gray-200/80 hover:bg-emerald-50/40 hover:border-emerald-200 transition-all shadow-sm">
           <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">24 Hours</div>
           <div class="text-xs text-gray-500 mt-1">ASS Salt Spray Pass</div>
         </div>
@@ -554,9 +861,9 @@
        Official Supplier Due Diligence Profile Box
        Padding: py-24 md:py-28 (Unified Rhythm)
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="supplier-profile">
+  <section class="py-24 md:py-28 bg-white" id="supplier-profile">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200/80">
+      <div class="bg-gray-50 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200/80">
         <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">
           OFFICIAL SUPPLIER PROFILE · CORPORATE DUE DILIGENCE
         </span>
@@ -628,7 +935,7 @@
        Indicative B2B Factory Pricing Tiers
        Padding: py-24 md:py-28 (Unified Rhythm)
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-white" id="pricing-tiers">
+  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="pricing-tiers">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
         <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">DIRECT FACTORY PRICING</span>
@@ -752,7 +1059,7 @@
        Canton Fair Exhibition Tour & Dedicated Engineering Team
        Padding: py-24 md:py-28 (Unified Rhythm)
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="factory-tour">
+  <section class="py-24 md:py-28 bg-white" id="factory-tour">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
         <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">GLOBAL EXPO PRESENCE</span>
@@ -765,7 +1072,7 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/factory-exterior.jpg', '50,000 m² Modern Manufacturing Base in Nanan, Fujian')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/factory-exterior.jpg', '50,000 m² Modern Manufacturing Base in Nanan, Fujian')">
           <div class="overflow-hidden">
             <img src="assets/images/factory/factory-exterior.jpg" alt="Fujian Kedah Factory Facility" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -775,7 +1082,7 @@
           </div>
         </div>
 
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/office-showroom.png', 'International Product Experience & Sample Showroom')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/office-showroom.png', 'International Product Experience & Sample Showroom')">
           <div class="overflow-hidden">
             <img src="assets/images/factory/office-showroom.png" alt="Kedah Corporate Showroom" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -785,7 +1092,7 @@
           </div>
         </div>
 
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/kedah-team-full.jpg', 'Fujian Kedah Engineering & Management Team')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/factory/kedah-team-full.jpg', 'Fujian Kedah Engineering & Management Team')">
           <div class="overflow-hidden">
             <img src="assets/images/factory/kedah-team-full.jpg" alt="Kedah Professional Engineering Team" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -795,7 +1102,7 @@
           </div>
         </div>
 
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-grand-hall.jpg', 'Canton Fair International Pavilion - Kedah Exhibition')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-grand-hall.jpg', 'Canton Fair International Pavilion - Kedah Exhibition')">
           <div class="overflow-hidden">
             <img src="assets/images/exhibition/canton-fair-grand-hall.jpg" alt="Canton Fair Grand Pavilion Exhibition Hall" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -805,7 +1112,7 @@
           </div>
         </div>
 
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-booth-2.jpg', 'Kedah Official Custom Exhibition Booth')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-booth-2.jpg', 'Kedah Official Custom Exhibition Booth')">
           <div class="overflow-hidden">
             <img src="assets/images/exhibition/canton-fair-booth-2.jpg" alt="Kedah Canton Fair Booth Front Display" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -815,7 +1122,7 @@
           </div>
         </div>
 
-        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-client-meeting-1.jpg', 'On-Site Client Product Inspection & Technical Discussion')">
+        <div class="group relative rounded-3xl overflow-hidden bg-gray-50 shadow-md hover:shadow-2xl border border-gray-200/80 transition-all duration-300 cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-client-meeting-1.jpg', 'On-Site Client Product Inspection & Technical Discussion')">
           <div class="overflow-hidden">
             <img src="assets/images/exhibition/canton-fair-client-meeting-1.jpg" alt="Overseas Buyer Product Inspection" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
           </div>
@@ -827,7 +1134,7 @@
       </div>
 
       <div class="text-center">
-        <a href="about.html#exhibitions" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white hover:bg-emerald-50 border border-gray-200 hover:border-emerald-300 text-xs font-bold text-gray-900 hover:text-emerald-700 shadow-sm hover:shadow-md transition">
+        <a href="about.html#exhibitions" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-gray-50 hover:bg-emerald-50 border border-gray-200 hover:border-emerald-300 text-xs font-bold text-gray-900 hover:text-emerald-700 shadow-sm hover:shadow-md transition">
           <span>Explore Full Exhibition Track Record &amp; Client Footprint</span>
           <iconify-icon icon="solar:arrow-right-linear" class="text-emerald-600"></iconify-icon>
         </a>
@@ -839,7 +1146,7 @@
        SECTION 4 - CONTACT: Centered max-4xl Layout with Emerald Pin Icon
        Padding: py-24 md:py-28 (Unified Rhythm)
        =================================================================== -->
-  <section class="py-24 md:py-28 bg-white" id="contact">
+  <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="contact">
     <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
       
       <!-- Emerald Map Point Icon at Top -->
@@ -856,7 +1163,7 @@
       </p>
 
       <!-- Contact Form -->
-      <form id="homeInquiryForm" onsubmit="handleInquirySubmit(event)" class="text-left bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-200/80 shadow-xl">
+      <form id="homeInquiryForm" onsubmit="handleInquirySubmit(event)" class="text-left bg-white p-8 md:p-12 rounded-3xl border border-gray-200/80 shadow-xl">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
             <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.name">Full Name / Contact Person *</label>

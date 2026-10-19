@@ -507,3 +507,30 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 });
 
+// 10. Home Featured Products Category Filter
+function filterHomeProducts(category, btnElement) {
+  var btns = document.querySelectorAll('.home-filter-btn');
+  btns.forEach(function (btn) {
+    btn.classList.remove('active', 'bg-emerald-500', 'text-white');
+    btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+  });
+
+  if (btnElement) {
+    btnElement.classList.add('active', 'bg-emerald-500', 'text-white');
+    btnElement.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-200');
+  }
+
+  var cards = document.querySelectorAll('#homeProductsGrid .home-product-card');
+  cards.forEach(function (card) {
+    var cat = card.getAttribute('data-cat');
+    if (category === 'all' || cat === category) {
+      card.style.display = 'flex';
+      card.classList.remove('opacity-0', 'scale-95');
+      card.classList.add('opacity-100', 'scale-100');
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+
