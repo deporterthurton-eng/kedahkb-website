@@ -73,17 +73,17 @@
       <div class="nav-actions">
         <!-- Language Switcher -->
         <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn" aria-label="Select Language">
+          <button class="lang-btn" id="langBtn" type="button" onclick="toggleLangDropdown(event)" aria-label="Select Language">
             <span class="lang-icon">🌐</span>
             <span id="currentLangText">EN</span>
             <span class="arrow">▼</span>
           </button>
-          <ul class="lang-dropdown" id="langDropdown">
-            <li><a href="#" class="lang-opt" data-lang="en">English (EN)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="es">Español (ES)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="th">ไทย (TH)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="ar">العربية (AR)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="zh">中文 (ZH)</a></li>
+          <ul class="lang-dropdown" id="langDropdown" style="display: none;">
+            <li><button type="button" onclick="switchLanguage('en', event)" class="lang-opt" data-lang="en">English (EN)</button></li>
+            <li><button type="button" onclick="switchLanguage('es', event)" class="lang-opt" data-lang="es">Español (ES)</button></li>
+            <li><button type="button" onclick="switchLanguage('th', event)" class="lang-opt" data-lang="th">ไทย (TH)</button></li>
+            <li><button type="button" onclick="switchLanguage('ar', event)" class="lang-opt" data-lang="ar">العربية (AR)</button></li>
+            <li><button type="button" onclick="switchLanguage('zh', event)" class="lang-opt" data-lang="zh">中文 (ZH)</button></li>
           </ul>
         </div>
 
@@ -264,6 +264,6 @@
   </div>
 
   <!-- Client-side Scripts -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js?v=20261019_v7"></script>
 </body>
 </html>
