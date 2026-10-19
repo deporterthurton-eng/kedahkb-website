@@ -7,6 +7,27 @@
 // Global Translations Dictionary
 const i18n = {
   en: {
+    'services.tag': "CORE PRODUCT SERVICES",
+    'services.title': "Precision Manufacturing for Global Plumbing Contractors",
+    'services.lead': "From residential luxury developments in North America and Spain to high-traffic commercial installations in Saudi Arabia and resorts in Thailand, Fujian Kedah delivers certified plumbing solutions with zero middleman markups.",
+    'products.tag': "FEATURED EXPORT COLLECTIONS",
+    'products.title': "Certified Sanitary Products Engineered for Global Projects",
+    'products.lead': "Direct factory supply of cUPC & CE certified lead-free brass faucets, intelligent touchless valves, and thermostatic luxury shower systems. Tested with 24-hour ASS salt spray for 50+ export destinations.",
+    'showcase.tag': "QUALITY & CERTIFICATION",
+    'showcase.title': "Engineered to Exceed North American & European Standards",
+    'showcase.lead': "Every Kedah faucet and valve is manufactured under strict ISO 9001 quality protocols. We eliminate porosity through automated gravity casting, achieve 0.01mm tolerance on CNC lathes, and verify corrosion resistance with 24-hour ASS salt spray testing.",
+    'factory.tag': "LIVE PRODUCTION · NANAN SANITARY BASE",
+    'factory.title': "Inside Our Factory — Transparent Chinese Manufacturing",
+    'factory.lead': "Operating in Lucang, Nanan—China national plumbing hub: from raw copper gravity casting to 0.01mm CNC machining, robotic mirror polishing, and clean-room assembly.",
+    'pricing.tag': "DIRECT FACTORY PRICING",
+    'pricing.title': "Indicative B2B Volume Pricing Tiers",
+    'pricing.lead': "Transparent volume tiers for commercial contractors, plumbing distributors, and brand importers. Custom finishes, packaging, and branding available upon request.",
+    'tour.tag': "GLOBAL TRADE EXPOS & PHYSICAL FOOTPRINT",
+    'tour.title': "Canton Fair Track Record & Factory Presence",
+    'tour.lead': "Take a look inside our 50,000+ sqm manufacturing facility in Lucang, Nanan and explore our long-standing Canton Fair exhibition presence meeting global engineering partners.",
+    'contact.tag': "DIRECT FACTORY INQUIRY",
+    'contact.title': "Request an Instant Engineering & Quotation Package",
+    'contact.lead': "Direct communication with Fujian Kedah export engineering department. Technical feedback, CAD evaluations, and customized quotations within 24 hours.",
     'nav.home': 'Home',
     'nav.about': 'About Us',
     'nav.products': 'Products',
@@ -52,6 +73,27 @@ const i18n = {
     'rightsReserved': 'All Rights Reserved.'
   },
   es: {
+    'services.tag': "SERVICIOS Y PRODUCTOS PRINCIPALES",
+    'services.title': "Fabricación de Precisión para Contratistas Globales",
+    'services.lead': "Desde desarrollos residenciales de lujo en Norteamérica y España hasta instalaciones comerciales en Arabia Saudita y resorts en Tailandia.",
+    'products.tag': "COLECCIÓN EXCLUSIVA DE EXPORTACIÓN",
+    'products.title': "Productos Sanitarios Certificados para Proyectos Globales",
+    'products.lead': "Suministro directo de fábrica de grifos de latón sin plomo certificados cUPC y CE, válvulas con sensor inteligente y duchas termostáticas.",
+    'showcase.tag': "CALIDAD Y CERTIFICACIÓN",
+    'showcase.title': "Diseñado para Superar los Estándares Norteamericanos y Europeos",
+    'showcase.lead': "Cada grifo y válvula Kedah se fabrica bajo estrictos protocolos ISO 9001 con pruebas de niebla salina ASS de 24 horas.",
+    'factory.tag': "PRODUCCIÓN EN VIVO · BASE INDUSTRIAL NANAN",
+    'factory.title': "Dentro de Nuestra Fábrica: Fabricación China Transparente",
+    'factory.lead': "Operando en Lucang, Nanan: desde fundición por gravedad de latón hasta mecanizado CNC de 0.01 mm y pulido robótico.",
+    'pricing.tag': "PRECIOS DIRECTOS DE FÁBRICA",
+    'pricing.title': "Niveles de Precios por Volumen B2B",
+    'pricing.lead': "Precios transparentes por volumen para contratistas comerciales y distribuidores de fontanería en todo el mundo.",
+    'tour.tag': "FERIAS MUNDIALES Y FÁBRICA",
+    'tour.title': "Historial en la Feria de Cantón y Presencia de Fábrica",
+    'tour.lead': "Conozca nuestras instalaciones de más de 50,000 m² en Nanan y nuestra trayectoria continua en la Feria de Cantón.",
+    'contact.tag': "CONSULTA DIRECTA DE FÁBRICA",
+    'contact.title': "Solicite un Paquete de Cotización e Ingeniería Inmediato",
+    'contact.lead': "Comunicación directa con el departamento de exportación. Respuesta técnica y cotizaciones personalizadas en 24 horas.",
     'nav.home': 'Inicio',
     'nav.about': 'Nosotros',
     'nav.products': 'Productos',
@@ -97,6 +139,27 @@ const i18n = {
     'rightsReserved': 'Todos los derechos reservados.'
   },
   th: {
+    'services.tag': "บริการและผลิตภัณฑ์หลัก",
+    'services.title': "การผลิตที่แม่นยำสำหรับผู้รับเหมาสุขภัณฑ์ทั่วโลก",
+    'services.lead': "ตั้งแต่โครงการที่อยู่อาศัยระดับหรูในอเมริกาเหนือและสเปน ไปจนถึงอาคารพาณิชย์ในซาอุดีอาระเบียและรีสอร์ทในไทย",
+    'products.tag': "คอลเลกชันส่งออกยอดนิยม",
+    'products.title': "ผลิตภัณฑ์สุขภัณฑ์ที่ได้รับการรับรองมาตรฐานสากลสำหรับโครงการทั่วโลก",
+    'products.lead': "โรงงานจัดหาโดยตรงสำหรับก๊อกน้ำทองเหลืองไร้สารตะกั่วมาตรฐาน cUPC & CE วาล์วเซ็นเซอร์ และชุดฝักบัวเทอร์โมสแตท",
+    'showcase.tag': "คุณภาพและการรับรองมาตรฐาน",
+    'showcase.title': "ออกแบบเพื่อมาตรฐานที่เหนือกว่าอเมริกาเหนือและยุโรป",
+    'showcase.lead': "ก๊อกน้ำและวาล์วทุกชิ้นผลิตภายใต้ระบบ ISO 9001 ผ่านการทดสอบกรดเกลือ 24 ชั่วโมง (ASS Grade 10)",
+    'factory.tag': "การผลิตจริง · ฐานอุตสาหกรรมหนานอัน",
+    'factory.title': "เยี่ยมชมโรงงานของเรา — ความโปร่งใสในการผลิตมาตรฐานจีนระดับพรีเมียม",
+    'factory.lead': "ตั้งอยู่ในลู่ชาง หนานอัน: หล่อทองเหลืองไร้สารตะกั่ว กลึง CNC ความละเอียด 0.01 มม. และขัดเงาด้วยหุ่นยนต์",
+    'pricing.tag': "ราคาตรงจากโรงงาน",
+    'pricing.title': "ตารางราคาขายส่ง B2B ตามปริมาณการสั่งซื้อ",
+    'pricing.lead': "ระดับราคาที่โปร่งใสสำหรับผู้รับเหมาโครงการและผู้จัดจำหน่ายอุปกรณ์สุขภัณฑ์ทั่วโลก",
+    'tour.tag': "งานแสดงสินค้าระดับโลกและโรงงาน",
+    'tour.title': "ประวัติการร่วมงานกวางเจาแฟร์และการเยี่ยมชมโรงงาน",
+    'tour.lead': "ชมโรงงานขนาดกว่า 50,000 ตร.ม. ในหนานอัน และการพบปะลูกค้าในงานกวางเจาแฟร์อย่างต่อเนื่อง",
+    'contact.tag': "ติดต่อโรงงานโดยตรง",
+    'contact.title': "ขอรับเอกสารทางวิศวกรรมและใบเสนอราคาด่วนจากโรงงาน",
+    'contact.lead': "ติดต่อทีมวิศวกรส่งออกโดยตรง ตอบกลับภายใน 24 ชั่วโมงพร้อมใบเสนอราคาและการประเมินแบบ",
     'nav.home': 'หน้าแรก',
     'nav.about': 'เกี่ยวกับเรา',
     'nav.products': 'สินค้าทั้งหมด',
@@ -142,6 +205,27 @@ const i18n = {
     'rightsReserved': 'สงวนลิขสิทธิ์ทั้งหมด'
   },
   ar: {
+    'services.tag': "الخدمات والمنتجات الرئيسية",
+    'services.title': "تصنيع دقيق لمقاولي السباكة العالميين",
+    'services.lead': "من المشاريع السكنية الفاخرة في أمريكا الشمالية وإسبانيا إلى المنشآت التجارية الكبرى في المملكة العربية السعودية والمنتجعاتใน تايلاند.",
+    'products.tag': "مجموعات التصدير المعتمدة للمشاريع",
+    'products.title': "منتجات صحية معتمدة هندسيًا للمشاريع العالمية",
+    'products.lead': "توريد مباشر من المصنع لخلاطات النحاس الخالية من الرصاص المعتمدة بشهادات cUPC وCE وأنظمة الدش الفاخرة.",
+    'showcase.tag': "الجودة والاعتمادات الهندسية",
+    'showcase.title': "مصممة لتتجاوز المعايير الأمريكية الشمالية والأوروبية",
+    'showcase.lead': "يتم تصنيع جميع الخلاطات والصمامات وفقًا لمعايير ISO 9001 مع اختبار رش الملح لمدة 24 ساعة لضمان متانة الطلاء.",
+    'factory.tag': "الإنتاج الحي · قاعدة نان آن للأدوات الصحية",
+    'factory.title': "داخل مصنعنا - تصنيع صيني شفاف عالي الجودة",
+    'factory.lead': "نعمل في نان آن، مركز السباكة الوطني في الصين: صب النحاس النقي، التشغيل الآلي بدقة 0.01 مم، والتجميع الدقيق.",
+    'pricing.tag': "أسعار المصنع المباشرة",
+    'pricing.title': "مستويات أسعار الجملة التقديرية للمشاريع B2B",
+    'pricing.lead': "أسعار واضحة وتنافسية لمقاولي المشاريع وموزعي الأدوات الصحية مع خيارات التخصيص الكاملة.",
+    'tour.tag': "المعارض العالمية وزيارة المصنع",
+    'tour.title': "سجل معارض كانتون الدولية وحضور المصنع",
+    'tour.lead': "تعرف على منشأتنا الصناعية البالغة 50,000 متر مربع في نان آن وحضورنا المستمر في معرض كانتون الدولي.",
+    'contact.tag': "استفسار مباشر من المصنع",
+    'contact.title': "طلب حزمة المواصفات الهندسية وعرض الأسعار الفوري",
+    'contact.lead': "تواصل مباشر مع الفريق الهندسي والتصديري لمصنع كيداه. رد فني وعروض أسعار خلال 24 ساعة.",
     'nav.home': 'الرئيسية',
     'nav.about': 'من نحن',
     'nav.products': 'المنتجات',
@@ -187,6 +271,27 @@ const i18n = {
     'rightsReserved': 'جميع الحقوق محفوظة.'
   },
   zh: {
+    'services.tag': "核心产品与工程服务",
+    'services.title': "面向全球水暖工程商的高精度卫浴制造",
+    'services.lead': "从北美和西班牙的高端豪宅，到沙特高人流商用设施及泰国度假酒店，福建科迪直接交付权威认证的水暖解决方案，无任何中间商溢价。",
+    'products.tag': "出口工程卫浴精选专区",
+    'products.title': "经过国际权威认证的全球工程卫浴产品专区",
+    'products.lead': "工厂直供通过北美 cUPC 与欧盟 CE 认证的无铅铜水龙头、智能红外感应洁具及豪华恒温雨淋系统，经受 24 小时乙酸盐雾严苛质检，畅销 50+ 国家。",
+    'showcase.tag': "严苛质检与工程认证",
+    'showcase.title': "严苛超越北美与欧洲行业准入标准的精工制造",
+    'showcase.lead': "科迪每款水龙头与阀门均在 ISO 9001 质量管理体系下严格生产。重力压铸消除内部砂眼，CNC 车床达到 0.01mm 精密公差，并通过 24 小时乙酸盐雾 Grade 10 级防腐检测。",
+    'factory.tag': "车间实景 · 南安水暖卫浴产业基地",
+    'factory.title': "深入科迪工厂实景 — 真实透明的中国高端制造",
+    'factory.lead': "坐落于中国水暖名镇南安仑苍：从高纯度无铅铜重力铸造、0.01mm 精度数控车削，到机器人镜面抛光及十万级洁净装配全流程。",
+    'pricing.tag': "工厂直供透明报价",
+    'pricing.title': "B2B 工程采购阶梯价格参考表",
+    'pricing.lead': "为全球工程承包商、水暖建材批发商及品牌进口商提供公开透明的批量采购梯度价格，支持表面工艺、包装定制与激光镭雕。",
+    'tour.tag': "全球出海展贸与实景展厅",
+    'tour.title': "广交会全球出海历程与实体工厂实景",
+    'tour.lead': "走进科迪位于福建南安仑苍 50,000 m² 现代化综合制造园区，纵览历届广交会与全球工程采购商现场交流的真实足迹。",
+    'contact.tag': "外贸直通询盘",
+    'contact.title': "立即获取工厂直供工程报价与技术方案包",
+    'contact.lead': "直接与福建科迪外贸工程部对接，24小时内提供技术图纸确认、CAD评估、样品寄送与外贸出海报价单。",
     'nav.home': '首页',
     'nav.about': '关于科迪',
     'nav.products': '产品中心',
@@ -428,24 +533,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Language Switcher Dropdown & i18n
-  const langBtn = document.getElementById('langBtn') || document.getElementById('langToggle');
-  const langDropdown = document.getElementById('langDropdown');
-  const langOptions = document.querySelectorAll('.lang-opt, .lang-option');
-  const currentLangText = document.getElementById('currentLangText') || document.getElementById('currentLangLabel');
-
-  if (langBtn && langDropdown) {
-    langBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      langDropdown.classList.toggle('show');
-    });
-
-    document.addEventListener('click', () => {
-      langDropdown.classList.remove('show');
-    });
-  }
-
-  // Robust Global Language Switcher
+  // ===================================================================
+  // 2. Definitive Global Language Switcher Engine
+  // ===================================================================
   window.setLanguage = function(lang) {
     if (!i18n[lang]) lang = 'en';
     try {
@@ -464,12 +554,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const langLabels = { en: 'EN', es: 'ES', th: 'TH', ar: 'AR', zh: '中文' };
-    document.querySelectorAll('#currentLangText, #currentLangLabel').forEach(el => {
+    document.querySelectorAll('#currentLangText, #currentLangLabel, .current-lang-text').forEach(el => {
       el.textContent = langLabels[lang] || lang.toUpperCase();
     });
 
-    document.querySelectorAll('.lang-opt, .lang-option').forEach(opt => {
-      opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+    document.querySelectorAll('.lang-opt, .lang-option, .drawer-lang-btn').forEach(opt => {
+      const optLang = opt.getAttribute('data-lang');
+      const isActive = optLang === lang;
+      opt.classList.toggle('active', isActive);
+      if (opt.classList.contains('drawer-lang-btn')) {
+        opt.classList.toggle('bg-emerald-500', isActive);
+        opt.classList.toggle('text-white', isActive);
+        opt.classList.toggle('bg-white/10', !isActive);
+        opt.classList.toggle('text-white/80', !isActive);
+      }
     });
 
     // Translate all elements with data-i18n
@@ -487,50 +585,65 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // Wire up dropdown buttons
-  document.querySelectorAll('#langBtn, #langToggle, .lang-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  window.toggleLangDropdown = function(e) {
+    if (e) {
       e.stopPropagation();
       e.preventDefault();
-      const parent = btn.closest('.relative, .lang-switcher') || btn.parentElement;
-      const dropdown = parent.querySelector('#langDropdown, .lang-dropdown');
-      if (dropdown) {
-        const isHidden = dropdown.classList.contains('hidden') || dropdown.style.display === 'none' || !dropdown.classList.contains('show');
-        if (isHidden) {
-          dropdown.classList.remove('hidden');
-          dropdown.classList.add('show');
-          dropdown.style.display = 'block';
-        } else {
-          dropdown.classList.add('hidden');
-          dropdown.classList.remove('show');
-          dropdown.style.display = 'none';
-        }
+    }
+    document.querySelectorAll('#langDropdown, .lang-dropdown').forEach(dropdown => {
+      const isVisible = dropdown.style.display === 'block' || dropdown.classList.contains('is-open');
+      if (isVisible) {
+        dropdown.classList.remove('is-open', 'show');
+        dropdown.classList.add('hidden');
+        dropdown.style.display = 'none';
+      } else {
+        dropdown.classList.add('is-open', 'show');
+        dropdown.classList.remove('hidden');
+        dropdown.style.display = 'block';
       }
     });
-  });
+  };
 
-  document.addEventListener('click', () => {
-    document.querySelectorAll('#langDropdown, .lang-dropdown').forEach(dd => {
-      dd.classList.add('hidden');
-      dd.classList.remove('show');
-      dd.style.display = 'none';
-    });
-  });
-
-  document.querySelectorAll('.lang-opt, .lang-option').forEach(opt => {
-    opt.addEventListener('click', (e) => {
+  window.switchLanguage = function(lang, e) {
+    if (e) {
       e.preventDefault();
       e.stopPropagation();
-      const selectedLang = opt.getAttribute('data-lang');
-      window.setLanguage(selectedLang);
-      document.querySelectorAll('#langDropdown, .lang-dropdown').forEach(dd => {
-        dd.classList.add('hidden');
-        dd.classList.remove('show');
-        dd.style.display = 'none';
-      });
+    }
+    window.setLanguage(lang);
+    document.querySelectorAll('#langDropdown, .lang-dropdown').forEach(dropdown => {
+      dropdown.classList.remove('is-open', 'show');
+      dropdown.classList.add('hidden');
+      dropdown.style.display = 'none';
     });
+  };
+
+  // Wire up button clicks
+  document.querySelectorAll('#langBtn, #langToggle, .lang-btn').forEach(btn => {
+    btn.onclick = function(e) {
+      window.toggleLangDropdown(e);
+    };
   });
 
+  // Global click outside to close dropdown
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#langBtn, #langToggle, .lang-btn, #langDropdown, .lang-dropdown')) {
+      document.querySelectorAll('#langDropdown, .lang-dropdown').forEach(dd => {
+        dd.classList.remove('is-open', 'show');
+        dd.classList.add('hidden');
+        dd.style.display = 'none';
+      });
+    }
+  });
+
+  // Options click
+  document.querySelectorAll('.lang-opt, .lang-option').forEach(opt => {
+    opt.onclick = function(e) {
+      const selected = opt.getAttribute('data-lang');
+      window.switchLanguage(selected, e);
+    };
+  });
+
+  // Load saved language
   const savedLang = localStorage.getItem('kedah_site_lang') || 'en';
   window.setLanguage(savedLang);
 

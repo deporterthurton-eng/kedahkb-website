@@ -163,17 +163,17 @@
       <div class="flex items-center gap-4">
         <!-- Language Switcher Dropdown -->
         <div class="relative">
-          <button id="langBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-xs font-semibold text-white transition backdrop-blur-sm">
+          <button id="langBtn" type="button" onclick="toggleLangDropdown(event)" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-xs font-semibold text-white transition backdrop-blur-sm">
             <span>🌐</span>
             <span id="currentLangText">EN</span>
             <span class="text-[10px] opacity-75">▼</span>
           </button>
           <ul id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-36 bg-white text-gray-800 rounded-xl shadow-2xl py-2 hidden z-50 border border-gray-100 text-xs font-medium">
-            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="en">English (EN)</a></li>
-            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="es">Español (ES)</a></li>
-            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="th">ไทย (TH)</a></li>
-            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="ar">العربية (AR)</a></li>
-            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="zh">中文 (ZH)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchLanguage('en', event)" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="en">English (EN)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchLanguage('es', event)" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="es">Español (ES)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchLanguage('th', event)" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="th">ไทย (TH)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchLanguage('ar', event)" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="ar">العربية (AR)</a></li>
+            <li><a href="javascript:void(0)" onclick="switchLanguage('zh', event)" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="zh">中文 (ZH)</a></li>
           </ul>
         </div>
 
@@ -307,8 +307,8 @@
       <!-- 2-Column Header (Title vs Description) -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
         <div>
-          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">CORE PRODUCT SERVICES</span>
-          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
+          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block" data-i18n="services.tag">CORE PRODUCT SERVICES</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900" data-i18n="services.title">
             Precision Manufacturing for Global Plumbing Contractors
           </h2>
         </div>
@@ -395,8 +395,8 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
-        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">FEATURED EXPORT COLLECTIONS</span>
-        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block" data-i18n="products.tag">FEATURED EXPORT COLLECTIONS</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4" data-i18n="products.title">
           Certified Sanitary Products Engineered for Global Projects
         </h2>
         <p class="text-base text-gray-600 leading-relaxed">
@@ -724,8 +724,8 @@
 
         <!-- Right: Text with Border-B Checklist -->
         <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
-          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">QUALITY &amp; CERTIFICATION</span>
-          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block" data-i18n="showcase.tag">QUALITY &amp; CERTIFICATION</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6" data-i18n="showcase.title">
             Engineered to Exceed North American &amp; European Standards
           </h2>
           <p class="text-base text-gray-600 mb-8 leading-relaxed">
@@ -786,7 +786,7 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
         <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">LIVE PRODUCTION · NANAN SANITARY INDUSTRIAL BASE</span>
-        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4" data-i18n="factory.title">
           Inside Our Factory — Transparent Chinese Manufacturing
         </h2>
         <p class="text-base text-gray-600 leading-relaxed">
@@ -949,8 +949,8 @@
   <section class="py-24 md:py-28 bg-gray-50 border-y border-gray-200" id="pricing-tiers">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
-        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">DIRECT FACTORY PRICING</span>
-        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block" data-i18n="pricing.tag">DIRECT FACTORY PRICING</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4" data-i18n="pricing.title">
           Indicative B2B Volume Pricing Tiers
         </h2>
         <p class="text-base text-gray-600 leading-relaxed">
@@ -1434,6 +1434,21 @@
           </a>
         </li>
       </ul>
+
+            <!-- Mobile Drawer Language Selector -->
+      <div class="px-6 py-4 my-2 mx-4 rounded-2xl bg-white/5 border border-white/10">
+        <div class="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2.5 flex items-center justify-between">
+          <span>Language / 语言切换</span>
+          <span class="current-lang-text text-emerald-400 font-mono text-xs">EN</span>
+        </div>
+        <div class="grid grid-cols-5 gap-1.5 text-center text-xs">
+          <button type="button" class="drawer-lang-btn py-1.5 rounded-lg bg-emerald-500 text-white font-bold transition" onclick="switchLanguage('en', event)" data-lang="en">EN</button>
+          <button type="button" class="drawer-lang-btn py-1.5 rounded-lg bg-white/10 text-white/80 hover:bg-white/20 transition" onclick="switchLanguage('es', event)" data-lang="es">ES</button>
+          <button type="button" class="drawer-lang-btn py-1.5 rounded-lg bg-white/10 text-white/80 hover:bg-white/20 transition" onclick="switchLanguage('th', event)" data-lang="th">TH</button>
+          <button type="button" class="drawer-lang-btn py-1.5 rounded-lg bg-white/10 text-white/80 hover:bg-white/20 transition" onclick="switchLanguage('ar', event)" data-lang="ar">AR</button>
+          <button type="button" class="drawer-lang-btn py-1.5 rounded-lg bg-white/10 text-white/80 hover:bg-white/20 transition" onclick="switchLanguage('zh', event)" data-lang="zh">中文</button>
+        </div>
+      </div>
 
       <div class="navsheet__foot">
         <button class="navsheet__cta" onclick="openRFQModal()" style="background: #10b981;">
