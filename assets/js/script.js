@@ -108,13 +108,15 @@ window.showToast = function(message) {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background: #0f172a;
-      color: #fff;
-      padding: 14px 24px;
-      border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      border-left: 4px solid #c5a059;
+      background: #ffffff;
+      color: #0f172a;
+      padding: 16px 26px;
+      border-radius: 12px;
+      box-shadow: 0 16px 40px rgba(2, 132, 199, 0.22);
+      border: 1px solid #bae6fd;
+      border-left: 5px solid #0284c7;
       font-size: 14px;
+      font-weight: 600;
       z-index: 99999;
       opacity: 0;
       transform: translateY(20px);
@@ -384,20 +386,20 @@ document.addEventListener('DOMContentLoaded', () => {
     banner.id = 'cookieConsentBanner';
     banner.style.cssText = `
       position: fixed; bottom: 20px; left: 20px; z-index: 9999;
-      max-width: 420px; background: rgba(10, 15, 29, 0.96);
-      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(197, 160, 89, 0.35); border-radius: 12px;
-      padding: 16px 20px; box-shadow: 0 16px 36px rgba(0,0,0,0.4);
-      color: #cbd5e1; font-size: 13px; line-height: 1.5;
+      max-width: 420px; background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border: 1px solid #bae6fd; border-radius: 16px;
+      padding: 18px 22px; box-shadow: 0 16px 36px rgba(2, 132, 199, 0.16);
+      color: #334155; font-size: 13px; line-height: 1.6;
     `;
     banner.innerHTML = `
       <div style="display: flex; gap: 12px; align-items: flex-start;">
         <span style="font-size: 20px; line-height: 1;">🛡️</span>
         <div>
-          <strong style="color: #fff; display: block; margin-bottom: 4px; font-size: 14px;">Privacy &amp; Cookie Assurance</strong>
-          We use essential cookies to ensure safe B2B communication and analyze regional traffic in compliance with GDPR. See our <a href="privacy.html" style="color: #c5a059; text-decoration: underline;">Privacy Policy</a>.
+          <strong style="color: #075985; display: block; margin-bottom: 4px; font-size: 14px;">Privacy &amp; Cookie Assurance</strong>
+          We use essential cookies to ensure safe B2B communication and analyze regional traffic in compliance with GDPR. See our <a href="privacy.html" style="color: #0284c7; text-decoration: underline; font-weight: 600;">Privacy Policy</a>.
           <div style="margin-top: 12px; display: flex; gap: 8px;">
-            <button id="acceptCookiesBtn" style="background: #c5a059; color: #fff; border: none; padding: 6px 16px; border-radius: 6px; font-weight: 700; font-size: 12px; cursor: pointer;">Accept &amp; Continue</button>
+            <button id="acceptCookiesBtn" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #fff; border: none; padding: 7px 18px; border-radius: 999px; font-weight: 700; font-size: 12px; cursor: pointer; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.28);">Accept &amp; Continue</button>
           </div>
         </div>
       </div>

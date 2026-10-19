@@ -1,10 +1,9 @@
 /* ==========================================================================
    Fujian Kedah Kitchen & Bath Co., Ltd. (kedahkb.com)
    Official B2B Export Website Design System
-   Aesthetic: Marine Luxury & Precision Water Engineering (海洋风格 · 海派高奢水暖)
-   Color Palette: Deep Ocean Navy (#061325), Sunrise Wave Gold (#df9f52), Azure Ripple (#0284c7, #38bdf8), Seafoam White (#f4f9fd)
-   Typography: Playfair Display (Serif Elegance) & Plus Jakarta Sans (Clarity)
-   Inspired by: Ocean Serenity & luxopack.com (1:1 Layout Harmony & Precision Hierarchy)
+   Aesthetic: Luminous Ocean & Coastal Aqua (明亮清爽海洋水色 · 纯净通透外贸高奢)
+   Palette: Luminous Ocean Blue (#0284c7), Coastal Aqua & Teal (#0d9488, #14b8a6), Seafoam (#f0f9ff, #e0f2fe), Pure White (#ffffff)
+   Typography: Playfair Display (Serif Elegance) & Plus Jakarta Sans (Modern Clarity)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -13,58 +12,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap');
 
 :root {
-  /* Color Palette - Deep Ocean Navy System (深海蔚蓝基调) */
-  --ocean-950: #061325;
-  --ocean-900: #091c36;
-  --ocean-850: #0d2547;
-  --ocean-800: #12335e;
-  --ocean-700: #1a457e;
-  --ocean-600: #245c9f;
-  --ocean-500: #2b72bd;
+  /* Color Palette - Vibrant Ocean Blue & Aqua Teal System (明亮清爽海洋水色体系) */
+  --ocean-primary: #0284c7;       /* 天水蔚蓝 - 核心品牌主色 */
+  --ocean-deep: #0369a1;          /* 舒适深海蓝 - 主按钮、强调交互 */
+  --ocean-dark: #075985;          /* 沉稳海蓝 - 高对比度文字与标识 */
+  --ocean-light: #38bdf8;         /* 轻盈浪花天蓝 - 悬浮渐变、高光 */
+  --ocean-pale: #e0f2fe;          /* 浅海微蓝 - 顶栏、微标背景 */
+  --ocean-surface: #f0f9ff;       /* 纯净浅天青底色 - 带来清爽通透海洋感 */
 
-  /* Backward Compatibility Mappings for Obsidian */
-  --obsidian-950: #061325;
-  --obsidian-900: #091c36;
-  --obsidian-850: #0d2547;
-  --obsidian-800: #12335e;
-  --obsidian-700: #1a457e;
-  --obsidian-600: #245c9f;
+  /* Coastal Aqua & Seafoam Green (清爽青绿辅助色 - 传达纯净健康水流) */
+  --teal-primary: #0d9488;        /* 滨海碧波青绿 */
+  --teal-light: #14b8a6;          /* 清透水波青绿 */
+  --teal-pale: #ccfbf1;           /* 极浅青绿水润背景 */
+  --teal-surface: #f0fdfa;        /* 浪沫微浅底色 */
+  --teal-border: rgba(13, 148, 136, 0.28);
 
-  /* Color Palette - Sunrise Wave Gold System (晨曦浪金 · 落日波光与精工黄铜) */
-  --gold-500: #df9f52;
-  --gold-400: #ecb26e;
-  --gold-300: #f6c88e;
-  --gold-600: #c18134;
-  --gold-700: #9c6220;
-  --gold-subtle: #fcf6ee;
-  --gold-glow: rgba(223, 159, 82, 0.28);
-  --gold-border: rgba(223, 159, 82, 0.4);
+  /* Backward Compatibility Mappings */
+  --obsidian-950: #0f172a;
+  --obsidian-900: #1e293b;
+  --obsidian-850: #0369a1;
+  --obsidian-800: #0284c7;
+  --obsidian-700: #0284c7;
+  --obsidian-600: #0369a1;
+  --ocean-950: #0b1f33;           /* 沉稳舒适的深海石板青（用于页脚压轴，告别压抑死黑） */
+  --ocean-900: #0f2c4a;
+  --ocean-850: #0369a1;
+  --ocean-800: #0284c7;
+  --ocean-700: #0284c7;
+  --ocean-600: #0369a1;
+  --ocean-500: #0284c7;
 
-  /* Color Palette - Water Ripple & Pure Seafoam System (纯净水流与海雾白) */
+  /* Interactive Highlight Tokens (清爽微渐变与光晕) */
+  --gold-500: #0284c7;
+  --gold-400: #0891b2;
+  --gold-300: #38bdf8;
+  --gold-600: #0369a1;
+  --gold-700: #075985;
+  --gold-subtle: #f0f9ff;
+  --gold-glow: rgba(2, 132, 199, 0.24);
+  --gold-border: rgba(2, 132, 199, 0.35);
+
+  /* Water Ripple & Pure Seafoam System */
   --wave-azure: #0284c7;
   --wave-cyan: #38bdf8;
-  --wave-glow: rgba(56, 189, 248, 0.25);
+  --wave-glow: rgba(56, 189, 248, 0.28);
   --surface-white: #ffffff;
-  --surface-light: #f4f9fd;
-  --surface-alt: #eaf3fb;
-  --border-light: #d8e8f5;
-  --border-subtle: rgba(216, 232, 245, 0.85);
-  --border-dark: rgba(255, 255, 255, 0.14);
+  --surface-light: #f8fafc;
+  --surface-alt: #f0f9ff;
+  --border-light: #e2e8f0;
+  --border-subtle: rgba(226, 232, 240, 0.95);
+  --border-aqua: #bae6fd;
+  --border-dark: rgba(2, 132, 199, 0.16);
 
-  /* Typography Colors */
-  --text-dark-primary: #07172c;
-  --text-dark-secondary: #223c5b;
-  --text-dark-muted: #577395;
+  /* Typography Colors - High Legibility & Professional Contrast */
+  --text-dark-primary: #0f172a;   /* 舒适深海黑墨蓝 - 极其舒适的高清晰度 */
+  --text-dark-secondary: #334155; /* 正文深灰青 */
+  --text-dark-muted: #64748b;     /* 辅助说明灰 */
   --text-light-primary: #ffffff;
-  --text-light-secondary: #cde1f5;
-  --text-light-muted: #9ab4d0;
+  --text-light-secondary: #e2e8f0;
+  --text-light-muted: #94a3b8;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --bg: #ffffff;
 
   /* Functional Accents */
   --emerald-600: #0d9488;
   --emerald-500: #14b8a6;
   --emerald-bg: #f0fdfa;
   --ruby-500: #f43f5e;
-  --ruby-bg: rgba(244, 63, 94, 0.12);
+  --ruby-bg: rgba(244, 63, 94, 0.1);
 
   /* Typography Families */
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -72,32 +88,27 @@
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
 
-  /* Elevation Shadows with Ocean Depth Ambient */
-  --shadow-xs: 0 1px 3px rgba(6, 19, 37, 0.05);
-  --shadow-sm: 0 3px 6px rgba(6, 19, 37, 0.06);
-  --shadow-md: 0 8px 18px -2px rgba(6, 19, 37, 0.08), 0 3px 8px -1px rgba(6, 19, 37, 0.04);
-  --shadow-lg: 0 16px 32px -4px rgba(6, 19, 37, 0.1), 0 6px 12px -2px rgba(6, 19, 37, 0.04);
-  --shadow-xl: 0 24px 44px -8px rgba(6, 19, 37, 0.16), 0 10px 20px -4px rgba(6, 19, 37, 0.06);
-  --shadow-gold: 0 8px 24px -4px rgba(223, 159, 82, 0.35);
-  --shadow-ocean: 0 12px 30px -4px rgba(9, 28, 54, 0.35);
+  /* Elevation Shadows with Luminous Ocean Ambient (清爽微光漫反射，去除生硬黑影) */
+  --shadow-xs: 0 1px 3px rgba(2, 132, 199, 0.05);
+  --shadow-sm: 0 3px 8px rgba(2, 132, 199, 0.07);
+  --shadow-md: 0 8px 20px -3px rgba(2, 132, 199, 0.09), 0 3px 8px -1px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 16px 36px -4px rgba(2, 132, 199, 0.12), 0 6px 14px -2px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 24px 50px -8px rgba(2, 132, 199, 0.16), 0 10px 22px -4px rgba(15, 23, 42, 0.05);
+  --shadow-gold: 0 8px 24px -4px rgba(2, 132, 199, 0.35);
+  --shadow-ocean: 0 12px 30px -4px rgba(2, 132, 199, 0.28);
 
   /* Radii */
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
-  --radius-xl: 24px;
+  --radius-xl: 26px;
   --radius-pill: 9999px;
 
   /* Layout & Stagger Spec Tokens */
   --container-max: 1240px;
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-
-  /* Prompt Design System Tokens */
-  --ink: #07172c;
-  --muted: #577395;
-  --bg: #ffffff;
   --radius-card: 26px;
   --pad: clamp(20px, 2.2vw, 34px);
   --ease-out: cubic-bezier(.16, 1, .3, 1);
@@ -128,7 +139,7 @@ html {
 body {
   font-family: var(--font-body);
   font-size: 0.9375rem;
-  line-height: 1.68;
+  line-height: 1.7;
   color: var(--text-dark-secondary);
   background-color: var(--surface-white);
   -webkit-font-smoothing: antialiased;
@@ -171,13 +182,13 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   2. Typography & Section Header System (Ocean Serenity Layout)
+   2. Typography & Section Header System (Luminous Ocean Architecture)
    -------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   color: var(--text-dark-primary);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.22;
   letter-spacing: -0.015em;
 }
 
@@ -196,10 +207,10 @@ p:last-child {
 
 .text-white { color: #ffffff !important; }
 .text-muted { color: var(--text-dark-muted) !important; }
-.text-gold { color: var(--gold-500) !important; }
+.text-gold { color: var(--ocean-primary) !important; }
 .text-center { text-align: center !important; }
 
-/* Section Header (Uniform Marine Rhythm & Air Flow) */
+/* Section Header (Uniform Coastal Aqua Rhythm) */
 .section-header {
   margin-bottom: 3.5rem;
   position: relative;
@@ -214,25 +225,26 @@ p:last-child {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--gold-600);
-  background: var(--gold-subtle);
-  border: 1px solid var(--gold-border);
-  padding: 0.38rem 1.05rem;
+  color: var(--ocean-deep);
+  background: var(--ocean-pale);
+  border: 1px solid var(--border-aqua);
+  padding: 0.4rem 1.15rem;
   border-radius: var(--radius-pill);
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px rgba(223, 159, 82, 0.12);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.1);
 }
 
 .section-tag-gold {
-  background: rgba(223, 159, 82, 0.16);
-  color: var(--gold-400);
-  border-color: rgba(223, 159, 82, 0.45);
+  background: var(--teal-surface);
+  color: var(--teal-primary);
+  border-color: var(--teal-border);
 }
 
 .section-title {
   font-size: 2.45rem;
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  color: var(--text-dark-primary);
 }
 
 .section-desc, .section-subtitle {
@@ -250,15 +262,16 @@ p:last-child {
 }
 
 .highlight {
-  color: var(--gold-500);
-  background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-300) 50%, var(--gold-500) 100%);
+  color: var(--ocean-deep);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--teal-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  font-weight: 800;
 }
 
 /* --------------------------------------------------------------------------
-   3. Buttons & Interactive Controls (Ocean Capsule Pill Shape)
+   3. Buttons & Interactive Controls (Vibrant Aqua Pill Shape)
    -------------------------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -279,59 +292,61 @@ p:last-child {
 }
 
 .btn-primary {
-  background-color: var(--ocean-850);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
   color: #ffffff;
-  border-color: var(--ocean-850);
-  box-shadow: 0 4px 14px rgba(13, 37, 71, 0.25);
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
 }
 
 .btn-primary:hover {
-  background-color: var(--gold-500);
-  border-color: var(--gold-500);
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--teal-primary) 100%);
   color: #ffffff;
-  box-shadow: var(--shadow-gold);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.38);
   transform: translateY(-2px);
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--gold-400) 0%, var(--gold-500) 100%);
+  background: linear-gradient(135deg, var(--teal-primary) 0%, var(--ocean-primary) 100%);
   color: #ffffff;
-  border-color: var(--gold-500);
-  box-shadow: var(--shadow-gold);
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.3);
 }
 
 .btn-gold:hover {
-  background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-600) 100%);
-  box-shadow: 0 10px 24px -4px rgba(223, 159, 82, 0.45);
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--teal-light) 100%);
+  box-shadow: 0 10px 26px rgba(13, 148, 136, 0.42);
   transform: translateY(-2px);
 }
 
 .btn-outline {
-  background: transparent;
-  color: var(--ocean-850);
-  border-color: var(--border-light);
+  background: var(--surface-white);
+  color: var(--ocean-deep);
+  border-color: var(--border-aqua);
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.06);
 }
 
 .btn-outline:hover {
-  background: var(--gold-subtle);
-  border-color: var(--gold-500);
-  color: var(--gold-600);
+  background: var(--ocean-surface);
+  border-color: var(--ocean-primary);
+  color: var(--ocean-primary);
+  transform: translateY(-2px);
 }
 
 .btn-outline-white {
-  background: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--ocean-deep);
+  border-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.12);
 }
 
 .btn-outline-white:hover {
-  background: rgba(255, 255, 255, 0.18);
+  background: #ffffff;
   border-color: #ffffff;
-  color: #ffffff;
+  color: var(--ocean-primary);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.22);
 }
 
 .btn-sm {
@@ -355,11 +370,11 @@ p:last-child {
    4. Top Announcement Bar & Sticky Header
    -------------------------------------------------------------------------- */
 .top-bar {
-  background-color: var(--obsidian-950);
-  color: var(--text-light-muted);
+  background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+  color: var(--text-dark-secondary);
   font-size: 0.8125rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border-aqua);
   position: relative;
   z-index: 1001;
 }
@@ -376,11 +391,13 @@ p:last-child {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  color: #e2e8f0;
+  color: var(--text-dark-secondary);
+  font-weight: 500;
 }
 
 .top-bar-left strong {
-  color: var(--gold-400);
+  color: var(--ocean-deep);
+  font-weight: 700;
 }
 
 .top-bar-right {
@@ -390,15 +407,16 @@ p:last-child {
 }
 
 .contact-link {
-  color: var(--text-light-secondary);
+  color: var(--ocean-deep);
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   font-size: 0.8125rem;
+  font-weight: 600;
 }
 
 .contact-link:hover {
-  color: var(--gold-400);
+  color: var(--teal-primary);
 }
 
 /* Main Navigation Header */
@@ -599,7 +617,7 @@ body.rtl .lang-dropdown {
   padding-left: max(var(--pad), env(safe-area-inset-left));
   padding-right: max(var(--pad), env(safe-area-inset-right));
   overflow: hidden;
-  background: var(--surface-white);
+  background: radial-gradient(circle at 10% 20%, #f0f9ff 0%, #ffffff 85%);
   box-sizing: border-box;
 }
 
@@ -620,16 +638,17 @@ body.rtl .lang-dropdown {
   isolation: isolate;
   border-radius: var(--radius-card);
   overflow: hidden;
-  background: #07172c;
+  background: #0284c7;
   min-width: 0;
-  box-shadow: 0 20px 48px -12px rgba(6, 19, 37, 0.25);
+  border: 1px solid var(--border-aqua);
+  box-shadow: 0 20px 48px -12px rgba(2, 132, 199, 0.22);
 }
 
 .hero__media::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 19, 37, .24) 0%, rgba(6, 19, 37, 0) 40%, rgba(6, 19, 37, .48) 100%);
+  background: linear-gradient(180deg, rgba(2, 132, 199, 0.12) 0%, rgba(2, 132, 199, 0) 40%, rgba(3, 105, 161, 0.32) 100%);
   pointer-events: none;
 }
 
@@ -846,10 +865,11 @@ body.rtl .lang-dropdown {
 }
 
 .cta:hover .cta__icon {
-  background: var(--ocean-950);
+  background: var(--ocean-deep);
   color: #fff;
-  border-color: var(--ocean-950);
+  border-color: var(--ocean-deep);
   transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
 }
 
 .cta-secondary {
@@ -1040,7 +1060,7 @@ body.rtl .lang-dropdown {
 .navsheet__scrim {
   position: absolute;
   inset: 0;
-  background: rgba(5, 17, 24, .48);
+  background: rgba(2, 132, 199, 0.28);
   opacity: 0;
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -1049,8 +1069,8 @@ body.rtl .lang-dropdown {
 
 .navsheet.is-open .navsheet__scrim {
   opacity: 1;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: opacity .5s ease, backdrop-filter .6s ease, -webkit-backdrop-filter .6s ease;
 }
 
@@ -1064,12 +1084,12 @@ body.rtl .lang-dropdown {
   flex-direction: column;
   padding: calc(var(--pad) + 78px) clamp(24px, 6vw, 52px) calc(var(--pad) + 12px);
   padding-bottom: max(calc(var(--pad) + 12px), env(safe-area-inset-bottom));
-  background: rgba(6, 22, 31, .94);
-  backdrop-filter: blur(28px) saturate(160%);
-  -webkit-backdrop-filter: blur(28px) saturate(160%);
-  border-left: 1px solid rgba(255, 255, 255, .12);
-  box-shadow: -30px 0 80px rgba(0, 0, 0, .45);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border-left: 1px solid var(--border-aqua);
+  box-shadow: -20px 0 60px rgba(2, 132, 199, 0.16);
+  color: var(--text-dark-primary);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   transform: translateX(100%);
@@ -1088,11 +1108,11 @@ body.rtl .lang-dropdown {
 }
 
 .navsheet__list li {
-  border-top: 1px solid rgba(255, 255, 255, .13);
+  border-top: 1px solid var(--border-aqua);
 }
 
 .navsheet__list li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, .13);
+  border-bottom: 1px solid var(--border-aqua);
 }
 
 .navsheet__link {
@@ -1102,10 +1122,10 @@ body.rtl .lang-dropdown {
   gap: 16px;
   padding: clamp(14px, 2.2vh, 20px) 2px;
   text-decoration: none;
-  color: #fff;
+  color: var(--ocean-dark);
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 5.2vw, 2.1rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -.015em;
   line-height: 1.1;
   opacity: 0;
@@ -1131,7 +1151,7 @@ body.rtl .lang-dropdown {
 
 .navsheet__link:hover,
 .navsheet__link:focus-visible {
-  color: var(--gold-400);
+  color: var(--ocean-primary);
 }
 
 .navsheet__link:hover .navsheet__arrow,
@@ -1165,22 +1185,24 @@ body.rtl .lang-dropdown {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 13px 24px;
+  padding: 13px 26px;
   border-radius: 999px;
-  background: #fff;
-  color: var(--ocean-950);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
+  color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
   border: none;
-  transition: transform .25s var(--ease-out), background .25s ease;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3);
+  transition: transform .25s var(--ease-out), background .25s ease, box-shadow .25s ease;
 }
 
 .navsheet__cta:hover {
   transform: translateY(-2px);
-  background: var(--gold-300);
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--teal-primary) 100%);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.4);
 }
 
 .navsheet__cta svg {
@@ -1197,7 +1219,7 @@ body.rtl .lang-dropdown {
 }
 
 .navsheet__socials a {
-  color: rgba(255, 255, 255, .72);
+  color: var(--ocean-deep);
   text-decoration: none;
   display: grid;
   place-items: center;
@@ -1205,7 +1227,7 @@ body.rtl .lang-dropdown {
 }
 
 .navsheet__socials a:hover {
-  color: var(--gold-400);
+  color: var(--teal-primary);
   transform: translateY(-2px);
 }
 
@@ -1377,45 +1399,55 @@ body.rtl .lang-dropdown {
 }
 
 /* --------------------------------------------------------------------------
-   7. "Inside Our Factory - Live" Manufacturing Monitor
+   7. "Inside Our Factory - Live" Manufacturing Monitor (Luminous Coastal Aqua)
    -------------------------------------------------------------------------- */
 .live-factory-section {
-  background: linear-gradient(180deg, var(--ocean-950) 0%, var(--ocean-900) 100%);
-  color: #ffffff;
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+  color: var(--text-dark-secondary);
   padding: 5.5rem 0;
   position: relative;
-  border-bottom: 1px solid rgba(223, 159, 82, 0.2);
+  border-top: 1px solid var(--border-aqua);
+  border-bottom: 1px solid var(--border-aqua);
+}
+
+.live-factory-section .section-title {
+  color: var(--ocean-dark) !important;
+}
+
+.live-factory-section .section-subtitle {
+  color: var(--text-dark-muted) !important;
 }
 
 .live-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(239, 68, 68, 0.14);
-  border: 1px solid rgba(239, 68, 68, 0.45);
-  color: #fca5a5;
-  padding: 0.4rem 1rem;
+  background: var(--teal-pale);
+  border: 1px solid var(--teal-light);
+  color: var(--teal-primary);
+  padding: 0.4rem 1.15rem;
   border-radius: var(--radius-pill);
   font-family: var(--font-mono);
   font-size: 0.78125rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.12);
 }
 
 .live-pulse {
   width: 8px;
   height: 8px;
-  background: #ef4444;
+  background: var(--teal-primary);
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.7);
   animation: radarPulse 1.8s infinite;
 }
 
 @keyframes radarPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(13, 148, 136, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(13, 148, 136, 0); }
 }
 
 .live-stats-bar {
@@ -1424,7 +1456,7 @@ body.rtl .lang-dropdown {
   gap: 1.5rem;
   margin-top: 3.5rem;
   padding-top: 2.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border-aqua);
 }
 
 .live-stat-item {
@@ -1435,14 +1467,14 @@ body.rtl .lang-dropdown {
   font-family: var(--font-heading);
   font-size: 2.25rem;
   font-weight: 800;
-  color: var(--gold-400);
+  color: var(--ocean-deep);
   line-height: 1.1;
   letter-spacing: -0.02em;
 }
 
 .live-stat-label {
   font-size: 0.78125rem;
-  color: var(--text-light-muted);
+  color: var(--text-dark-muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 0.4rem;
@@ -1450,15 +1482,15 @@ body.rtl .lang-dropdown {
 }
 
 /* --------------------------------------------------------------------------
-   8. Official Supplier Due Diligence Profile Card
+   8. Official Supplier Due Diligence Profile Card (Crisp Ocean Pure)
    -------------------------------------------------------------------------- */
 .profile-box {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   padding: 3rem;
   margin: 1.5rem 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
   position: relative;
 }
 
@@ -1466,7 +1498,7 @@ body.rtl .lang-dropdown {
   font-family: var(--font-heading);
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--gold-600);
+  color: var(--ocean-deep);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.6rem;
@@ -1475,6 +1507,7 @@ body.rtl .lang-dropdown {
 .profile-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--ocean-dark);
 }
 
 .profile-grid {
@@ -1485,24 +1518,24 @@ body.rtl .lang-dropdown {
 }
 
 .profile-col {
-  background: var(--surface-light);
+  background: #f0f9ff;
   padding: 1.65rem;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border-light);
-  border-left: 4px solid var(--gold-500);
+  border: 1px solid var(--border-aqua);
+  border-left: 4px solid var(--ocean-primary);
   transition: var(--transition);
 }
 
 .profile-col:hover {
-  box-shadow: var(--shadow-md);
-  border-left-color: var(--gold-400);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.14);
+  border-left-color: var(--teal-primary);
   transform: translateY(-2px);
 }
 
 .profile-col h4 {
   font-size: 1.05rem;
   margin-bottom: 1rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
 }
 
 .profile-col ul {
@@ -1520,21 +1553,21 @@ body.rtl .lang-dropdown {
 }
 
 /* --------------------------------------------------------------------------
-   9. B2B Indicative Tiered Pricing Table
+   9. B2B Indicative Tiered Pricing Table (Luminous Oceanic Grid)
    -------------------------------------------------------------------------- */
 .pricing-section {
-  background: var(--surface-light);
+  background: #f8fafc;
   padding: 5.5rem 0;
-  border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-aqua);
+  border-bottom: 1px solid var(--border-aqua);
 }
 
 .price-table-wrapper {
   overflow-x: auto;
   background: var(--surface-white);
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-aqua);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
   margin: 2.5rem 0 1rem;
 }
 
@@ -1546,7 +1579,7 @@ body.rtl .lang-dropdown {
 }
 
 .luxo-price-table th {
-  background: var(--obsidian-900);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
@@ -1554,7 +1587,7 @@ body.rtl .lang-dropdown {
   padding: 1.15rem 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  border-bottom: 2px solid var(--gold-500);
+  border-bottom: 2px solid var(--teal-light);
 }
 
 .luxo-price-table td {
@@ -1566,22 +1599,22 @@ body.rtl .lang-dropdown {
 }
 
 .luxo-price-table tr:hover td {
-  background: var(--gold-subtle);
+  background: var(--ocean-pale);
 }
 
 .luxo-price-table .product-name-cell {
   font-weight: 700;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
 }
 
 .luxo-price-table .price-badge {
   font-family: var(--font-mono);
   font-weight: 700;
-  color: var(--obsidian-850);
+  color: var(--ocean-deep);
 }
 
 /* --------------------------------------------------------------------------
-   10. Core Value Propositions & Features Grid
+   10. Core Value Propositions & Features Grid (Bright Coastal Cards)
    -------------------------------------------------------------------------- */
 .section {
   padding: 5.5rem 0;
@@ -1589,7 +1622,18 @@ body.rtl .lang-dropdown {
 
 .bg-white { background-color: var(--surface-white); }
 .bg-light { background-color: var(--surface-light); }
-.bg-slate { background-color: var(--obsidian-900); }
+.bg-slate, .bg-ocean-surface {
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+  color: var(--text-dark-secondary);
+}
+
+.bg-slate .section-title, .bg-ocean-surface .section-title {
+  color: var(--ocean-dark) !important;
+}
+
+.bg-slate .section-desc, .bg-ocean-surface .section-desc {
+  color: var(--text-dark-muted) !important;
+}
 
 .features-grid {
   display: grid;
@@ -1599,37 +1643,40 @@ body.rtl .lang-dropdown {
 
 .feature-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.06);
 }
 
 .feature-card:hover {
-  border-color: var(--gold-border);
-  box-shadow: var(--shadow-lg);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16);
   transform: translateY(-4px);
 }
 
 .feature-icon-box {
   width: 58px;
   height: 58px;
-  background: var(--gold-subtle);
-  border: 1px solid var(--gold-border);
+  background: #f0f9ff;
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
   margin-bottom: 1.35rem;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.1);
 }
 
 .feature-title {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
+}
 }
 
 .feature-desc {
@@ -1639,7 +1686,7 @@ body.rtl .lang-dropdown {
 }
 
 /* --------------------------------------------------------------------------
-   11. 7-Step Precision Manufacturing Process Cards
+   11. 7-Step Precision Manufacturing Process Cards (Bright Ocean Craft)
    -------------------------------------------------------------------------- */
 .process-grid {
   display: grid;
@@ -1649,18 +1696,19 @@ body.rtl .lang-dropdown {
 
 .process-step-card, .process-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   position: relative;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.06);
 }
 
 .process-step-card:hover, .process-card:hover {
-  border-color: var(--gold-500);
-  box-shadow: var(--shadow-lg);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.18);
   transform: translateY(-4px);
 }
 
@@ -1668,16 +1716,16 @@ body.rtl .lang-dropdown {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(15, 23, 42, 0.88);
-  backdrop-filter: blur(4px);
-  color: var(--gold-400);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
+  color: #ffffff;
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 800;
-  padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
   z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
 }
 
 body.rtl .step-num {
@@ -1688,7 +1736,7 @@ body.rtl .step-num {
 .step-image, .process-img {
   height: 200px;
   overflow: hidden;
-  background: #000;
+  background: #f0f9ff;
 }
 
 .step-image img, .process-img img {
@@ -1713,7 +1761,7 @@ body.rtl .step-num {
 .step-info h4, .step-title {
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
 }
 
 .step-info p, .step-desc {
@@ -1736,23 +1784,23 @@ body.rtl .step-num {
 .filter-btn, .cat-tab, .buyer-chip {
   padding: 0.65rem 1.45rem;
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-pill);
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--text-dark-secondary);
   cursor: pointer;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
 }
 
 .filter-btn:hover, .filter-btn.active,
 .cat-tab:hover, .cat-tab.active,
 .buyer-chip:hover, .buyer-chip.active {
-  background: var(--obsidian-850);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
   color: #ffffff;
-  border-color: var(--obsidian-850);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
 }
 
 .products-grid, .product-grid, .luxo-product-grid {
@@ -1761,28 +1809,29 @@ body.rtl .step-num {
   gap: 2rem;
 }
 
-/* Unified Product Card Component */
+/* Unified Product Card Component (Luminous Ocean Card) */
 .product-card, .luxo-product-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   position: relative;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.05);
 }
 
 .product-card:hover, .luxo-product-card:hover {
-  border-color: var(--gold-border);
-  box-shadow: var(--shadow-xl);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.18);
   transform: translateY(-6px);
 }
 
 .product-img-wrapper, .product-thumb, .luxo-card-img-wrap {
   position: relative;
   height: 250px;
-  background: var(--surface-light);
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1807,7 +1856,7 @@ body.rtl .step-num {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(2, 132, 199, 0.92);
   backdrop-filter: blur(4px);
   color: #ffffff;
   font-family: var(--font-heading);
@@ -1816,9 +1865,10 @@ body.rtl .step-num {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
 }
 
 body.rtl .product-badge,
@@ -1829,8 +1879,8 @@ body.rtl .luxo-card-badge {
 }
 
 .product-badge.gold, .luxo-card-badge.gold {
-  background: var(--gold-500);
-  border-color: var(--gold-400);
+  background: linear-gradient(135deg, var(--teal-primary) 0%, var(--teal-light) 100%);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .product-content, .product-body, .luxo-card-body {
@@ -1846,14 +1896,14 @@ body.rtl .luxo-card-badge {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: var(--gold-600);
+  color: var(--teal-primary);
   margin-bottom: 0.35rem;
 }
 
 .product-title, .luxo-card-title {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
   line-height: 1.35;
   margin-bottom: 0.6rem;
 }
@@ -1871,8 +1921,8 @@ body.rtl .luxo-card-badge {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  background: var(--surface-light);
-  border: 1px solid var(--border-light);
+  background: #f0f9ff;
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-sm);
   padding: 0.65rem 0.5rem;
   margin-bottom: 1.25rem;
@@ -1891,7 +1941,7 @@ body.rtl .luxo-card-badge {
 .luxo-spec-col .spec-v {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--obsidian-850);
+  color: var(--ocean-deep);
 }
 
 .product-specs {
@@ -1900,15 +1950,15 @@ body.rtl .luxo-card-badge {
   gap: 0.35rem;
   font-size: 0.8125rem;
   color: var(--text-dark-secondary);
-  background: var(--surface-light);
-  border: 1px solid var(--border-light);
+  background: #f0f9ff;
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-sm);
   padding: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
 .product-specs span strong {
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
 }
 
 .product-footer, .product-card-footer {
@@ -1917,25 +1967,27 @@ body.rtl .luxo-card-badge {
   align-items: center;
   gap: 0.75rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-aqua);
 }
 
 .btn-luxo-quote {
   width: 100%;
   padding: 0.75rem;
-  background: var(--obsidian-850);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--ocean-deep) 100%);
   color: #ffffff;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 700;
   cursor: pointer;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.22);
 }
 
 .btn-luxo-quote:hover {
-  background: var(--gold-500);
+  background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--teal-primary) 100%);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
 }
 
 /* Category Showcase Cards (Homepage 4 Categories) */
@@ -1947,24 +1999,25 @@ body.rtl .luxo-card-badge {
 
 .category-showcase-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.05);
 }
 
 .category-showcase-card:hover {
-  border-color: var(--gold-border);
-  box-shadow: var(--shadow-xl);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.18);
   transform: translateY(-5px);
 }
 
 .category-img-box {
   position: relative;
   height: 230px;
-  background: var(--surface-light);
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
   overflow: hidden;
   padding: 1.25rem;
   display: flex;
@@ -1987,17 +2040,18 @@ body.rtl .luxo-card-badge {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(13, 148, 136, 0.92);
   backdrop-filter: blur(4px);
-  color: var(--gold-400);
+  color: #ffffff;
   font-family: var(--font-heading);
   font-size: 0.71875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 0.35rem 0.75rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
 }
 
 .category-body {
@@ -2010,7 +2064,7 @@ body.rtl .luxo-card-badge {
 .category-title {
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
 }
 
 .category-summary {
@@ -2055,7 +2109,7 @@ body.rtl .luxo-card-badge {
 
 
 /* --------------------------------------------------------------------------
-   13. Global Target Markets & Project Capabilities
+   13. Global Target Markets & Project Capabilities (Luminous Ocean Cards)
    -------------------------------------------------------------------------- */
 .markets-grid {
   display: grid;
@@ -2064,17 +2118,18 @@ body.rtl .luxo-card-badge {
 }
 
 .market-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--surface-white);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
-  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.06);
+  transition: var(--transition-smooth);
 }
 
 .market-card:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: var(--gold-border);
+  background: var(--surface-white);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16);
   transform: translateY(-4px);
 }
 
@@ -2085,13 +2140,13 @@ body.rtl .luxo-card-badge {
 
 .market-card h3 {
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--ocean-dark);
   margin-bottom: 0.75rem;
 }
 
 .market-card p {
   font-size: 0.875rem;
-  color: var(--text-light-secondary);
+  color: var(--text-dark-secondary);
   line-height: 1.65;
 }
 
@@ -2106,16 +2161,16 @@ body.rtl .luxo-card-badge {
 
 .gallery-item {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.06);
+  transition: var(--transition-smooth);
 }
 
 .gallery-item:hover {
-  border-color: var(--gold-border);
-  box-shadow: var(--shadow-lg);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16);
   transform: translateY(-4px);
 }
 
@@ -2136,11 +2191,12 @@ body.rtl .luxo-card-badge {
   color: var(--text-dark-secondary);
   font-weight: 500;
   line-height: 1.5;
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-aqua);
+  background: #ffffff;
 }
 
 /* --------------------------------------------------------------------------
-   15. Fast B2B RFQ Form Section & Modals
+   15. Fast B2B RFQ Form Section & Modals (Pure Seafoam Flow)
    -------------------------------------------------------------------------- */
 .rfq-wrapper {
   display: grid;
@@ -2152,6 +2208,7 @@ body.rtl .luxo-card-badge {
 .rfq-title {
   font-size: 2.25rem;
   margin-bottom: 1rem;
+  color: var(--ocean-dark);
 }
 
 .rfq-desc {
@@ -2172,10 +2229,17 @@ body.rtl .luxo-card-badge {
   align-items: center;
   gap: 1rem;
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
-  box-shadow: var(--shadow-xs);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.06);
+  transition: var(--transition);
+}
+
+.contact-pill:hover {
+  border-color: var(--ocean-primary);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.12);
+  transform: translateY(-2px);
 }
 
 .pill-icon {
@@ -2192,23 +2256,23 @@ body.rtl .luxo-card-badge {
 
 .contact-pill strong {
   font-size: 0.9375rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-deep);
 }
 
 .rfq-form-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 12px 32px rgba(2, 132, 199, 0.09);
 }
 
 .form-title {
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  color: var(--obsidian-850);
+  color: var(--ocean-dark);
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-aqua);
 }
 
 .form-group {
@@ -2247,16 +2311,16 @@ body.rtl .luxo-card-badge {
   box-shadow: 0 0 0 3px var(--gold-glow);
 }
 
-/* Modal Windows & Drawers */
+/* Modal Windows & Drawers (Luminous Coastal Style) */
 .modal-overlay, .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(2, 132, 199, 0.32);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 2000;
   display: none;
   align-items: center;
@@ -2275,10 +2339,10 @@ body.rtl .luxo-card-badge {
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 24px 60px rgba(2, 132, 199, 0.2);
   position: relative;
   padding: 2.5rem;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   animation: modalScale 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -2291,8 +2355,8 @@ body.rtl .luxo-card-badge {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  background: var(--surface-light);
-  border: 1px solid var(--border-light);
+  background: #f0f9ff;
+  border: 1px solid var(--border-aqua);
   width: 36px;
   height: 36px;
   border-radius: var(--radius-pill);
@@ -2311,13 +2375,14 @@ body.rtl .modal-close {
 }
 
 .modal-close:hover {
-  background: var(--border-light);
-  color: var(--obsidian-850);
+  background: var(--border-aqua);
+  color: var(--ocean-primary);
 }
 
 .modal-header h3 {
   font-size: 1.5rem;
   margin-bottom: 0.35rem;
+  color: var(--ocean-dark);
 }
 
 .modal-header p {
@@ -2349,10 +2414,10 @@ body.rtl .floating-widget {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.25);
   color: #ffffff;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   border: none;
   font-size: 1.35rem;
@@ -2360,6 +2425,7 @@ body.rtl .floating-widget {
 
 .float-btn:hover {
   transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.38);
 }
 
 .float-whatsapp {
@@ -2367,17 +2433,17 @@ body.rtl .floating-widget {
 }
 
 .float-rfq {
-  background: var(--gold-500);
+  background: linear-gradient(135deg, var(--ocean-primary) 0%, var(--teal-primary) 100%);
 }
 
 .float-top {
-  background: var(--obsidian-850);
+  background: var(--ocean-deep);
 }
 
 .float-tooltip {
   position: absolute;
   right: 62px;
-  background: var(--obsidian-850);
+  background: var(--ocean-dark);
   color: #ffffff;
   padding: 0.4rem 0.85rem;
   border-radius: var(--radius-sm);
@@ -2400,15 +2466,17 @@ body.rtl .float-tooltip {
 }
 
 /* --------------------------------------------------------------------------
-   16. Subpage Banner & Specific Components (About, Certifications, Contact)
+   16. Subpage Banner & Specific Components (Luminous Coastal Sky)
    -------------------------------------------------------------------------- */
 .page-banner {
-  background: radial-gradient(circle at 80% 25%, rgba(223, 159, 82, 0.22) 0%, transparent 55%),
-              radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.12) 0%, transparent 50%),
-              linear-gradient(135deg, var(--ocean-950) 0%, var(--ocean-900) 55%, var(--ocean-850) 100%);
-  color: #ffffff;
-  padding: 5.5rem 0 4.25rem;
-  border-bottom: 1px solid rgba(223, 159, 82, 0.22);
+  background: radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.25) 0%, transparent 60%),
+              radial-gradient(circle at 15% 85%, rgba(20, 184, 166, 0.18) 0%, transparent 55%),
+              linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+  color: var(--text-dark-primary);
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid var(--border-aqua);
+  position: relative;
+  text-align: center;
 }
 
 .page-title {
@@ -2416,11 +2484,12 @@ body.rtl .float-tooltip {
   font-size: clamp(2.2rem, 4vw, 3rem);
   letter-spacing: -0.015em;
   margin-bottom: 0.85rem;
+  color: var(--ocean-dark);
 }
 
 .page-subtitle {
   font-size: 1.05rem;
-  color: var(--text-light-secondary);
+  color: var(--text-dark-secondary);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -2434,17 +2503,18 @@ body.rtl .float-tooltip {
 
 .cert-card {
   background: var(--surface-white);
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.06);
 }
 
 .cert-card:hover {
-  border-color: var(--gold-border);
-  box-shadow: var(--shadow-lg);
+  border-color: var(--ocean-primary);
+  box-shadow: 0 16px 36px -4px rgba(2, 132, 199, 0.16);
   transform: translateY(-4px);
 }
 
@@ -2491,13 +2561,13 @@ body.rtl .float-tooltip {
 }
 
 /* --------------------------------------------------------------------------
-   17. Main Footer System (Deep Ocean Horizon & Marine Elegance)
+   17. Main Footer System (Luminous Coastal Ocean Horizon)
    -------------------------------------------------------------------------- */
 .footer, .main-footer {
-  background-color: var(--ocean-950);
-  color: var(--text-light-muted);
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
+  color: var(--text-dark-secondary);
   padding: 5rem 0 2.25rem;
-  border-top: 1px solid rgba(223, 159, 82, 0.25);
+  border-top: 2px solid var(--border-aqua);
   position: relative;
 }
 
@@ -2523,18 +2593,18 @@ body.rtl .float-tooltip {
 }
 
 .footer-logo-img {
-  height: 38px;
+  height: 42px;
   width: auto;
   max-width: 240px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 2px 6px rgba(2, 132, 199, 0.15));
   transition: var(--transition);
 }
 
 .footer-logo-link:hover .footer-logo-img {
   transform: translateY(-2px);
-  filter: drop-shadow(0 4px 10px rgba(223, 159, 82, 0.45));
+  filter: drop-shadow(0 4px 10px rgba(2, 132, 199, 0.28));
 }
 
 .footer-brand-title {
@@ -2542,13 +2612,13 @@ body.rtl .float-tooltip {
   font-size: 0.71875rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--gold-400);
+  color: var(--ocean-deep);
   text-transform: uppercase;
 }
 
 .footer-desc {
   font-size: 0.875rem;
-  color: var(--text-light-secondary);
+  color: var(--text-dark-secondary);
   line-height: 1.65;
   margin-bottom: 1.25rem;
 }
@@ -2563,13 +2633,16 @@ body.rtl .float-tooltip {
   font-size: 0.71875rem;
   padding: 0.25rem 0.65rem;
   margin-bottom: 0;
+  background: #ffffff;
+  border-color: var(--border-aqua);
+  color: var(--ocean-deep);
 }
 
 .footer-title, .footer-col h4 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--ocean-dark);
   margin-bottom: 1.25rem;
   position: relative;
 }
@@ -2579,13 +2652,13 @@ body.rtl .float-tooltip {
 }
 
 .footer-links a {
-  color: var(--text-light-muted);
+  color: var(--text-dark-secondary);
   font-size: 0.875rem;
   transition: var(--transition);
 }
 
 .footer-links a:hover {
-  color: var(--gold-400);
+  color: var(--ocean-primary);
   padding-left: 4px;
 }
 
@@ -2600,7 +2673,7 @@ body.rtl .footer-links a:hover {
   gap: 0.75rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
-  color: var(--text-light-secondary);
+  color: var(--text-dark-secondary);
 }
 
 .social-links {
@@ -2612,27 +2685,30 @@ body.rtl .footer-links a:hover {
 .social-icon {
   width: 38px;
   height: 38px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #ffffff;
+  border: 1px solid var(--border-aqua);
   border-radius: var(--radius-pill);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--ocean-deep);
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.08);
   transition: var(--transition);
 }
 
 .social-icon:hover {
-  background: var(--gold-500);
-  border-color: var(--gold-500);
+  background: var(--ocean-primary);
+  border-color: var(--ocean-primary);
+  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(2, 132, 199, 0.25);
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border-aqua);
   font-size: 0.8125rem;
-  color: var(--text-light-muted);
+  color: var(--text-dark-muted);
 }
 
 .footer-bottom-container {
@@ -2644,7 +2720,8 @@ body.rtl .footer-links a:hover {
 }
 
 .footer-bottom a {
-  color: var(--gold-400);
+  color: var(--ocean-deep);
+  font-weight: 600;
 }
 
 /* --------------------------------------------------------------------------
@@ -2950,7 +3027,7 @@ body.rtl .footer-links a:hover {
     border-radius: 0;
   }
   .hero__media::after {
-    background: linear-gradient(180deg, rgba(4, 18, 28, .76) 0%, rgba(4, 18, 28, .5) 42%, rgba(4, 18, 28, .9) 100%);
+    background: linear-gradient(180deg, rgba(2, 132, 199, .75) 0%, rgba(3, 105, 161, .6) 42%, rgba(7, 89, 133, .88) 100%);
   }
   .marker, .hero__media .socials {
     display: none;
