@@ -477,5 +477,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   })();
+
+  // 9. Veroda Style Scroll-Driven Animations & Hero Reveal Engine
+  (function () {
+    setTimeout(function () {
+      var heroBg = document.querySelector('.hero-bg-reveal');
+      if (heroBg) {
+        heroBg.classList.remove('scale-110', 'opacity-50');
+      }
+    }, 100);
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-8', 'translate-y-12', 'scale-95');
+            entry.target.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15
+      });
+
+      document.querySelectorAll('.animate-on-scroll').forEach(function (el) {
+        observer.observe(el);
+      });
+    }
+  })();
 });
 

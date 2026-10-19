@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fujian Kedah Kitchen & Bath Co., Ltd. | Lead-Free Brass Faucets & Commercial Plumbing Manufacturer</title>
   <meta name="description" content="Fujian Kedah Kitchen & Bath Co., Ltd. (kedahkb.com) is a premier OEM/ODM manufacturer of cUPC & CE certified lead-free brass faucets, intelligent sensor taps, and luxury shower systems. 30+ years engineering experience, 24h ASS salt spray resistance.">
   <meta name="keywords" content="Kedah Kitchen & Bath, brass faucets manufacturer, cUPC certified faucet, lead free basin faucet, sensor faucet supplier, shower system OEM, Fujian plumbing factory, commercial sanitary ware exporter">
-    <!-- Search Engine Robots Directive for Google & Global Crawlers -->
+  
+  <!-- Search Engine Robots Directive for Google & Global Crawlers -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://kedahkb.com/index.html">
+  
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Favicon Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon Icons -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
@@ -32,8 +36,46 @@
   <meta name="twitter:title" content="Fujian Kedah Kitchen &amp; Bath Co., Ltd. | cUPC Certified Plumbing Manufacturer">
   <meta name="twitter:description" content="30+ Years OEM/ODM Manufacturer of Lead-Free Brass Faucets, Intelligent Sensor Taps &amp; Luxury Shower Systems in Lucang, Nanan. cUPC File No. 8933, CE certified, 24h ASS salt spray resistance.">
   <meta name="twitter:image" content="https://kedahkb.com/assets/images/factory/office-showroom.png">
+
+  <!-- Analytics: GTAG (G-2M6V79H761) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M6V79H761"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2M6V79H761');
+  </script>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            emerald: {
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Iconify CDN -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- Kedah Core System Stylesheet (Modal, Lightbox, RTL & Utilities) -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  
+
   <!-- Structured Data: Organization & Manufacturer Schema -->
   <script type="application/ld+json">
   {
@@ -55,339 +97,514 @@
       "addressCountry": "CN"
     },
     "sameAs": [
-      "https://kedahkb.com"
+      "https://kedahkb.com",
+      "https://www.facebook.com/share/r/1EBMTs3Uxc/"
     ]
   }
   </script>
 </head>
-<body>
+<body class="bg-white text-gray-900 font-sans selection:bg-emerald-100 selection:text-emerald-900 scroll-smooth overflow-x-hidden">
 
   <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-container">
-      <div class="top-bar-left">
-        <span>🏆 <strong>Source Factory</strong> | 30+ Years B2B Export Experience | cUPC &amp; CE Certified</span>
+  <div class="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>🏆 <strong>Source Factory</strong> | 30+ Years B2B Export Experience | cUPC (File No. 8933) &amp; CE Certified</span>
       </div>
-      <div class="top-bar-right">
-        <a href="mailto:sale01@kedah.cn" class="contact-link">✉️ sale01@kedah.cn</a>
-        <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." target="_blank" class="contact-link">📱 WhatsApp: +86 13515055402</a>
+      <div class="flex items-center gap-6">
+        <a href="mailto:sale01@kedah.cn" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+          <iconify-icon icon="solar:letter-linear" width="14"></iconify-icon> sale01@kedah.cn
+        </a>
+        <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center gap-1.5">
+          <iconify-icon icon="solar:phone-linear" width="14"></iconify-icon> WhatsApp: +86 13515055402
+        </a>
       </div>
     </div>
   </div>
 
   <!-- ===================================================================
-       HERO DUAL-COLUMN OCEAN ARCHITECTURE (Exact Prompt Design System)
-       DOM ORDER: .hero__media first, .hero__left second
+       SECTION 1 - HERO: High Visual Fidelity Tailwind Re-creation
+       - Layer 0 (BG): absolute inset-0, black background with unsplash image
+       - Layer 1 (Overlay): absolute inset-0, gradient from black/90 to black/30
+       - Layer 2 (Header): absolute top-0 w-full z-20 (Playfair Display text logo + single hamburger)
+       - Layer 3 (Content): relative z-10, flex-centered vertically
+       - Specific delay pattern: 200ms, 300ms, 500ms, 700ms staggered entry
        =================================================================== -->
-  <section class="hero">
+  <section class="relative h-screen min-h-[720px] max-h-[1080px] flex items-center justify-center overflow-hidden bg-black text-white">
 
-    <!-- MEDIA CARD (Order 2 via CSS) -->
-    <div class="hero__media anim" style="--d:0">
-      <video class="hero__video anim" style="--d:1" autoplay muted loop playsinline preload="auto" poster="https://motionsites.org/assets/prompt-media/1511c3aa1d97eed608a5.webp">
-        <source src="https://motionsites.org/assets/prompt-media/dc3df4f298a1f66c771c.mp4" type="video/mp4">
-      </video>
-
-      <!-- Callout Marker 1: Pure Waters / Plating Standard -->
-      <div class="marker marker--water">
-        <span class="marker__line anim" style="--d:14"></span>
-        <span class="marker__dot anim" style="--d:13"></span>
-        <span class="marker__label anim" style="--d:15">24H ASS Plating Grade 10</span>
-      </div>
-
-      <!-- Callout Marker 2: Coral Bed / Lead-Free cUPC -->
-      <div class="marker marker--reef marker--right">
-        <span class="marker__line anim" style="--d:17"></span>
-        <span class="marker__dot anim" style="--d:16"></span>
-        <span class="marker__label anim" style="--d:18">cUPC File No. 8933</span>
-      </div>
-
-      <!-- Desktop Social Pill (Notched into Card Corner) -->
-      <div class="socials anim" style="--d:19">
-        <a href="mailto:sale01@kedah.cn" title="Direct Email" aria-label="Direct Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-        </a>
-        <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." target="_blank" rel="noopener noreferrer" title="WhatsApp 24/7" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" title="Official Facebook" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-          </svg>
-        </a>
-      </div>
+    <!-- Layer 0 (BG) -->
+    <div class="absolute inset-0 bg-black overflow-hidden z-0">
+      <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000" 
+           alt="Precision Brass Plumbing & Luxury Sanitary" 
+           class="hero-bg-reveal w-full h-full object-cover transition-all duration-[2000ms] ease-out scale-110 opacity-50">
     </div>
 
-    <!-- LEFT COLUMN (Order 1 via CSS) -->
-    <div class="hero__left">
-      <!-- 4a. Nav Row -->
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html">
-          <span class="brand__name anim" style="--d:2">KEDAH KITCHEN &amp; BATH</span>
-        </a>
+    <!-- Layer 1 (Overlay) -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30 z-[1] pointer-events-none"></div>
 
-        <ul class="nav__links">
-          <li class="anim" style="--d:4"><a href="about.html" data-i18n="nav.about">About Us</a></li>
-          <li class="anim" style="--d:5"><a href="products.html" data-i18n="nav.products">Products</a></li>
-          <li class="anim" style="--d:6"><a href="about.html#certifications" data-i18n="nav.certs">Certifications</a></li>
-          <li class="anim" style="--d:7"><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
+    <!-- Layer 2 (Header) -->
+    <header class="absolute top-0 w-full z-20 px-6 py-6 md:px-12 flex items-center justify-between">
+      <a href="index.html" class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-white hover:text-emerald-400 transition duration-300">
+        KEDAH KITCHEN &amp; BATH
+      </a>
 
-        <!-- Language Selector -->
-        <div class="lang-switcher anim" style="--d:7.5">
-          <button class="lang-btn" id="langBtn" aria-label="Select Language">
-            <span class="lang-icon">🌐</span>
+      <div class="flex items-center gap-4">
+        <!-- Language Switcher Dropdown -->
+        <div class="relative">
+          <button id="langBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-xs font-semibold text-white transition backdrop-blur-sm">
+            <span>🌐</span>
             <span id="currentLangText">EN</span>
-            <span class="arrow">▼</span>
+            <span class="text-[10px] opacity-75">▼</span>
           </button>
-          <ul class="lang-dropdown" id="langDropdown">
-            <li><a href="#" class="lang-opt" data-lang="en">English (EN)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="es">Español (ES)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="th">ไทย (TH)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="ar">العربية (AR)</a></li>
-            <li><a href="#" class="lang-opt" data-lang="zh">中文 (ZH)</a></li>
+          <ul id="langDropdown" class="lang-dropdown absolute right-0 mt-2 w-36 bg-white text-gray-800 rounded-xl shadow-2xl py-2 hidden z-50 border border-gray-100 text-xs font-medium">
+            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="en">English (EN)</a></li>
+            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="es">Español (ES)</a></li>
+            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="th">ไทย (TH)</a></li>
+            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="ar">العربية (AR)</a></li>
+            <li><a href="#" class="lang-opt block px-4 py-2 hover:bg-emerald-50 hover:text-emerald-600 transition" data-lang="zh">中文 (ZH)</a></li>
           </ul>
         </div>
 
-        <button class="burger anim" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navSheet" style="--d:8">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- Single Hamburger Button -->
+        <button id="navToggle" class="p-2 text-white hover:text-emerald-400 transition rounded-lg hover:bg-white/10" aria-label="Open menu" aria-expanded="false" aria-controls="navSheet">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="30" height="30"></iconify-icon>
         </button>
-      </nav>
+      </div>
+    </header>
 
-      <!-- 4b. Content Block -->
-      <div class="hero__content">
-        <div class="badge-tag anim" style="--d:8.5">
-          <span class="badge-dot"></span>
-          <span data-i18n="hero.badge">Direct Source Manufacturer | North America &amp; Global Engineering Ready</span>
-        </div>
-
-        <h1 class="hero__title">
-          <span class="hero__line anim" style="--d:9">Precision Engineered <span class="hl">Brass Faucets</span></span>
-          <span class="hero__line anim" style="--d:10">&amp; Commercial Sanitary Systems</span>
-        </h1>
-
-        <p class="hero__text anim" style="--d:11" data-i18n="hero.subtitle">
-          Over 30 years of OEM/ODM excellence for North American, European, Middle Eastern, and Southeast Asian sanitary engineering contractors. Compliant with cUPC File No. 8933, CE, and rigorous 24-Hour Acetic Acid Salt Spray (ASS) plating tests.
-        </p>
-
-        <div class="hero__cta-row">
-          <button class="cta anim" style="--d:12" onclick="openRFQModal()" aria-label="Request Project Quote">
-            <span class="cta__label" data-i18n="hero.btn1">Request Project Quote</span>
-            <span class="cta__icon anim" style="--d:13">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M5 12h14M13 6l6 6-6 6"/>
-              </svg>
-            </span>
-          </button>
-          <a href="products.html" class="cta-secondary anim" style="--d:13.5" data-i18n="hero.btn2">Explore Product Catalog →</a>
-        </div>
-
-        <!-- Mobile Social Row (shown at <=768px) -->
-        <div class="socials socials--mobile">
-          <a class="anim" style="--d:14" href="mailto:sale01@kedah.cn" aria-label="Direct Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-          </a>
-          <a class="anim" style="--d:15" href="https://wa.me/8613515055402" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-            </svg>
-          </a>
-          <a class="anim" style="--d:16" href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Signature Quick Spec Pills -->
-        <div class="luxo-quick-pills anim" style="--d:14">
-          <div class="luxo-pill-card">
-            <div class="pill-label">Minimum Order (MOQ)</div>
-            <div class="pill-val"><strong>100 - 300</strong> PCS</div>
-          </div>
-          <div class="luxo-pill-card">
-            <div class="pill-label">Production Lead Time</div>
-            <div class="pill-val"><strong>15 - 25</strong> Days</div>
-          </div>
-          <div class="luxo-pill-card">
-            <div class="pill-label">Global Export Markets</div>
-            <div class="pill-val"><strong>50+</strong> Countries</div>
-          </div>
-          <div class="luxo-pill-card">
-            <div class="pill-label">OEM / ODM Support</div>
-            <div class="pill-val"><strong>Free CAD</strong> &amp; 3D</div>
-          </div>
+    <!-- Layer 3 (Content Block with Staggered 200/300/500/700ms Delays) -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center justify-center pt-16">
+      
+      <!-- 200ms Delay: Stars & Tagline Pill -->
+      <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-[200ms] inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 text-xs md:text-sm text-emerald-300 font-medium tracking-wide">
+        <iconify-icon icon="solar:stars-linear" width="18" height="18" class="text-emerald-300"></iconify-icon>
+        <span data-i18n="hero.badge">Direct Source Manufacturer | North America &amp; Global Engineering Ready</span>
+        <div class="flex items-center text-white ml-1">
+          <iconify-icon icon="solar:star-bold" width="13" height="13"></iconify-icon>
+          <iconify-icon icon="solar:star-bold" width="13" height="13"></iconify-icon>
+          <iconify-icon icon="solar:star-bold" width="13" height="13"></iconify-icon>
+          <iconify-icon icon="solar:star-bold" width="13" height="13"></iconify-icon>
+          <iconify-icon icon="solar:star-bold" width="13" height="13"></iconify-icon>
         </div>
       </div>
+
+      <!-- 300ms Delay: Playfair Display Headline with Italics -->
+      <h1 class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-[300ms] font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-tight">
+        Precision Engineered <span class="italic font-normal text-emerald-400 font-serif">Brass Faucets</span> &amp; Commercial Sanitary Systems
+      </h1>
+
+      <!-- 500ms Delay: Subtitle Text -->
+      <p class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-[500ms] text-base md:text-xl text-gray-200 max-w-3xl mb-10 leading-relaxed font-light" data-i18n="hero.subtitle">
+        Over 30 years of OEM/ODM excellence for North American, European, Middle Eastern, and Southeast Asian sanitary engineering contractors. Compliant with cUPC File No. 8933, CE, and rigorous 24-Hour Acetic Acid Salt Spray (ASS) plating tests.
+      </p>
+
+      <!-- 700ms Delay: CTAs & Custom Rounded-Full Pill Button -->
+      <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-[700ms] flex flex-col sm:flex-row items-center justify-center gap-5 mb-12">
+        <!-- Primary Custom Pill CTA with Inner Black/15 Circle -->
+        <button onclick="openRFQModal()" 
+                class="rounded-full bg-emerald-400 text-gray-950 font-semibold px-8 py-4 inline-flex items-center gap-3 hover:bg-emerald-300 transition duration-300 shadow-2xl hover:scale-105 active:scale-95" 
+                aria-label="Request Project Quote">
+          <span class="text-base tracking-wide" data-i18n="hero.btn1">Request Project Quote</span>
+          <span class="w-8 h-8 rounded-full bg-black/15 flex items-center justify-center text-gray-950">
+            <iconify-icon icon="solar:arrow-right-up-linear" width="18" height="18"></iconify-icon>
+          </span>
+        </button>
+
+        <!-- Secondary CTA: Underlined Text Link -->
+        <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="text-sm font-medium text-emerald-300 hover:text-white underline underline-offset-8 transition duration-200 flex items-center gap-1.5">
+          <span>or call / WhatsApp us: +86 13515055402</span>
+        </a>
+      </div>
+
+      <!-- Hero Micro-Spec Pills -->
+      <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-[700ms] grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-4xl">
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 text-center">
+          <div class="text-[11px] text-gray-300 uppercase tracking-wider">Minimum Order</div>
+          <div class="text-base md:text-lg font-bold text-emerald-300">100 - 300 <span class="text-xs font-normal text-white">PCS</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 text-center">
+          <div class="text-[11px] text-gray-300 uppercase tracking-wider">Production Lead Time</div>
+          <div class="text-base md:text-lg font-bold text-emerald-300">15 - 25 <span class="text-xs font-normal text-white">Days</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 text-center">
+          <div class="text-[11px] text-gray-300 uppercase tracking-wider">Export Coverage</div>
+          <div class="text-base md:text-lg font-bold text-emerald-300">50+ <span class="text-xs font-normal text-white">Countries</span></div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-3.5 text-center">
+          <div class="text-[11px] text-gray-300 uppercase tracking-wider">OEM / ODM Custom</div>
+          <div class="text-base md:text-lg font-bold text-emerald-300">Free CAD <span class="text-xs font-normal text-white">&amp; 3D</span></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- International Trust & Certification Bar -->
-  <section class="trust-bar">
-    <div class="container trust-container">
-      <div class="trust-label" data-i18n="trust.title">Global Engineering Certifications & Quality Assurances:</div>
-      <div class="trust-badges">
-        <div class="trust-badge-item">
-          <span class="trust-icon">🛡️</span>
-          <div class="trust-info">
-            <strong>cUPC Listed (USA & Canada)</strong>
-            <span>IAPMO File No. 8933</span>
-          </div>
+  <section class="bg-slate-50 border-b border-gray-200 py-6">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="text-xs font-bold tracking-widest text-gray-500 uppercase flex items-center gap-2" data-i18n="trust.title">
+          <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 text-lg"></iconify-icon>
+          Global Engineering Certifications &amp; Quality Assurances:
         </div>
-        <div class="trust-badge-item">
-          <span class="trust-icon">🇪🇺</span>
-          <div class="trust-info">
-            <strong>CE Certified</strong>
-            <span>European Conformity Standard</span>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full lg:w-auto">
+          <div class="flex items-center gap-3 bg-white px-4 py-2.5 rounded-xl border border-gray-200 shadow-sm">
+            <span class="text-2xl">🛡️</span>
+            <div>
+              <strong class="block text-xs font-bold text-gray-900 leading-tight">cUPC Listed (USA/CA)</strong>
+              <span class="text-[11px] text-gray-500">IAPMO File No. 8933</span>
+            </div>
           </div>
-        </div>
-        <div class="trust-badge-item">
-          <span class="trust-icon">🔬</span>
-          <div class="trust-info">
-            <strong>24H ASS Salt Spray</strong>
-            <span>Superior Anti-Corrosion Plating</span>
+          <div class="flex items-center gap-3 bg-white px-4 py-2.5 rounded-xl border border-gray-200 shadow-sm">
+            <span class="text-2xl">🇪🇺</span>
+            <div>
+              <strong class="block text-xs font-bold text-gray-900 leading-tight">CE Certified</strong>
+              <span class="text-[11px] text-gray-500">EN 817 / EN 1111</span>
+            </div>
           </div>
-        </div>
-        <div class="trust-badge-item">
-          <span class="trust-icon">⚙️</span>
-          <div class="trust-info">
-            <strong>ISO 9001:2015</strong>
-            <span>Strict Quality Management</span>
+          <div class="flex items-center gap-3 bg-white px-4 py-2.5 rounded-xl border border-gray-200 shadow-sm">
+            <span class="text-2xl">🔬</span>
+            <div>
+              <strong class="block text-xs font-bold text-gray-900 leading-tight">24H ASS Salt Spray</strong>
+              <span class="text-[11px] text-gray-500">Grade 10 Plating Finish</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 bg-white px-4 py-2.5 rounded-xl border border-gray-200 shadow-sm">
+            <span class="text-2xl">⚙️</span>
+            <div>
+              <strong class="block text-xs font-bold text-gray-900 leading-tight">ISO 9001:2015</strong>
+              <span class="text-[11px] text-gray-500">Strict Quality QA</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       LuxoPack 1:1 Hallmark: Inside Our Factory — Live
-       ========================================== -->
-  <section class="live-factory-section" id="live-factory">
-    <div class="container">
-      <div class="text-center">
-        <div class="live-badge">
-          <span class="live-pulse"></span>
-          <span>LIVE FACTORY PRODUCTION · NANAN SANITARY INDUSTRIAL BASE</span>
+  <!-- ===================================================================
+       SECTION 2 - SERVICES: Exact 2-Column Header & 3-Column Grid
+       Padding: pt-32 pb-32
+       Hover: card icon background changes to emerald/blue/amber 500 and icon turns white
+       =================================================================== -->
+  <section class="pt-32 pb-32 bg-white text-gray-900" id="services">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- 2-Column Header (Title vs Description) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-end mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <div>
+          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">CORE PRODUCT SERVICES</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
+            Precision Manufacturing for Global Plumbing Contractors
+          </h2>
         </div>
-        <h2 class="section-title">Inside Our Factory — See Your Product Being Made Live</h2>
-        <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-          Transparent manufacturing directly inside China's sanitary capital: from raw copper gravity casting to 0.01mm CNC machining, robotic mirror polishing, clean-room assembly, and 100% dual air-water pressure testing.
+        <div>
+          <p class="text-base text-gray-600 leading-relaxed">
+            From residential luxury developments in North America and Spain to high-traffic commercial installations in Saudi Arabia and resorts in Thailand, Fujian Kedah delivers certified plumbing solutions with zero middleman markups.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3-Column Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 (Emerald Accent) -->
+        <div class="group p-8 rounded-3xl bg-gray-50 hover:bg-emerald-50/50 border border-gray-100 hover:border-emerald-200 transition-all duration-300 shadow-sm hover:shadow-xl animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 mb-6 shadow-sm">
+            <iconify-icon icon="solar:waterdrop-linear" width="32" height="32"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition">Lead-Free Basin Mixers</h3>
+          <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+            Forged with premium DZR low-lead brass meeting NSF/ANSI 61 and cUPC health standards. Features Sedal 35mm ceramic cartridges tested for 500,000 flawless actuation cycles.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6 border-t border-gray-200/60 pt-4">
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-emerald-500"></iconify-icon> 24H Acetic Acid Salt Spray (ASS) Grade 10</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-emerald-500"></iconify-icon> Neoperl Air-Injected Aerators (1.5 / 1.8 GPM)</li>
+          </ul>
+          <a href="products.html?cat=basin" class="text-xs font-bold text-emerald-600 flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+            <span>Explore Basin Line</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+          </a>
+        </div>
+
+        <!-- Service Card 2 (Blue Accent) -->
+        <div class="group p-8 rounded-3xl bg-gray-50 hover:bg-sky-50/50 border border-gray-100 hover:border-sky-200 transition-all duration-300 shadow-sm hover:shadow-xl animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-150">
+          <div class="w-16 h-16 rounded-2xl bg-sky-100 flex items-center justify-center text-sky-600 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300 mb-6 shadow-sm">
+            <iconify-icon icon="solar:palmtree-linear" width="32" height="32"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-sky-700 transition">Pull-Down Commercial Kitchen Taps</h3>
+          <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+            Heavy-duty 360° swivel spouts with dual-mode aerated stream and high-pressure spray. Equipped with high-density anti-kink braided hoses for hotel and residential kitchens.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6 border-t border-gray-200/60 pt-4">
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-sky-500"></iconify-icon> Wanhai 40mm Durable Ceramic Cartridge</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-sky-500"></iconify-icon> ASME A112.18.1 High-Pressure Water-Tight Fit</li>
+          </ul>
+          <a href="products.html?cat=kitchen" class="text-xs font-bold text-sky-600 flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+            <span>Explore Kitchen Line</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+          </a>
+        </div>
+
+        <!-- Service Card 3 (Amber Accent) -->
+        <div class="group p-8 rounded-3xl bg-gray-50 hover:bg-amber-50/50 border border-gray-100 hover:border-amber-200 transition-all duration-300 shadow-sm hover:shadow-xl animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300">
+          <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 mb-6 shadow-sm">
+            <iconify-icon icon="solar:sun-linear" width="32" height="32"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-700 transition">Touchless Smart Sensor Taps</h3>
+          <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+            Hygienic infrared sensor technology for airports, hospitals, and modern corporate buildings. Dual AC 110V-220V and DC 6V power module with instant &lt;0.5s actuation.
+          </p>
+          <ul class="text-xs text-gray-500 space-y-2 mb-6 border-t border-gray-200/60 pt-4">
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-amber-500"></iconify-icon> Vandal-Resistant Solid Heavy Brass Casting</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="solar:check-circle-linear" class="text-amber-500"></iconify-icon> CE &amp; ADA Compliant Commercial Automation</li>
+          </ul>
+          <a href="products.html?cat=sensor" class="text-xs font-bold text-amber-600 flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+            <span>Explore Sensor Line</span> <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 3 - SHOWCASE: Offset Dual Images & Rigorous Engineering Checklist
+       - Left: Grid of 2 images with offset (one image has md:mt-12), initial state scale-95 opacity-0
+       - Right: Text with check-mark list and border-b border-gray-200
+       =================================================================== -->
+  <section class="py-28 bg-gray-50 overflow-hidden border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left: 2 Offset Images -->
+        <div class="grid grid-cols-2 gap-4 md:gap-6">
+          <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-white">
+              <img src="https://images.unsplash.com/photo-1651213084058-c3420ea21852?w=800&q=80" 
+                   alt="Precision Sanitary Fixture Finishing" 
+                   class="w-full h-72 md:h-96 object-cover hover:scale-105 transition duration-500">
+            </div>
+            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">01. Optical Surface Inspection</div>
+          </div>
+          <div class="animate-on-scroll opacity-0 scale-95 transition-all duration-700 delay-200 md:mt-12">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200/80 bg-white">
+              <img src="https://images.unsplash.com/photo-1721222204128-3f8262e14f35?w=800&q=80" 
+                   alt="Robotic Plating and Quality Testing" 
+                   class="w-full h-72 md:h-96 object-cover hover:scale-105 transition duration-500">
+            </div>
+            <div class="text-[11px] font-semibold text-gray-500 mt-3 text-center">02. Hydrostatic Pressure Testing</div>
+          </div>
+        </div>
+
+        <!-- Right: Text with Border-B Checklist -->
+        <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+          <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">QUALITY &amp; CERTIFICATION</span>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+            Engineered to Exceed North American &amp; European Standards
+          </h2>
+          <p class="text-base text-gray-600 mb-8 leading-relaxed">
+            Every Kedah faucet and valve is manufactured under strict ISO 9001 quality protocols. We eliminate porosity through automated gravity casting, achieve 0.01mm tolerance on CNC lathes, and verify corrosion resistance with 24-hour ASS salt spray testing.
+          </p>
+
+          <!-- Check-mark List with border-b border-gray-200 -->
+          <div class="space-y-4">
+            <div class="border-b border-gray-200 pb-4 flex items-start gap-3.5">
+              <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 text-xl flex-shrink-0 mt-0.5"></iconify-icon>
+              <div>
+                <strong class="text-sm md:text-base font-bold text-gray-900 block">cUPC Listed (IAPMO File No. 8933)</strong>
+                <span class="text-xs text-gray-500">Fully compliant with ASME A112.18.1 / CSA B125.1 and NSF/ANSI 61 low-lead standards.</span>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4 flex items-start gap-3.5">
+              <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 text-xl flex-shrink-0 mt-0.5"></iconify-icon>
+              <div>
+                <strong class="text-sm md:text-base font-bold text-gray-900 block">24-Hour Acetic Acid Salt Spray (ASS) Grade 10</strong>
+                <span class="text-xs text-gray-500">Advanced multi-layer electroplating and PVD coatings resist peeling in harsh tropical &amp; coastal bathrooms.</span>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4 flex items-start gap-3.5">
+              <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 text-xl flex-shrink-0 mt-0.5"></iconify-icon>
+              <div>
+                <strong class="text-sm md:text-base font-bold text-gray-900 block">500,000-Cycle Sedal &amp; Wanhai Ceramic Cartridges</strong>
+                <span class="text-xs text-gray-500">Drip-free operation guaranteed with high-hardness alumina ceramic discs and smooth temperature control.</span>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 pb-4 flex items-start gap-3.5">
+              <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 text-xl flex-shrink-0 mt-0.5"></iconify-icon>
+              <div>
+                <strong class="text-sm md:text-base font-bold text-gray-900 block">100% Dual Air &amp; Hydrostatic Pressure Testing</strong>
+                <span class="text-xs text-gray-500">Every assembled unit is subjected to 0.8 MPa water pressure and 0.6 MPa air pressure testing before packing.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <button onclick="openRFQModal()" class="rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-8 py-3.5 inline-flex items-center gap-2.5 transition shadow-lg">
+              <span>Request Factory Audit &amp; Certificates</span>
+              <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       Inside Our Factory — Live Production & Nanan Industrial Base
+       =================================================================== -->
+  <section class="py-24 bg-white" id="live-factory">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+          LIVE PRODUCTION · NANAN SANITARY INDUSTRIAL BASE
+        </div>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          Inside Our Factory — Transparent Chinese Manufacturing
+        </h2>
+        <p class="text-base text-gray-600 leading-relaxed">
+          Operating in Lucang, Nanan—China's national plumbing hub: from raw copper gravity casting to 0.01mm CNC machining, robotic mirror polishing, and clean-room assembly.
         </p>
       </div>
 
-      <!-- 4 Live Production Stage Cards -->
-      <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-        <div class="gallery-item">
-          <img src="assets/images/process/1-casting.jpg" alt="Gravity Brass Casting Live Workshop" loading="lazy">
-          <div class="gallery-caption"><strong>01. Gravity Casting:</strong> High-purity DZR low-lead brass casting without internal porosity.</div>
+      <!-- 4 Live Production Workshop Stages -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div class="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+          <img src="assets/images/process/1-casting.jpg" alt="Gravity Brass Casting Live Workshop" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="text-xs font-bold text-emerald-600 uppercase mb-1">01. Gravity Casting</div>
+            <p class="text-xs text-gray-600">High-purity DZR low-lead brass casting without internal porosity.</p>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="assets/images/process/2-machining.jpg" alt="Automated CNC Machining Center" loading="lazy">
-          <div class="gallery-caption"><strong>02. CNC Machining:</strong> Ultra-precision lathe threading with 0.01mm tolerance control.</div>
+
+        <div class="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+          <img src="assets/images/process/2-machining.jpg" alt="Automated CNC Machining Center" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="text-xs font-bold text-emerald-600 uppercase mb-1">02. CNC Machining</div>
+            <p class="text-xs text-gray-600">Ultra-precision lathe threading with 0.01mm tolerance control.</p>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="assets/images/process/3-polishing.jpg" alt="Robotic Mirror Polishing Cell" loading="lazy">
-          <div class="gallery-caption"><strong>03. Mirror Polishing:</strong> Robotic multi-grit surface finishing for flawless plating adhesion.</div>
+
+        <div class="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+          <img src="assets/images/process/3-polishing.jpg" alt="Robotic Mirror Polishing Cell" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="text-xs font-bold text-emerald-600 uppercase mb-1">03. Mirror Polishing</div>
+            <p class="text-xs text-gray-600">Robotic multi-grit surface finishing for flawless plating adhesion.</p>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="assets/images/process/5-assembly.jpg" alt="Clean-Room Final Assembly & QA" loading="lazy">
-          <div class="gallery-caption"><strong>04. Clean Assembly:</strong> 500,000-cycle ceramic cartridges & 100% 0.8MPa pressure tested.</div>
+
+        <div class="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition">
+          <img src="assets/images/process/5-assembly.jpg" alt="Clean-Room Final Assembly & QA" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <div class="text-xs font-bold text-emerald-600 uppercase mb-1">04. Clean Assembly</div>
+            <p class="text-xs text-gray-600">500,000-cycle ceramic cartridges &amp; 100% 0.8MPa pressure tested.</p>
+          </div>
         </div>
       </div>
 
-      <!-- 6 Live Production Status Stats -->
-      <div class="live-stats-bar">
-        <div class="live-stat-item">
-          <div class="live-stat-num">50,000 m²</div>
-          <div class="live-stat-label">Facility Footprint</div>
+      <!-- 6 Live Manufacturing Metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">50,000 m²</div>
+          <div class="text-xs text-gray-500 mt-1">Facility Footprint</div>
         </div>
-        <div class="live-stat-item">
-          <div class="live-stat-num">120+ Sets</div>
-          <div class="live-stat-label">Casting & CNC Units</div>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">120+ Sets</div>
+          <div class="text-xs text-gray-500 mt-1">Casting &amp; CNC Units</div>
         </div>
-        <div class="live-stat-item">
-          <div class="live-stat-num">180,000+</div>
-          <div class="live-stat-label">Monthly Output (Pcs)</div>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">180,000+</div>
+          <div class="text-xs text-gray-500 mt-1">Monthly Output (Pcs)</div>
         </div>
-        <div class="live-stat-item">
-          <div class="live-stat-num">0.01 mm</div>
-          <div class="live-stat-label">CNC Machining Precision</div>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">0.01 mm</div>
+          <div class="text-xs text-gray-500 mt-1">Machining Precision</div>
         </div>
-        <div class="live-stat-item">
-          <div class="live-stat-num">100%</div>
-          <div class="live-stat-label">Air & Water Tested</div>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">100%</div>
+          <div class="text-xs text-gray-500 mt-1">Air &amp; Water Tested</div>
         </div>
-        <div class="live-stat-item">
-          <div class="live-stat-num">24 Hours</div>
-          <div class="live-stat-label">ASS Salt Spray Pass</div>
+        <div class="bg-gray-50 p-5 rounded-2xl border border-gray-100">
+          <div class="text-2xl lg:text-3xl font-extrabold text-emerald-600 font-mono">24 Hours</div>
+          <div class="text-xs text-gray-500 mt-1">ASS Salt Spray Pass</div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ==========================================
-       LuxoPack 1:1 Supplier Due Diligence & Profile Box
-       ========================================== -->
-  <section class="section bg-white" id="supplier-profile">
-    <div class="container">
-      <div class="profile-box">
-        <div class="profile-header-tag">Official Supplier Profile · Corporate Due Diligence</div>
-        <h2 class="profile-title">Fujian Kedah Kitchen & Bath Co., Ltd. at a Glance</h2>
-        <p style="color: var(--text-muted); max-width: 850px; line-height: 1.6;">
+  <!-- ===================================================================
+       Official Supplier Due Diligence Profile Box
+       =================================================================== -->
+  <section class="py-20 bg-slate-50 border-t border-b border-gray-200" id="supplier-profile">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200/80">
+        <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider mb-4">
+          Official Supplier Profile · Corporate Due Diligence
+        </div>
+        <h2 class="font-serif text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+          Fujian Kedah Kitchen &amp; Bath Co., Ltd. at a Glance
+        </h2>
+        <p class="text-gray-600 max-w-4xl text-sm md:text-base leading-relaxed mb-8">
           Operating in China's national sanitary hardware hub (Lucang, Nanan), Fujian Kedah provides direct factory transparency, verifiable international certificates, and comprehensive engineering capabilities for overseas project contractors and distributors.
         </p>
 
-        <div class="profile-grid">
-          <div class="profile-col">
-            <h4>🏭 Corporate Entity & Heritage</h4>
-            <ul>
-              <li><strong>Legal Entity:</strong> Fujian Kedah Kitchen & Bath Co., Ltd. (福建科迪厨卫有限公司)</li>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <h4 class="font-bold text-gray-900 text-base mb-3 flex items-center gap-2">
+              <span>🏭</span> Corporate Entity
+            </h4>
+            <ul class="text-xs text-gray-600 space-y-2">
+              <li><strong>Legal Entity:</strong> Fujian Kedah Kitchen &amp; Bath Co., Ltd.</li>
               <li><strong>Established:</strong> 1994 (30+ Years Sanitary Experience)</li>
-              <li><strong>Location:</strong> Plumbing Industrial Area, Lucang, Nanan, Fujian, China (362304)</li>
-              <li><strong>Factory Area:</strong> 50,000+ m² Integrated Industrial Base</li>
-              <li><strong>Business Scope:</strong> OEM/ODM Manufacturing & Direct Global Export</li>
+              <li><strong>Location:</strong> Lucang, Nanan, Fujian, China (362304)</li>
+              <li><strong>Factory Footprint:</strong> 50,000+ m² Integrated Base</li>
+              <li><strong>Business Scope:</strong> OEM/ODM Manufacturing &amp; Global Export</li>
             </ul>
           </div>
 
-          <div class="profile-col">
-            <h4>📜 Official Certifications & Compliance</h4>
-            <ul>
-              <li><strong>North America:</strong> cUPC Listed (IAPMO File No. 8933, ASME A112.18.1)</li>
+          <div>
+            <h4 class="font-bold text-gray-900 text-base mb-3 flex items-center gap-2">
+              <span>📜</span> Official Certifications
+            </h4>
+            <ul class="text-xs text-gray-600 space-y-2">
+              <li><strong>North America:</strong> cUPC Listed (IAPMO File No. 8933)</li>
               <li><strong>European Union:</strong> CE Certified (EN 817 / EN 1111)</li>
-              <li><strong>Health Standard:</strong> NSF/ANSI 61 & AB1953 Low-Lead Compliance</li>
-              <li><strong>Quality Standard:</strong> ISO 9001:2015 Quality Management System</li>
-              <li><strong>Middle East:</strong> SASO Water Efficiency Standards</li>
+              <li><strong>Health Standard:</strong> NSF/ANSI 61 Low-Lead Compliance</li>
+              <li><strong>Quality Standard:</strong> ISO 9001:2015 QA Certified</li>
+              <li><strong>Middle East:</strong> SASO Water Efficiency Compliant</li>
             </ul>
           </div>
 
-          <div class="profile-col">
-            <h4>🔬 Laboratory & Quality Testing</h4>
-            <ul>
-              <li><strong>Surface Resistance:</strong> 24H Acetic Acid Salt Spray (ASS) Grade 10</li>
-              <li><strong>Valve Durability:</strong> 500,000 Open/Close Cycle Lifespan Test</li>
-              <li><strong>Pressure Testing:</strong> 100% Units Tested at 0.8 MPa Water & 0.6 MPa Air</li>
-              <li><strong>Flow Optimization:</strong> Neoperl Air-Injected Aerators (1.5 / 1.8 GPM)</li>
-              <li><strong>Defect Rate:</strong> &lt; 0.15% Rigorous In-Line Statistical QA</li>
+          <div>
+            <h4 class="font-bold text-gray-900 text-base mb-3 flex items-center gap-2">
+              <span>🔬</span> Laboratory &amp; Testing
+            </h4>
+            <ul class="text-xs text-gray-600 space-y-2">
+              <li><strong>Surface Plating:</strong> 24H Acetic Acid Salt Spray (ASS) Grade 10</li>
+              <li><strong>Valve Durability:</strong> 500,000 Open/Close Cycle Test</li>
+              <li><strong>Pressure QA:</strong> 100% Tested at 0.8 MPa Water &amp; 0.6 MPa Air</li>
+              <li><strong>Flow Optimization:</strong> Neoperl Aerators (1.5 / 1.8 GPM)</li>
+              <li><strong>Defect Rate:</strong> &lt; 0.15% Rigorous In-Line QA</li>
             </ul>
           </div>
 
-          <div class="profile-col">
-            <h4>🚢 Export Logistics & Terms</h4>
-            <ul>
+          <div>
+            <h4 class="font-bold text-gray-900 text-base mb-3 flex items-center gap-2">
+              <span>🚢</span> Export Logistics
+            </h4>
+            <ul class="text-xs text-gray-600 space-y-2">
               <li><strong>Export Ports:</strong> Xiamen Port (Main) / Shenzhen / Fuzhou</li>
               <li><strong>Incoterms:</strong> FOB, CIF, CFR, DDP, EXW Available</li>
-              <li><strong>Accepted Payment:</strong> T/T (30% deposit), L/C at sight, Western Union</li>
-              <li><strong>Sample Lead Time:</strong> 7 - 10 Working Days (Fast Express)</li>
-              <li><strong>Mass Production:</strong> 20 - 30 Days for 20GP/40HQ Containers</li>
+              <li><strong>Payment Terms:</strong> T/T (30% deposit), L/C at sight</li>
+              <li><strong>Sample Lead Time:</strong> 7 - 10 Working Days (Air Express)</li>
+              <li><strong>Mass Production:</strong> 20 - 30 Days for 20GP/40HQ</li>
             </ul>
           </div>
         </div>
@@ -395,788 +612,393 @@
     </div>
   </section>
 
-  <!-- ==========================================
-       LuxoPack 1:1 Quick Reference Pricing Table
-       ========================================== -->
-  <section class="pricing-section" id="pricing-tiers">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Direct Factory Pricing</span>
-        <h2 class="section-title">Indicative B2B Factory Pricing Tiers</h2>
-        <p class="section-desc">
-          Transparent indicative volume tiers for commercial contractors, plumbing distributors, and brand importers. Custom finishes, packaging, and branding available upon request.
+  <!-- ===================================================================
+       Indicative B2B Factory Pricing Tiers
+       =================================================================== -->
+  <section class="py-24 bg-white" id="pricing-tiers">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">DIRECT FACTORY PRICING</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          Indicative B2B Volume Pricing Tiers
+        </h2>
+        <p class="text-base text-gray-600 leading-relaxed">
+          Transparent volume tiers for commercial contractors, plumbing distributors, and brand importers. Custom finishes, packaging, and branding available upon request.
         </p>
       </div>
 
-      <div class="price-table-wrapper">
-        <table class="luxo-price-table">
+      <div class="overflow-x-auto bg-white rounded-3xl border border-gray-200 shadow-xl mb-6">
+        <table class="w-full text-left border-collapse min-w-[800px]">
           <thead>
-            <tr>
-              <th>Category / Product Line</th>
-              <th>Technical Specification</th>
-              <th>Compliance Standard</th>
-              <th>Trial MOQ</th>
-              <th>Indicative Price (500 Pcs)</th>
-              <th>Volume Price (5,000+ Pcs)</th>
-              <th>Action</th>
+            <tr class="bg-gray-50 border-b border-gray-200 text-xs font-bold text-gray-600 uppercase tracking-wider">
+              <th class="py-4 px-6">Product Line</th>
+              <th class="py-4 px-6">Technical Specification</th>
+              <th class="py-4 px-6">Standard</th>
+              <th class="py-4 px-6">Trial MOQ</th>
+              <th class="py-4 px-6">Indicative Price (500 Pcs)</th>
+              <th class="py-4 px-6">Volume Price (5,000+ Pcs)</th>
+              <th class="py-4 px-6 text-center">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="product-name-cell">
-                <div>Lead-Free Basin Mixer</div>
-                <small style="color: #64748b;">KD-B2001 Series (Single Handle)</small>
+          <tbody class="divide-y divide-gray-200 text-sm">
+            <tr class="hover:bg-gray-50/70 transition">
+              <td class="py-4 px-6">
+                <div class="font-bold text-gray-900">Lead-Free Basin Mixer</div>
+                <div class="text-xs text-gray-500">KD-B2001 Series (Single Handle)</div>
               </td>
-              <td>Solid DZR Low-Lead Brass, Sedal 35mm Cartridge, Neoperl Aerator</td>
-              <td><span class="badge-tag" style="padding: 2px 8px; font-size: 11px;">cUPC / CE / NSF61</span></td>
-              <td><strong>200 Pcs</strong></td>
-              <td><span class="price-badge">$14.50 – $18.80</span></td>
-              <td><span class="price-badge" style="color: #15803d; font-size: 1.05rem;">$12.80 – $15.50</span></td>
-              <td><button class="btn btn-sm btn-primary" onclick="openRFQModal('Lead-Free Basin Mixer')">Inquire</button></td>
+              <td class="py-4 px-6 text-xs text-gray-600">Solid DZR Brass, Sedal 35mm Cartridge, Neoperl Aerator</td>
+              <td class="py-4 px-6"><span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">cUPC / CE / NSF61</span></td>
+              <td class="py-4 px-6 font-semibold">200 Pcs</td>
+              <td class="py-4 px-6 font-mono font-bold text-gray-900">$14.50 – $18.80</td>
+              <td class="py-4 px-6 font-mono font-bold text-emerald-600 text-base">$12.80 – $15.50</td>
+              <td class="py-4 px-6 text-center">
+                <button onclick="openRFQModal('Lead-Free Basin Mixer')" class="px-4 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition">Inquire</button>
+              </td>
             </tr>
-            <tr>
-              <td class="product-name-cell">
-                <div>Pull-Down Commercial Kitchen Tap</div>
-                <small style="color: #64748b;">KD-K1002 Series (Dual Spray)</small>
+            <tr class="hover:bg-gray-50/70 transition">
+              <td class="py-4 px-6">
+                <div class="font-bold text-gray-900">Pull-Down Commercial Kitchen Tap</div>
+                <div class="text-xs text-gray-500">KD-K1002 Series (Dual Spray)</div>
               </td>
-              <td>360° Swivel, Stream &amp; Spray Modes, High-Density Nylon Braided Hose</td>
-              <td><span class="badge-tag" style="padding: 2px 8px; font-size: 11px;">cUPC / ASME A112.18.1</span></td>
-              <td><strong>150 Pcs</strong></td>
-              <td><span class="price-badge">$18.90 – $24.50</span></td>
-              <td><span class="price-badge" style="color: #15803d; font-size: 1.05rem;">$16.50 – $21.00</span></td>
-              <td><button class="btn btn-sm btn-primary" onclick="openRFQModal('Pull-Down Kitchen Tap')">Inquire</button></td>
+              <td class="py-4 px-6 text-xs text-gray-600">360° Swivel, Stream &amp; Spray Modes, Nylon Braided Hose</td>
+              <td class="py-4 px-6"><span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">cUPC / ASME A112.18.1</span></td>
+              <td class="py-4 px-6 font-semibold">150 Pcs</td>
+              <td class="py-4 px-6 font-mono font-bold text-gray-900">$18.90 – $24.50</td>
+              <td class="py-4 px-6 font-mono font-bold text-emerald-600 text-base">$16.50 – $21.00</td>
+              <td class="py-4 px-6 text-center">
+                <button onclick="openRFQModal('Pull-Down Kitchen Tap')" class="px-4 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition">Inquire</button>
+              </td>
             </tr>
-            <tr>
-              <td class="product-name-cell">
-                <div>Touchless Smart Sensor Faucet</div>
-                <small style="color: #64748b;">KD-A608 Series (Infrared Deck/Wall)</small>
+            <tr class="hover:bg-gray-50/70 transition">
+              <td class="py-4 px-6">
+                <div class="font-bold text-gray-900">Touchless Smart Sensor Faucet</div>
+                <div class="text-xs text-gray-500">KD-A608 Series (Infrared Deck/Wall)</div>
               </td>
-              <td>AC 110V-220V &amp; DC 6V Dual, Anti-Interference IR Sensor, Magnetic Solenoid</td>
-              <td><span class="badge-tag" style="padding: 2px 8px; font-size: 11px;">CE / ADA / Commercial</span></td>
-              <td><strong>100 Pcs</strong></td>
-              <td><span class="price-badge">$24.00 – $32.00</span></td>
-              <td><span class="price-badge" style="color: #15803d; font-size: 1.05rem;">$21.00 – $27.50</span></td>
-              <td><button class="btn btn-sm btn-primary" onclick="openRFQModal('Touchless Sensor Faucet')">Inquire</button></td>
+              <td class="py-4 px-6 text-xs text-gray-600">AC 110V-220V &amp; DC 6V Dual, Anti-Interference IR Sensor</td>
+              <td class="py-4 px-6"><span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">CE / ADA / Commercial</span></td>
+              <td class="py-4 px-6 font-semibold">100 Pcs</td>
+              <td class="py-4 px-6 font-mono font-bold text-gray-900">$24.00 – $32.00</td>
+              <td class="py-4 px-6 font-mono font-bold text-emerald-600 text-base">$21.00 – $27.50</td>
+              <td class="py-4 px-6 text-center">
+                <button onclick="openRFQModal('Touchless Sensor Faucet')" class="px-4 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition">Inquire</button>
+              </td>
             </tr>
-            <tr>
-              <td class="product-name-cell">
-                <div>Thermostatic Luxury Shower Column</div>
-                <small style="color: #64748b;">KD-S8005 Series (Piano Key / Rain)</small>
+            <tr class="hover:bg-gray-50/70 transition">
+              <td class="py-4 px-6">
+                <div class="font-bold text-gray-900">Thermostatic Luxury Shower Column</div>
+                <div class="text-xs text-gray-500">KD-S8005 Series (Piano Key / Rain)</div>
               </td>
-              <td>38°C Safety Core, Solid Brass Concealed Diverter, Air-Injected Rainfall Head</td>
-              <td><span class="badge-tag" style="padding: 2px 8px; font-size: 11px;">EN 1111 / SASO Compliant</span></td>
-              <td><strong>100 Sets</strong></td>
-              <td><span class="price-badge">$39.00 – $55.00</span></td>
-              <td><span class="price-badge" style="color: #15803d; font-size: 1.05rem;">$34.50 – $48.00</span></td>
-              <td><button class="btn btn-sm btn-primary" onclick="openRFQModal('Thermostatic Shower Column')">Inquire</button></td>
+              <td class="py-4 px-6 text-xs text-gray-600">38°C Safety Core, Solid Brass Concealed Diverter, Rainfall Head</td>
+              <td class="py-4 px-6"><span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">EN 1111 / SASO Compliant</span></td>
+              <td class="py-4 px-6 font-semibold">100 Sets</td>
+              <td class="py-4 px-6 font-mono font-bold text-gray-900">$39.00 – $55.00</td>
+              <td class="py-4 px-6 font-mono font-bold text-emerald-600 text-base">$34.50 – $48.00</td>
+              <td class="py-4 px-6 text-center">
+                <button onclick="openRFQModal('Thermostatic Shower Column')" class="px-4 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition">Inquire</button>
+              </td>
             </tr>
-            <tr>
-              <td class="product-name-cell">
-                <div>Automatic Sensor Flush Valve</div>
-                <small style="color: #64748b;">KD-F501 Series (Urinal / Water Closet)</small>
+            <tr class="hover:bg-gray-50/70 transition">
+              <td class="py-4 px-6">
+                <div class="font-bold text-gray-900">Automatic Sensor Flush Valve</div>
+                <div class="text-xs text-gray-500">KD-F501 Series (Urinal / Water Closet)</div>
               </td>
-              <td>Heavy Solid Brass Valve Body, Auto-Mechanical Override Button, High-Traffic QA</td>
-              <td><span class="badge-tag" style="padding: 2px 8px; font-size: 11px;">CE / Airport &amp; Hotel Grade</span></td>
-              <td><strong>100 Pcs</strong></td>
-              <td><span class="price-badge">$19.50 – $28.00</span></td>
-              <td><span class="price-badge" style="color: #15803d; font-size: 1.05rem;">$17.00 – $23.50</span></td>
-              <td><button class="btn btn-sm btn-primary" onclick="openRFQModal('Sensor Flush Valve')">Inquire</button></td>
+              <td class="py-4 px-6 text-xs text-gray-600">Heavy Solid Brass Valve Body, Auto-Mechanical Override Button</td>
+              <td class="py-4 px-6"><span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">CE / Airport &amp; Hotel Grade</span></td>
+              <td class="py-4 px-6 font-semibold">100 Pcs</td>
+              <td class="py-4 px-6 font-mono font-bold text-gray-900">$19.50 – $28.00</td>
+              <td class="py-4 px-6 font-mono font-bold text-emerald-600 text-base">$17.00 – $23.50</td>
+              <td class="py-4 px-6 text-center">
+                <button onclick="openRFQModal('Sensor Flush Valve')" class="px-4 py-1.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition">Inquire</button>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="text-align: center; font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.75rem;">
-        * Indicative prices are in USD FOB Xiamen. Final quotations depend on exact customized finishes (Chrome / Matte Black / Brushed Gold / PVD / Gunmetal), packaging design, and container quantities.
+      <p class="text-center text-xs text-gray-500">
+        * Indicative prices are in USD FOB Xiamen. Final quotations depend on exact customized finishes (Chrome / Matte Black / Brushed Gold / PVD), packaging, and container volumes.
       </p>
     </div>
   </section>
 
-  <!-- Core Value Proposition -->
-  <section class="section bg-light" id="features">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag" data-i18n="features.tag">Direct Factory Advantage</span>
-        <h2 class="section-title" data-i18n="features.title">Engineered for Global Plumbing Contractors & Wholesalers</h2>
-        <p class="section-desc" data-i18n="features.desc">
-          From residential luxury developments in Spain and Colombia to commercial towers in Saudi Arabia and resorts in Thailand, Fujian Kedah provides reliable, durable, and certified plumbing hardware directly from our integrated manufacturing base.
+  <!-- ===================================================================
+       Canton Fair Exhibition Tour & Dedicated Engineering Team
+       =================================================================== -->
+  <section class="py-24 bg-gray-50" id="factory-tour">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+        <span class="text-xs font-bold tracking-widest text-emerald-600 uppercase mb-3 block">GLOBAL EXPO PRESENCE</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          Canton Fair Footprint &amp; Modern Production Base
+        </h2>
+        <p class="text-base text-gray-600 leading-relaxed">
+          Take a look inside our 50,000+ sqm manufacturing facility in Lucang, Nanan and explore our long-standing Canton Fair exhibition presence meeting global engineering partners.
         </p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon-box">🏭</div>
-          <h3 class="feature-title" data-i18n="features.f1_title">Integrated Source Factory</h3>
-          <p class="feature-desc" data-i18n="features.f1_desc">
-            Direct manufacturing in Lucang, Nanan—China's sanitary ware capital. Gravity casting, CNC machining, polishing, electroplating, and assembly all under one roof to maximize cost efficiency and eliminate middleman markups.
-          </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/factory/factory-exterior.jpg', '50,000 m² Modern Manufacturing Base in Nanan, Fujian')">
+          <img src="assets/images/factory/factory-exterior.jpg" alt="Fujian Kedah Factory Facility" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Modern Industrial Base</strong>
+            <span class="text-xs text-gray-500">50,000 m² Facility in Lucang, Nanan · Click to Zoom</span>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-box">🚰</div>
-          <h3 class="feature-title" data-i18n="features.f2_title">Certified Lead-Free Health Standard</h3>
-          <p class="feature-desc" data-i18n="features.f2_desc">
-            Using premium DZR brass and low-lead alloy formulas that strictly meet NSF/ANSI 61 and North American drinking water standards, ensuring zero harmful heavy metals and safe potable water delivery.
-          </p>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/factory/office-showroom.png', 'International Product Experience & Sample Showroom')">
+          <img src="assets/images/factory/office-showroom.png" alt="Kedah Corporate Showroom" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Sample Showroom</strong>
+            <span class="text-xs text-gray-500">International Product Experience Center · Click to Zoom</span>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-box">✨</div>
-          <h3 class="feature-title" data-i18n="features.f3_title">24H ASS Salt Spray Resistant Plating</h3>
-          <p class="feature-desc" data-i18n="features.f3_desc">
-            Multi-layer electroplating and high-end PVD coating pass 24-hour Acetic Acid Salt Spray (ASS) tests—equivalent to over 10 years of harsh coastal or high-humidity bathroom use without peeling or tarnishing.
-          </p>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/factory/kedah-team-full.jpg', 'Fujian Kedah Engineering & Management Team')">
+          <img src="assets/images/factory/kedah-team-full.jpg" alt="Kedah Professional Engineering Team" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Dedicated Team</strong>
+            <span class="text-xs text-gray-500">Engineering, Quality &amp; Foreign Trade Staff · Click to Zoom</span>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-box">🛠️</div>
-          <h3 class="feature-title" data-i18n="features.f4_title">Full OEM/ODM Project Customization</h3>
-          <p class="feature-desc" data-i18n="features.f4_desc">
-            Custom laser branding, bespoke dimension tooling, custom finishes (Chrome, Matte Black, Brushed Gold, Gunmetal Grey, Rose Gold), and export retail/engineering packaging tailored to your brand specification.
-          </p>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-grand-hall.jpg', 'Canton Fair International Pavilion - Kedah Exhibition')">
+          <img src="assets/images/exhibition/canton-fair-grand-hall.jpg" alt="Canton Fair Grand Pavilion Exhibition Hall" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Canton Fair Grand Hall</strong>
+            <span class="text-xs text-gray-500">International Sanitary Pavilion · Click to Zoom</span>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-box">📡</div>
-          <h3 class="feature-title" data-i18n="features.f5_title">Smart Touchless & Sensor Engineering</h3>
-          <p class="feature-desc" data-i18n="features.f5_desc">
-            High-sensitivity infrared sensor faucets and automatic flush valves engineered for high-traffic commercial airports, hospitals, luxury hotels, and public facilities with DC/AC dual power options.
-          </p>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-booth-2.jpg', 'Kedah Official Custom Exhibition Booth')">
+          <img src="assets/images/exhibition/canton-fair-booth-2.jpg" alt="Kedah Canton Fair Booth Front Display" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Custom Exhibition Booth</strong>
+            <span class="text-xs text-gray-500">Full Series Sanitary Ware Display · Click to Zoom</span>
+          </div>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon-box">📦</div>
-          <h3 class="feature-title" data-i18n="features.f6_title">Flexible MOQ & Fast Global Delivery</h3>
-          <p class="feature-desc" data-i18n="features.f6_desc">
-            Fast 7-10 day sample turnaround, low starting trial MOQs for new project contractors, and robust multi-container monthly output supporting FOB, CIF, and DDP delivery terms.
-          </p>
+        <div class="group relative rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition cursor-pointer" onclick="openLightbox('assets/images/exhibition/canton-fair-client-meeting-1.jpg', 'On-Site Client Product Inspection & Technical Discussion')">
+          <img src="assets/images/exhibition/canton-fair-client-meeting-1.jpg" alt="Overseas Buyer Product Inspection" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+          <div class="p-5">
+            <strong class="block text-sm text-gray-900 mb-1">Client Reception</strong>
+            <span class="text-xs text-gray-500">Face-to-Face Technical Negotiations · Click to Zoom</span>
+          </div>
         </div>
+      </div>
+
+      <div class="text-center">
+        <a href="about.html#exhibitions" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700 underline underline-offset-4">
+          <span>Explore Full Exhibition Track Record &amp; Client Footprint</span>
+          <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- 7-Step Precision Manufacturing Process -->
-  <section class="section bg-white" id="manufacturing-process">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag" data-i18n="process.tag">Quality & Craftsmanship</span>
-        <h2 class="section-title" data-i18n="process.title">Our 7-Step Precision Manufacturing & QA Process</h2>
-        <p class="section-desc" data-i18n="process.desc">
-          Every Kedah faucet and valve undergoes 7 rigorous manufacturing stages to ensure zero leakage, smooth cartridge actuation, and immaculate surface aesthetics.
+  <!-- ===================================================================
+       SECTION 4 - CONTACT: Centered max-4xl Layout with Emerald Pin Icon
+       - Style: Centered max-4xl layout. Emerald location icon at top.
+       - Form: 2 input fields (gray-50 border) and one wide emerald button.
+       =================================================================== -->
+  <section class="py-28 bg-white" id="contact">
+    <div class="max-w-4xl mx-auto px-6 text-center animate-on-scroll opacity-0 translate-y-8 transition-all duration-700">
+      
+      <!-- Emerald Map Point Icon at Top -->
+      <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-50 text-emerald-500 mb-6 shadow-sm">
+        <iconify-icon icon="solar:map-point-linear" width="36" height="36"></iconify-icon>
+      </div>
+
+      <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+        Request Your Project Quotation or Custom Sample
+      </h2>
+      <p class="text-base text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed" data-i18n="rfq.desc">
+        Submit your project specifications or drawing files. Our technical sales engineers respond within 24 hours with comprehensive pricing, CAD drawings, and test reports.
+      </p>
+
+      <!-- Contact Form -->
+      <form id="homeInquiryForm" onsubmit="handleInquirySubmit(event)" class="text-left bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-200/80 shadow-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.name">Full Name / Contact Person *</label>
+            <input type="text" name="fullName" required placeholder="e.g. John Smith" class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.company">Company Name *</label>
+            <input type="text" name="companyName" required placeholder="e.g. Apex Plumbing Supplies LLC" class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.email">Business Email *</label>
+            <input type="email" name="email" required placeholder="e.g. john@apexplumbing.com" class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.country">Target Country / Region *</label>
+            <select name="country" required class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition">
+              <option value="">Select your region...</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Spain">Spain</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Other">Other Region</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.category">Product of Interest *</label>
+          <select name="productCategory" required class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition">
+            <option value="Basin Faucets">Lead-Free Basin Faucets Series</option>
+            <option value="Kitchen Faucets">Pull-Down Kitchen Faucets Series</option>
+            <option value="Sensor Faucets & Valves">Intelligent Sensor Taps &amp; Flush Valves</option>
+            <option value="Shower Systems">Thermostatic Luxury Shower Systems</option>
+            <option value="OEM/ODM Custom Project">OEM/ODM Bespoke Sanitary Engineering Project</option>
+            <option value="Full Catalog Inquiry">Full 2026 Export Catalog &amp; Price List</option>
+          </select>
+        </div>
+
+        <div class="mb-8">
+          <label class="block text-xs font-bold text-gray-700 uppercase mb-2" data-i18n="form.message">Project Specifications / Required Quantities *</label>
+          <textarea name="message" rows="4" required placeholder="Please describe required quantities (MOQ), finishes (Chrome/Matte Black/Gold), certifications needed (cUPC/CE), or custom branding requirements." class="w-full px-4 py-3.5 rounded-xl bg-white border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 text-sm outline-none transition"></textarea>
+        </div>
+
+        <!-- Wide Emerald Button -->
+        <button type="submit" class="w-full rounded-full bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-4 text-base tracking-wide shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-0.5">
+          Send Instant Factory Inquiry
+        </button>
+
+        <p class="text-center text-xs text-gray-500 mt-4 flex items-center justify-center gap-1.5" data-i18n="form.privacy_note">
+          <span>🔒</span> Your information is confidential. We strictly protect your project privacy and intellectual property.
         </p>
-      </div>
+      </form>
 
-      <div class="process-grid">
-        <div class="process-step-card">
-          <div class="step-num">01</div>
-          <div class="step-image">
-            <img src="assets/images/process/1-casting.jpg" alt="Gravity Brass Casting" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s1_title">Precision Gravity Casting</h4>
-            <p data-i18n="process.s1_desc">High-purity solid brass gravity casting eliminates sand holes and internal porosity, creating robust heavy-duty valve bodies.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">02</div>
-          <div class="step-image">
-            <img src="assets/images/process/2-machining.jpg" alt="CNC Machining Workshop" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s2_title">High-Precision CNC Machining</h4>
-            <p data-i18n="process.s2_desc">Automated CNC lathe machining with tolerance controlled within 0.01mm for flawless cartridge fit and water-tight threading.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">03</div>
-          <div class="step-image">
-            <img src="assets/images/process/3-polishing.jpg" alt="Robotic and Hand Polishing" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s3_title">Ultra-Fine Surface Polishing</h4>
-            <p data-i18n="process.s3_desc">Multi-grit robotic and manual mirror polishing creates a smooth, ripple-free surface essential for high-adhesion electroplating.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">04</div>
-          <div class="step-image">
-            <img src="assets/images/process/4-qc.jpg" alt="In-Line Quality Control" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s4_title">In-Line Visual & Dimensional QC</h4>
-            <p data-i18n="process.s4_desc">100% pre-plating inspection to detect micro-scratches, burrs, or dimensional discrepancies before surface treatment.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">05</div>
-          <div class="step-image">
-            <img src="assets/images/process/5-assembly.jpg" alt="Clean Room Assembly" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s5_title">Clean Room Precision Assembly</h4>
-            <p data-i18n="process.s5_desc">Equipped with premium Sedal/Wanhai ceramic cartridges (500,000 cycle lifespan) and Neoperl aerators for smooth laminar water flow.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">06</div>
-          <div class="step-image">
-            <img src="assets/images/process/6-testing.jpg" alt="100% Pressure Testing" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s6_title">100% Air & Water Pressure Test</h4>
-            <p data-i18n="process.s6_desc">Dual testing with 0.8 MPa hydrostatic pressure and 0.6 MPa air pressure on every single assembled unit to guarantee 0% leakage rate.</p>
-          </div>
-        </div>
-
-        <div class="process-step-card">
-          <div class="step-num">07</div>
-          <div class="step-image">
-            <img src="assets/images/process/7-plating-testing.jpg" alt="24H ASS Plating Salt Spray Test" loading="lazy">
-          </div>
-          <div class="step-info">
-            <h4 data-i18n="process.s7_title">24H ASS Salt Spray Testing</h4>
-            <p data-i18n="process.s7_desc">Automated plating lab testing with 24-hour Acetic Acid Salt Spray (Grade 10 rating) ensuring superior corrosion resistance.</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Featured Product Lines Showcase -->
-  <section class="section bg-light" id="products">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag" data-i18n="catalog.tag">Core Product Catalog</span>
-        <h2 class="section-title" data-i18n="catalog.title">Explore Our Export-Ready Plumbing Collections</h2>
-        <p class="section-desc" data-i18n="catalog.desc">
-          Engineered for international architectural aesthetics, residential developments, and commercial sanitary facilities.
-        </p>
-      </div>
-
-      <div class="product-category-grid">
-        <!-- Category 1: Basin Faucets -->
-        <div class="category-showcase-card">
-          <div class="category-img-box">
-            <img src="assets/images/products/basin/2022 fancy gold basin faucet.jpg" alt="Lead-Free Brass Basin Faucets" loading="lazy">
-            <span class="category-tag" data-i18n="cat.basin">Basin Faucets</span>
-          </div>
-          <div class="category-body">
-            <h3 class="category-title" data-i18n="cat.basin_title">Luxury Brass Basin Faucet Series</h3>
-            <p class="category-summary" data-i18n="cat.basin_desc">
-              Single-handle, dual-handle, waterfall spouts, and high-spout vessel basin mixers. Made with solid lead-free brass bodies and durable ceramic cartridges.
-            </p>
-            <ul class="spec-list">
-              <li>• Material: DZR Solid Brass / Low Lead Brass</li>
-              <li>• Finish: Chrome / Matte Black / Brushed Gold / PVD</li>
-              <li>• Cartridge: Sedal / Wanhai Ceramic (500,000 cycles)</li>
-            </ul>
-            <div class="category-actions">
-              <a href="products.html?cat=basin" class="btn btn-outline btn-sm" data-i18n="btn.view_series">View Models</a>
-              <button class="btn btn-primary btn-sm" onclick="openRFQModal('Basin Faucets Series')" data-i18n="btn.inquire_now">Inquire</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Category 2: Kitchen Faucets -->
-        <div class="category-showcase-card">
-          <div class="category-img-box">
-            <img src="assets/images/products/kitchen/KD-A1002 Square kitchen Faucet.jpg" alt="Commercial Pull-Out Kitchen Faucets" loading="lazy">
-            <span class="category-tag" data-i18n="cat.kitchen">Kitchen Faucets</span>
-          </div>
-          <div class="category-body">
-            <h3 class="category-title" data-i18n="cat.kitchen_title">Pull-Out &amp; Multi-Functional Kitchen Faucets</h3>
-            <p class="category-summary" data-i18n="cat.kitchen_desc">
-              Flexible 360° swivel spouts, dual-mode pull-down spray heads, spring commercial kitchen taps, and dedicated 3-way water purifier mixers.
-            </p>
-            <ul class="spec-list">
-              <li>• Function: Dual Stream/Spray / Pull-Down / 360° Swivel</li>
-              <li>• Hose: High-Grade Nylon Braided / Anti-Kink</li>
-              <li>• Standard: cUPC Compliant Flow Rate (1.8 GPM / 1.5 GPM)</li>
-            </ul>
-            <div class="category-actions">
-              <a href="products.html?cat=kitchen" class="btn btn-outline btn-sm" data-i18n="btn.view_series">View Models</a>
-              <button class="btn btn-primary btn-sm" onclick="openRFQModal('Kitchen Faucet Series')" data-i18n="btn.inquire_now">Inquire</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Category 3: Intelligent Sensor Faucets -->
-        <div class="category-showcase-card">
-          <div class="category-img-box">
-            <img src="assets/images/products/sensor/KD-A608A Wall mounted sensor faucet.jpg" alt="Commercial Touchless Sensor Faucets" loading="lazy">
-            <span class="category-tag" data-i18n="cat.sensor">Sensor &amp; Commercial</span>
-          </div>
-          <div class="category-body">
-            <h3 class="category-title" data-i18n="cat.sensor_title">Touchless Smart Sensor Taps &amp; Flush Valves</h3>
-            <p class="category-summary" data-i18n="cat.sensor_desc">
-              Hygienic infrared sensor taps, automatic toilet flushers, and urinal sensor valves for modern airport, hospital, and hotel commercial installations.
-            </p>
-            <ul class="spec-list">
-              <li>• Power: DC 6V (4x AA batteries) / AC 110V-220V Dual</li>
-              <li>• Sensor Range: 10-30cm Auto-Calibrated Infrared</li>
-              <li>• Sensor Response: &lt; 0.5s Fast Actuation, Auto-Shutoff</li>
-            </ul>
-            <div class="category-actions">
-              <a href="products.html?cat=sensor" class="btn btn-outline btn-sm" data-i18n="btn.view_series">View Models</a>
-              <button class="btn btn-primary btn-sm" onclick="openRFQModal('Sensor Faucets &amp; Valves')" data-i18n="btn.inquire_now">Inquire</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Category 4: Shower Systems -->
-        <div class="category-showcase-card">
-          <div class="category-img-box">
-            <img src="assets/images/products/shower/Massage Jet Shower Tower System.jpg" alt="Thermostatic Luxury Shower Systems" loading="lazy">
-            <span class="category-tag" data-i18n="cat.shower">Shower Systems</span>
-          </div>
-          <div class="category-body">
-            <h3 class="category-title" data-i18n="cat.shower_title">Thermostatic Shower Mixers &amp; Shower Columns</h3>
-            <p class="category-summary" data-i18n="cat.shower_desc">
-              Concealed wall-mounted thermostatic mixers, luxury rain shower columns, hydro-massage shower panels, and piano-key multi-function shower sets.
-            </p>
-            <ul class="spec-list">
-              <li>• Valve Type: Thermostatic Core 38°C Safety Lock</li>
-              <li>• Shower Head: Air-Injected Rainfall Brass/ABS Heads</li>
-              <li>• Features: Piano Key Diverter / Waterfall Tub Spout</li>
-            </ul>
-            <div class="category-actions">
-              <a href="products.html?cat=shower" class="btn btn-outline btn-sm" data-i18n="btn.view_series">View Models</a>
-              <button class="btn btn-primary btn-sm" onclick="openRFQModal('Shower System Collection')" data-i18n="btn.inquire_now">Inquire</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==========================================
-           Featured Engineering Best-Sellers (LuxoPack Signature 3-Col Micro-Spec Cards)
-           ========================================== -->
-      <div style="margin-top: 4.5rem; padding-top: 3.5rem; border-top: 1px solid var(--border-light);">
-        <div class="section-header text-center" style="margin-bottom: 2.5rem;">
-          <span class="section-tag">Direct Engineering Selection</span>
-          <h3 class="section-title" style="font-size: 1.85rem;">High-Volume Project Best-Sellers</h3>
-          <p class="section-desc" style="font-size: 0.95rem;">
-            Ready for fast container shipment with pre-inspected cUPC/CE standards and verified 24-hour ASS salt spray durability.
+  <!-- ===================================================================
+       SECTION 5 - FOOTER: High Visual Fidelity 4-Column Grid & Sub-footer
+       - BG: gray-950
+       - Grid: 4 columns (Brand, Services, Company, Connect)
+       - Sub-footer: Bottom flex row with Copyright and Social Icons
+       =================================================================== -->
+  <footer class="bg-gray-950 text-gray-300 pt-16 pb-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: Brand -->
+        <div>
+          <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-white hover:text-emerald-400 transition block mb-4">
+            KEDAH KITCHEN &amp; BATH
+          </a>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4" data-i18n="footer.desc">
+            Fujian Kedah Kitchen &amp; Bath Co., Ltd. (kedahkb.com) is a professional Chinese source manufacturer of lead-free brass faucets, smart sensor plumbing fixtures, and luxury shower systems. Delivering certified sanitary solutions to worldwide contractors and distributors.
           </p>
-        </div>
-
-        <div class="luxo-product-grid">
-          <!-- Featured 1 -->
-          <div class="luxo-product-card">
-            <span class="luxo-card-badge gold">cUPC &amp; CE</span>
-            <div class="luxo-card-img-wrap">
-              <img src="assets/images/products/basin/2022 fancy gold basin faucet.jpg" alt="KD-BG2022 Brushed Gold Basin Mixer" loading="lazy">
-            </div>
-            <div class="luxo-card-body">
-              <span class="luxo-card-category">Basin Series</span>
-              <h4 class="luxo-card-title">KD-BG2022 Luxury Brushed Gold Mixer</h4>
-              <p class="luxo-card-desc">Architectural deck-mounted basin faucet with knurled handle and anti-tarnish PVD coating.</p>
-              <div class="luxo-spec-table">
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Trial MOQ</div>
-                  <div class="spec-v">100 Pcs</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Cartridge</div>
-                  <div class="spec-v">Sedal 35mm</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Plating</div>
-                  <div class="spec-v">24H ASS</div>
-                </div>
-              </div>
-              <button class="btn-luxo-quote" onclick="openRFQModal('KD-BG2022 Luxury Basin Faucet')">Inquire Project Price</button>
-            </div>
-          </div>
-
-          <!-- Featured 2 -->
-          <div class="luxo-product-card">
-            <span class="luxo-card-badge">Commercial</span>
-            <div class="luxo-card-img-wrap">
-              <img src="assets/images/products/kitchen/KD-A1002 Square kitchen Faucet.jpg" alt="KD-A1002 Commercial Kitchen Tap" loading="lazy">
-            </div>
-            <div class="luxo-card-body">
-              <span class="luxo-card-category">Kitchen Series</span>
-              <h4 class="luxo-card-title">KD-A1002 Commercial Pull-Down Tap</h4>
-              <p class="luxo-card-desc">Heavy-duty 360° swivel kitchen faucet featuring dual-mode stream &amp; spray with anti-kink hose.</p>
-              <div class="luxo-spec-table">
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Trial MOQ</div>
-                  <div class="spec-v">150 Pcs</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Cartridge</div>
-                  <div class="spec-v">Wanhai 40mm</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Plating</div>
-                  <div class="spec-v">Cr / Matte</div>
-                </div>
-              </div>
-              <button class="btn-luxo-quote" onclick="openRFQModal('KD-A1002 Kitchen Tap')">Inquire Project Price</button>
-            </div>
-          </div>
-
-          <!-- Featured 3 -->
-          <div class="luxo-product-card">
-            <span class="luxo-card-badge gold">Smart Touchless</span>
-            <div class="luxo-card-img-wrap">
-              <img src="assets/images/products/sensor/KD-A608A Wall mounted sensor faucet.jpg" alt="KD-A608 Smart Sensor Tap" loading="lazy">
-            </div>
-            <div class="luxo-card-body">
-              <span class="luxo-card-category">Sensor Series</span>
-              <h4 class="luxo-card-title">KD-A608 Automatic Infrared Sensor Tap</h4>
-              <p class="luxo-card-desc">Commercial contactless sensor tap with AC/DC dual-power module and anti-vandal solid brass body.</p>
-              <div class="luxo-spec-table">
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Trial MOQ</div>
-                  <div class="spec-v">100 Pcs</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Power</div>
-                  <div class="spec-v">DC6V / AC</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Response</div>
-                  <div class="spec-v">&lt;0.5s</div>
-                </div>
-              </div>
-              <button class="btn-luxo-quote" onclick="openRFQModal('KD-A608 Sensor Tap')">Inquire Project Price</button>
-            </div>
-          </div>
-
-          <!-- Featured 4 -->
-          <div class="luxo-product-card">
-            <span class="luxo-card-badge">EN 1111 Safe</span>
-            <div class="luxo-card-img-wrap">
-              <img src="assets/images/products/shower/Massage Jet Shower Tower System.jpg" alt="KD-S8005 Thermostatic Shower Column" loading="lazy">
-            </div>
-            <div class="luxo-card-body">
-              <span class="luxo-card-category">Shower Series</span>
-              <h4 class="luxo-card-title">KD-S8005 Luxury Thermostatic Tower</h4>
-              <p class="luxo-card-desc">38°C safety thermostatic mixer system with air-boost rain shower and piano-key function selection.</p>
-              <div class="luxo-spec-table">
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Trial MOQ</div>
-                  <div class="spec-v">100 Sets</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Valve</div>
-                  <div class="spec-v">Thermo 38°C</div>
-                </div>
-                <div class="luxo-spec-col">
-                  <div class="spec-k">Plating</div>
-                  <div class="spec-v">Multi-PVD</div>
-                </div>
-              </div>
-              <button class="btn-luxo-quote" onclick="openRFQModal('KD-S8005 Thermostatic Shower')">Inquire Project Price</button>
-            </div>
+          <div class="text-[11px] text-emerald-400/90 font-mono space-y-1">
+            <div>• cUPC Listed (IAPMO File No. 8933)</div>
+            <div>• CE Certified (EN 817 / EN 1111)</div>
+            <div>• 24H ASS Salt Spray Grade 10</div>
           </div>
         </div>
-      </div>
 
-      <div class="text-center" style="margin-top: 3.5rem;">
-        <a href="products.html" class="btn btn-gold btn-lg" data-i18n="btn.explore_all">Browse Complete 2026 Product Catalog →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Global Target Markets & Project Capabilities -->
-  <section class="section bg-ocean-surface" id="global-markets">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag section-tag-gold" data-i18n="markets.tag">Worldwide Engineering Footprint</span>
-        <h2 class="section-title" data-i18n="markets.title">Tailored for Regional Engineering Specifications</h2>
-        <p class="section-desc" data-i18n="markets.desc">
-          We understand regional plumbing codes, threads (NPT / G / BSP), water pressure variations, and certification requirements across key global export markets.
-        </p>
-      </div>
-
-      <div class="markets-grid">
-        <div class="market-card">
-          <div class="market-flag">🇺🇸 🇨🇦</div>
-          <h3>United States & Canada</h3>
-          <p>cUPC certified (File No. 8933), NSF/ANSI 61 compliant low-lead brass, ASME A112.18.1 standards, 9/16" UNEF flexible supply lines, WaterSense flow rates.</p>
+        <!-- Col 2: Services / Product Lines -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4" data-i18n="footer.product_lines">Services &amp; Collections</h4>
+          <ul class="text-xs space-y-2.5 text-gray-400">
+            <li><a href="products.html?cat=basin" class="hover:text-emerald-400 transition">Lead-Free Basin Mixers</a></li>
+            <li><a href="products.html?cat=kitchen" class="hover:text-emerald-400 transition">Commercial Kitchen Faucets</a></li>
+            <li><a href="products.html?cat=sensor" class="hover:text-emerald-400 transition">Touchless Smart Sensor Taps</a></li>
+            <li><a href="products.html?cat=sensor" class="hover:text-emerald-400 transition">Automatic Flush Valves</a></li>
+            <li><a href="products.html?cat=shower" class="hover:text-emerald-400 transition">Thermostatic Shower Columns</a></li>
+            <li><a href="about.html#oem-section" class="hover:text-emerald-400 transition">OEM / ODM Custom Tooling</a></li>
+          </ul>
         </div>
 
-        <div class="market-card">
-          <div class="market-flag">🇪🇸 🇪🇺</div>
-          <h3>Spain & European Union</h3>
-          <p>CE marked sanitary fittings, EN 817 mechanical mixer compliance, G 1/2" standard European thread connections, energy-saving cold-start cartridges.</p>
+        <!-- Col 3: Company -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4" data-i18n="footer.quick_links">Company Heritage</h4>
+          <ul class="text-xs space-y-2.5 text-gray-400">
+            <li><a href="about.html" class="hover:text-emerald-400 transition" data-i18n="nav.about">About Our Factory</a></li>
+            <li><a href="about.html#certifications" class="hover:text-emerald-400 transition" data-i18n="nav.certs">Certificates &amp; Testing</a></li>
+            <li><a href="about.html#exhibitions" class="hover:text-emerald-400 transition">Global Trade Expos</a></li>
+            <li><a href="faq.html" class="hover:text-emerald-400 transition" data-i18n="nav.faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition" data-i18n="nav.contact">Contact Us</a></li>
+            <li><a href="privacy.html" class="hover:text-emerald-400 transition">Privacy Policy &amp; Terms</a></li>
+          </ul>
         </div>
 
-        <div class="market-card">
-          <div class="market-flag">🇸🇦 🇦🇪</div>
-          <h3>Saudi Arabia & Middle East</h3>
-          <p>High-temperature and hard-water resistant ceramic valves, SASO water efficiency standards, luxury PVD Brushed Gold finishes, and smart sensor commercial taps.</p>
-        </div>
-
-        <div class="market-card">
-          <div class="market-flag">🇨🇴 🇲🇽</div>
-          <h3>Colombia & Latin America</h3>
-          <p>Cost-effective solid brass faucets for major residential developments, heavy chrome plating with high corrosion resistance for tropical environments.</p>
-        </div>
-
-        <div class="market-card">
-          <div class="market-flag">🇹🇭 🇻🇳</div>
-          <h3>Thailand & Southeast Asia</h3>
-          <p>Custom designs for hospitality resort projects, robust bidet sprayers, dual-mode kitchen taps, and commercial automatic flush valves.</p>
-        </div>
-
-        <div class="market-card">
-          <div class="market-flag">🌐</div>
-          <h3>Global OEM / ODM Partners</h3>
-          <p>White-label manufacturing for international brand owners, private label laser marking, customized packaging, and full container load consolidations.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Factory & Exhibition Facility Tour -->
-  <section class="section bg-white" id="factory-tour">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag" data-i18n="tour.tag">Factory &amp; Expo Presence</span>
-        <h2 class="section-title" data-i18n="tour.title">State-of-the-Art Production Base &amp; Global Exhibitions</h2>
-        <p class="section-desc" data-i18n="tour.desc">
-          Take a look inside our 50,000+ sqm manufacturing facility in Lucang, Nanan and explore our long-standing Canton Fair exhibition footprint meeting global engineering partners.
-        </p>
-      </div>
-
-      <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/factory/factory-exterior.jpg', '50,000 m² Modern Manufacturing Base in Nanan, Fujian')">
-          <img src="assets/images/factory/factory-exterior.jpg" alt="Fujian Kedah Factory Facility" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Modern Industrial Base:</strong> 50,000 m² Facility in Lucang, Nanan
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/factory/office-showroom.png', 'International Product Experience & Sample Showroom')">
-          <img src="assets/images/factory/office-showroom.png" alt="Kedah Corporate Showroom" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Sample Showroom:</strong> International Product Experience Center
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/factory/kedah-team-full.jpg', 'Fujian Kedah Engineering & Management Team')">
-          <img src="assets/images/factory/kedah-team-full.jpg" alt="Kedah Professional Engineering Team" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Dedicated Team:</strong> Engineering, Quality &amp; Foreign Trade Staff
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/exhibition/canton-fair-grand-hall.jpg', 'Canton Fair International Pavilion - Kedah Exhibition')">
-          <img src="assets/images/exhibition/canton-fair-grand-hall.jpg" alt="Canton Fair Grand Pavilion Exhibition Hall" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Canton Fair Grand Hall:</strong> International Sanitary Pavilion
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/exhibition/canton-fair-booth-2.jpg', 'Kedah Official Custom Exhibition Booth')">
-          <img src="assets/images/exhibition/canton-fair-booth-2.jpg" alt="Kedah Canton Fair Booth Front Display" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Custom Exhibition Booth:</strong> Full Series Sanitary Ware Display
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-        <div class="gallery-item" style="cursor: pointer;" onclick="openLightbox('assets/images/exhibition/canton-fair-client-meeting-1.jpg', 'On-Site Client Product Inspection & Technical Discussion')">
-          <img src="assets/images/exhibition/canton-fair-client-meeting-1.jpg" alt="Overseas Buyer Product Inspection" loading="lazy">
-          <div class="gallery-caption">
-            <strong>Client Reception:</strong> Face-to-Face Technical Negotiations
-            <span style="display: block; font-size: 11px; color: var(--gold-600); margin-top: 4px;">🔍 Click to Zoom</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center" style="margin-top: 3rem;">
-        <a href="about.html#exhibitions" class="btn btn-outline btn-lg">Explore Full Exhibition Track Record &amp; Client Footprint &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fast B2B RFQ Form Section -->
-  <section class="section bg-light" id="quote-section">
-    <div class="container">
-      <div class="rfq-wrapper">
-        <div class="rfq-intro">
-          <span class="section-tag" data-i18n="rfq.tag">Direct Factory Quotation</span>
-          <h2 class="rfq-title" data-i18n="rfq.title">Request Your Project Quotation or Custom Sample</h2>
-          <p class="rfq-desc" data-i18n="rfq.desc">
-            Submit your product specifications, target quantities, or drawing files. Our technical sales engineers respond within 24 hours with comprehensive pricing, CAD drawings, and test reports.
+        <!-- Col 4: Connect -->
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4" data-i18n="footer.contact_info">Connect with Factory</h4>
+          <p class="text-xs text-gray-400 mb-2 leading-relaxed">
+            Plumbing Industrial Area, Lucang Town, Nanan City, Fujian Province, China (362304)
+          </p>
+          <p class="text-xs text-gray-400 mb-2">
+            Email: <a href="mailto:sale01@kedah.cn" class="text-emerald-400 hover:underline">sale01@kedah.cn</a>
+          </p>
+          <p class="text-xs text-gray-400 mb-4">
+            WhatsApp: <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." class="text-emerald-400 hover:underline">+86 13515055402</a>
           </p>
           
-          <div class="rfq-contact-cards">
-            <div class="contact-pill">
-              <span class="pill-icon">✉️</span>
-              <div>
-                <small>Direct Export Inquiry:</small>
-                <strong>sale01@kedah.cn</strong>
-              </div>
-            </div>
-            <div class="contact-pill">
-              <span class="pill-icon">📱</span>
-              <div>
-                <small>WhatsApp / Mobile (24/7):</small>
-                <strong>+86 13515055402</strong>
-              </div>
-            </div>
-            <div class="contact-pill">
-              <span class="pill-icon">📍</span>
-              <div>
-                <small>Factory Address:</small>
-                <strong>Plumbing Industrial Area, Lucang Town, Nanan City, Fujian, China</strong>
-              </div>
-            </div>
+          <div class="flex items-center gap-3">
+            <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." 
+               target="_blank" rel="noopener noreferrer" 
+               class="w-9 h-9 rounded-full bg-gray-800 hover:bg-emerald-500 hover:text-white text-gray-300 flex items-center justify-center transition" 
+               title="WhatsApp" aria-label="WhatsApp">
+              <iconify-icon icon="solar:phone-linear" width="18"></iconify-icon>
+            </a>
+            <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" 
+               target="_blank" rel="noopener noreferrer" 
+               class="w-9 h-9 rounded-full bg-gray-800 hover:bg-emerald-500 hover:text-white text-gray-300 flex items-center justify-center transition" 
+               title="Facebook" aria-label="Facebook">
+              <iconify-icon icon="mdi:facebook" width="18"></iconify-icon>
+            </a>
+            <a href="mailto:sale01@kedah.cn" 
+               class="w-9 h-9 rounded-full bg-gray-800 hover:bg-emerald-500 hover:text-white text-gray-300 flex items-center justify-center transition" 
+               title="Email" aria-label="Email">
+              <iconify-icon icon="solar:letter-linear" width="18"></iconify-icon>
+            </a>
           </div>
         </div>
 
-        <div class="rfq-form-card">
-          <h3 class="form-title" data-i18n="form.header">B2B Quick Inquiry Form</h3>
-          <form id="homeInquiryForm" onsubmit="handleInquirySubmit(event)">
-            <div class="form-group">
-              <label for="fullName" data-i18n="form.name">Full Name / Contact Person *</label>
-              <input type="text" id="fullName" name="fullName" required placeholder="e.g. John Smith" class="form-control">
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="companyName" data-i18n="form.company">Company Name *</label>
-                <input type="text" id="companyName" name="companyName" required placeholder="e.g. Apex Plumbing Supplies LLC" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="email" data-i18n="form.email">Business Email *</label>
-                <input type="email" id="email" name="email" required placeholder="e.g. john@apexplumbing.com" class="form-control">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="country" data-i18n="form.country">Target Country / Region *</label>
-                <select id="country" name="country" class="form-control" required>
-                  <option value="">Select your country...</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Saudi Arabia">Saudi Arabia</option>
-                  <option value="Colombia">Colombia</option>
-                  <option value="Thailand">Thailand</option>
-                  <option value="Other">Other Region</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="productCategory" data-i18n="form.category">Product of Interest *</label>
-                <select id="productCategory" name="productCategory" class="form-control" required>
-                  <option value="Basin Faucets">Basin Faucets Series</option>
-                  <option value="Kitchen Faucets">Kitchen Faucets Series</option>
-                  <option value="Sensor Faucets & Valves">Intelligent Sensor Taps / Valves</option>
-                  <option value="Shower Systems">Shower Systems & Columns</option>
-                  <option value="OEM/ODM Custom Project">OEM/ODM Custom Engineering Project</option>
-                  <option value="Full Catalog Inquiry">Full Product Catalog & Price List</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message" data-i18n="form.message">Project Requirements / Order Volume / Specifications *</label>
-              <textarea id="message" name="message" rows="4" required placeholder="Please describe required quantities (MOQ), finishes (Chrome/Matte Black/Gold), certifications needed (cUPC/CE), or custom branding requirements." class="form-control"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-gold btn-block btn-lg" data-i18n="form.submit">Send Instant Factory Inquiry</button>
-            <p class="form-note" data-i18n="form.privacy_note">🔒 Your information is confidential. We strictly protect your project privacy and intellectual property.</p>
-          </form>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-col footer-about">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo-link">
-            <img src="assets/images/logo/kedah-logo-white.png" alt="Fujian Kedah Kitchen &amp; Bath Co., Ltd." class="footer-logo-img">
-          </a>
-          <div class="footer-brand-title">FUJIAN KEDAH KITCHEN &amp; BATH CO., LTD.</div>
+      <!-- Sub-footer Bottom Row -->
+      <div class="pt-8 border-t border-gray-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <div>
+          &copy; 2026 Fujian Kedah Kitchen &amp; Bath Co., Ltd. All Rights Reserved. Official Domain: <a href="https://kedahkb.com" class="text-emerald-400 hover:underline">kedahkb.com</a>
         </div>
-        <p class="footer-desc" data-i18n="footer.desc">
-          Fujian Kedah Kitchen & Bath Co., Ltd. (kedahkb.com) is a professional Chinese source manufacturer of lead-free brass faucets, smart sensor plumbing fixtures, and luxury shower systems. Delivering certified sanitary solutions to worldwide contractors and distributors.
-        </p>
-        <div class="footer-certs-mini">
-          <span>cUPC Listed (No. 8933)</span> • <span>CE Certified</span> • <span>ISO 9001</span> • <span>24H ASS Tested</span>
+        <div class="flex items-center gap-4">
+          <a href="privacy.html" class="hover:text-gray-400 transition">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html" class="hover:text-gray-400 transition">Contractor FAQ</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:text-gray-400 transition">Direct Factory Inquiries</a>
         </div>
       </div>
 
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footer.quick_links">Quick Navigation</h4>
-        <ul class="footer-links">
-          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a href="about.html" data-i18n="nav.about">About Our Factory</a></li>
-          <li><a href="products.html" data-i18n="nav.products">Products Catalog</a></li>
-          <li><a href="about.html#oem-section" data-i18n="nav.oem">OEM/ODM Capabilities</a></li>
-          <li><a href="about.html#certifications" data-i18n="nav.certs">Certificates &amp; Testing</a></li>
-          <li><a href="about.html#exhibitions">Global Trade Expos</a></li>
-          <li><a href="faq.html" data-i18n="nav.faq">Frequently Asked Questions</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
-          <li><a href="privacy.html">Privacy Policy & Terms</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title" data-i18n="footer.product_lines">Product Lines</h4>
-        <ul class="footer-links">
-          <li><a href="products.html?cat=basin">Lead-Free Basin Faucets</a></li>
-          <li><a href="products.html?cat=kitchen">Pull-Down Kitchen Mixers</a></li>
-          <li><a href="products.html?cat=sensor">Touchless Sensor Taps</a></li>
-          <li><a href="products.html?cat=sensor">Automatic Flush Valves</a></li>
-          <li><a href="products.html?cat=shower">Thermostatic Shower Columns</a></li>
-          <li><a href="products.html?cat=shower">Commercial Plumbing Hardware</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-contact-col">
-        <h4 class="footer-title" data-i18n="footer.contact_info">Factory Contact</h4>
-        <p><strong>Factory:</strong> Plumbing Industrial Area, Lucang Town, Nanan City, Fujian Province, China (362304)</p>
-        <p><strong>Email:</strong> <a href="mailto:sale01@kedah.cn">sale01@kedah.cn</a></p>
-        <p><strong>WhatsApp / Mobile:</strong> <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing.">+86 13515055402</a></p>
-        <p><strong>Official Domain:</strong> <a href="https://kedahkb.com">kedahkb.com</a></p>
-        <div class="social-links">
-          <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." class="social-icon" target="_blank" rel="noopener noreferrer" title="WhatsApp Direct Chat" aria-label="WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" class="social-icon" target="_blank" rel="noopener noreferrer" title="Official Facebook Page" aria-label="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="mailto:sale01@kedah.cn" class="social-icon" title="Email Us Directly" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-container">
-        <p>&copy; 2026 Fujian Kedah Kitchen & Bath Co., Ltd. All Rights Reserved. Target Domain: <a href="https://kedahkb.com" class="text-gold">kedahkb.com</a></p>
-        <p class="text-muted">Designed & Optimized by B2B Export SiteBuilder Pro (Warren | 微信：HK-1912)</p>
-      </div>
     </div>
   </footer>
 
-  <!-- Floating Quick Contact & Back to Top Widget -->
-  <div class="floating-widget">
-    <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
-      <span>💬</span>
-      <span class="float-tooltip">Chat with Us on WhatsApp</span>
+  <!-- Floating Quick Contact Widget -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." 
+       target="_blank" rel="noopener noreferrer" 
+       class="w-12 h-12 rounded-full bg-emerald-500 text-white shadow-xl hover:bg-emerald-400 flex items-center justify-center text-xl transition hover:scale-110" 
+       title="Chat on WhatsApp" aria-label="WhatsApp">
+      <iconify-icon icon="solar:phone-linear" width="22"></iconify-icon>
     </a>
-    <button class="float-btn float-rfq" onclick="openRFQModal()" aria-label="Quick RFQ">
-      <span>📝</span>
-      <span class="float-tooltip">Quick RFQ Inquiry</span>
+    <button onclick="openRFQModal()" 
+            class="w-12 h-12 rounded-full bg-slate-900 text-white shadow-xl hover:bg-emerald-600 flex items-center justify-center text-xl transition hover:scale-110" 
+            title="Quick RFQ" aria-label="Quick RFQ">
+      <iconify-icon icon="solar:letter-linear" width="22"></iconify-icon>
     </button>
-    <button class="float-btn float-top" id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to Top">
-      <span>▲</span>
+    <button id="backToTopBtn" onclick="scrollToTop()" 
+            class="w-12 h-12 rounded-full bg-white text-gray-800 border border-gray-200 shadow-xl hover:bg-gray-100 flex items-center justify-center text-base opacity-0 transition hover:scale-110" 
+            title="Back to Top" aria-label="Back to Top">
+      ▲
     </button>
   </div>
 
@@ -1191,34 +1013,32 @@
       <form id="modalInquiryForm" onsubmit="handleInquirySubmit(event)">
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" required placeholder="Your Name" class="form-control">
+          <input type="text" name="fullName" required placeholder="Your Name" class="form-control">
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Business Email *</label>
-            <input type="email" required placeholder="email@company.com" class="form-control">
+            <input type="email" name="email" required placeholder="email@company.com" class="form-control">
           </div>
           <div class="form-group">
             <label>WhatsApp / Phone</label>
-            <input type="text" placeholder="+1 / +34 / +966..." class="form-control">
+            <input type="text" name="phone" placeholder="+1 / +34 / +966..." class="form-control">
           </div>
         </div>
         <div class="form-group">
           <label>Interested Product / Category *</label>
-          <input type="text" id="modalProductInput" value="General Inquiry" class="form-control">
+          <input type="text" id="modalProductInput" name="product" value="General Inquiry" class="form-control">
         </div>
         <div class="form-group">
           <label>Detailed Specifications / Quantities / Requirements *</label>
-          <textarea rows="3" required placeholder="Please provide target quantity, surface finish, certification needs, or project timeline..." class="form-control"></textarea>
+          <textarea name="message" rows="3" required placeholder="Please provide target quantity, surface finish, certification needs, or project timeline..." class="form-control"></textarea>
         </div>
-        <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Factory RFQ</button>
+        <button type="submit" class="btn btn-gold btn-block btn-lg" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Submit Factory RFQ</button>
       </form>
     </div>
   </div>
 
-  <!-- ===================================================================
-       SLIDE-IN NAV SHEET (Exact Prompt Spec Component)
-       =================================================================== -->
+  <!-- Slide-in Nav Sheet -->
   <div class="navsheet" id="navSheet" inert>
     <div class="navsheet__scrim" data-nav-close></div>
     <nav class="navsheet__panel" aria-label="Menu">
@@ -1226,69 +1046,50 @@
         <li style="--i:0">
           <a class="navsheet__link" href="about.html">
             <span>About Us &amp; Heritage</span>
-            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:1">
           <a class="navsheet__link" href="products.html">
             <span>Products Catalog</span>
-            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:2">
           <a class="navsheet__link" href="about.html#certifications">
             <span>cUPC &amp; CE Certifications</span>
-            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:3">
           <a class="navsheet__link" href="faq.html">
             <span>Contractor FAQ</span>
-            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
         <li style="--i:4">
           <a class="navsheet__link" href="contact.html">
             <span>Contact Factory Team</span>
-            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6"/>
-            </svg>
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
           </a>
         </li>
       </ul>
 
       <div class="navsheet__foot">
-        <button class="navsheet__cta" onclick="openRFQModal()">
+        <button class="navsheet__cta" onclick="openRFQModal()" style="background: #10b981;">
           <span>Talk to us · Fast Quote</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 12h14M13 6l6 6-6 6"/>
-          </svg>
+          <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
         </button>
 
         <div class="navsheet__socials">
           <a href="mailto:sale01@kedah.cn" title="Direct Email" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
+            <iconify-icon icon="solar:letter-linear" width="20"></iconify-icon>
           </a>
           <a href="https://wa.me/8613515055402" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
-            </svg>
+            <iconify-icon icon="solar:phone-linear" width="20"></iconify-icon>
           </a>
           <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-            </svg>
+            <iconify-icon icon="mdi:facebook" width="20"></iconify-icon>
           </a>
         </div>
       </div>
