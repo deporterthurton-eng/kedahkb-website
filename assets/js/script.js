@@ -414,6 +414,66 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
-  initCookieConsent();
+  // 8. Slide-in Nav Sheet & Burger Contrast Engine (Prompt Spec)
+  (function () {
+    var btn = document.getElementById('navToggle');
+    var sheet = document.getElementById('navSheet');
+    if (!btn || !sheet) return;
+    var panel = sheet.querySelector('.navsheet__panel');
+    if (!panel) return;
+
+    var isOpen = false;
+
+    function syncBurgerContrast() {
+      var panelLeft = window.innerWidth - panel.getBoundingClientRect().width;
+      var onPanel = btn.getBoundingClientRect().right > panelLeft + 4;
+      btn.classList.toggle('burger--on-panel', onPanel);
+    }
+
+    function setOpen(next) {
+      if (next === isOpen) return;
+      isOpen = next;
+
+      if (isOpen) {
+        syncBurgerContrast();
+      }
+
+      sheet.classList.toggle('is-open', isOpen);
+      btn.classList.toggle('is-active', isOpen);
+      document.body.classList.toggle('nav-open', isOpen);
+
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+
+      if (isOpen) {
+        sheet.removeAttribute('inert');
+      } else {
+        sheet.setAttribute('inert', '');
+      }
+    }
+
+    btn.addEventListener('click', function () {
+      setOpen(!isOpen);
+    });
+
+    sheet.addEventListener('click', function (e) {
+      if (e.target.hasAttribute('data-nav-close') || e.target.closest('a') || e.target.closest('button')) {
+        setOpen(false);
+      }
+    });
+
+    window.addEventListener('keydown', function (e) {
+      if ((e.key === 'Escape' || e.key === 'Esc') && isOpen) {
+        setOpen(false);
+        btn.focus();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (isOpen) {
+        syncBurgerContrast();
+      }
+    });
+  })();
 });
 

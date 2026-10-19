@@ -66,7 +66,7 @@
   <div class="top-bar">
     <div class="container top-bar-container">
       <div class="top-bar-left">
-        <span>🏆 <strong>Source Factory</strong> | 30+ Years B2B Export Experience | cUPC & CE Certified</span>
+        <span>🏆 <strong>Source Factory</strong> | 30+ Years B2B Export Experience | cUPC &amp; CE Certified</span>
       </div>
       <div class="top-bar-right">
         <a href="mailto:sale01@kedah.cn" class="contact-link">✉️ sale01@kedah.cn</a>
@@ -75,30 +75,70 @@
     </div>
   </div>
 
-  <!-- Main Navigation Header -->
-  <header class="header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo/kedah-logo.jpg" alt="Fujian Kedah Kitchen & Bath Logo" class="logo-img">
-        <div class="logo-text">
-          <span class="brand-title">KEDAH</span>
-          <span class="brand-sub">Kitchen & Bath Co., Ltd.</span>
-        </div>
-      </a>
+  <!-- ===================================================================
+       HERO DUAL-COLUMN OCEAN ARCHITECTURE (Exact Prompt Design System)
+       DOM ORDER: .hero__media first, .hero__left second
+       =================================================================== -->
+  <section class="hero">
 
-      <nav class="nav-menu" id="navMenu">
-        <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
-        <a href="about.html" class="nav-link" data-i18n="nav.about">About Us</a>
-        <a href="products.html" class="nav-link" data-i18n="nav.products">Products</a>
-        <a href="about.html#oem-section" class="nav-link" data-i18n="nav.oem">OEM/ODM</a>
-        <a href="about.html#certifications" class="nav-link" data-i18n="nav.certs">Certifications</a>
-        <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
-        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact Us</a>
-      </nav>
+    <!-- MEDIA CARD (Order 2 via CSS) -->
+    <div class="hero__media anim" style="--d:0">
+      <video class="hero__video anim" style="--d:1" autoplay muted loop playsinline preload="auto" poster="https://motionsites.org/assets/prompt-media/1511c3aa1d97eed608a5.webp">
+        <source src="https://motionsites.org/assets/prompt-media/dc3df4f298a1f66c771c.mp4" type="video/mp4">
+      </video>
 
-      <div class="nav-actions">
-        <!-- Language Switcher -->
-        <div class="lang-switcher">
+      <!-- Callout Marker 1: Pure Waters / Plating Standard -->
+      <div class="marker marker--water">
+        <span class="marker__line anim" style="--d:14"></span>
+        <span class="marker__dot anim" style="--d:13"></span>
+        <span class="marker__label anim" style="--d:15">24H ASS Plating Grade 10</span>
+      </div>
+
+      <!-- Callout Marker 2: Coral Bed / Lead-Free cUPC -->
+      <div class="marker marker--reef marker--right">
+        <span class="marker__line anim" style="--d:17"></span>
+        <span class="marker__dot anim" style="--d:16"></span>
+        <span class="marker__label anim" style="--d:18">cUPC File No. 8933</span>
+      </div>
+
+      <!-- Desktop Social Pill (Notched into Card Corner) -->
+      <div class="socials anim" style="--d:19">
+        <a href="mailto:sale01@kedah.cn" title="Direct Email" aria-label="Direct Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://wa.me/8613515055402?text=Hello%20Kedah%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20cUPC%2FCE%20certified%20faucets%20and%20factory%20pricing." target="_blank" rel="noopener noreferrer" title="WhatsApp 24/7" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" title="Official Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- LEFT COLUMN (Order 1 via CSS) -->
+    <div class="hero__left">
+      <!-- 4a. Nav Row -->
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand__name anim" style="--d:2">KEDAH KITCHEN &amp; BATH</span>
+        </a>
+
+        <ul class="nav__links">
+          <li class="anim" style="--d:4"><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li class="anim" style="--d:5"><a href="products.html" data-i18n="nav.products">Products</a></li>
+          <li class="anim" style="--d:6"><a href="about.html#certifications" data-i18n="nav.certs">Certifications</a></li>
+          <li class="anim" style="--d:7"><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <div class="lang-switcher anim" style="--d:7.5">
           <button class="lang-btn" id="langBtn" aria-label="Select Language">
             <span class="lang-icon">🌐</span>
             <span id="currentLangText">EN</span>
@@ -113,43 +153,63 @@
           </ul>
         </div>
 
-        <button class="btn btn-primary rfq-trigger-btn" onclick="openRFQModal()" data-i18n="nav.rfq">Get a Fast Quote</button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
-          <span></span><span></span><span></span>
+        <button class="burger anim" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navSheet" style="--d:8">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-      </div>
-    </div>
-  </header>
+      </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="badge-tag">
+      <!-- 4b. Content Block -->
+      <div class="hero__content">
+        <div class="badge-tag anim" style="--d:8.5">
           <span class="badge-dot"></span>
-          <span data-i18n="hero.badge">Direct Source Manufacturer | North America & Global Engineering Ready</span>
+          <span data-i18n="hero.badge">Direct Source Manufacturer | North America &amp; Global Engineering Ready</span>
         </div>
-        <h1 class="hero-title" data-i18n="hero.title">
-          Precision Engineered <span class="highlight">Lead-Free Brass</span> Faucets & Commercial Plumbing Solutions
+
+        <h1 class="hero__title">
+          <span class="hero__line anim" style="--d:9">Precision Engineered <span class="hl">Brass Faucets</span></span>
+          <span class="hero__line anim" style="--d:10">&amp; Commercial Sanitary Systems</span>
         </h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">
+
+        <p class="hero__text anim" style="--d:11" data-i18n="hero.subtitle">
           Over 30 years of OEM/ODM excellence for North American, European, Middle Eastern, and Southeast Asian sanitary engineering contractors. Compliant with cUPC File No. 8933, CE, and rigorous 24-Hour Acetic Acid Salt Spray (ASS) plating tests.
         </p>
-        
-        <div class="hero-highlights">
-          <div class="highlight-chip">✓ <strong data-i18n="hero.tag1">Lead-Free Solid Brass</strong></div>
-          <div class="highlight-chip">✓ <strong data-i18n="hero.tag2">Pass 24H ASS Plating Test</strong></div>
-          <div class="highlight-chip">✓ <strong data-i18n="hero.tag3">IAPMO cUPC & CE Listed</strong></div>
-          <div class="highlight-chip">✓ <strong data-i18n="hero.tag4">Full OEM/ODM Customization</strong></div>
+
+        <div class="hero__cta-row">
+          <button class="cta anim" style="--d:12" onclick="openRFQModal()" aria-label="Request Project Quote">
+            <span class="cta__label" data-i18n="hero.btn1">Request Project Quote</span>
+            <span class="cta__icon anim" style="--d:13">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </span>
+          </button>
+          <a href="products.html" class="cta-secondary anim" style="--d:13.5" data-i18n="hero.btn2">Explore Product Catalog →</a>
         </div>
 
-        <div class="hero-cta-group">
-          <button class="btn btn-gold btn-lg" onclick="openRFQModal()" data-i18n="hero.btn1">Request Project Quote</button>
-          <a href="products.html" class="btn btn-outline-white btn-lg" data-i18n="hero.btn2">Explore Product Catalog</a>
+        <!-- Mobile Social Row (shown at <=768px) -->
+        <div class="socials socials--mobile">
+          <a class="anim" style="--d:14" href="mailto:sale01@kedah.cn" aria-label="Direct Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a class="anim" style="--d:15" href="https://wa.me/8613515055402" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+          </a>
+          <a class="anim" style="--d:16" href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+          </a>
         </div>
 
-        <!-- LuxoPack 1:1 Signature Quick Spec Pills -->
-        <div class="luxo-quick-pills">
+        <!-- Signature Quick Spec Pills -->
+        <div class="luxo-quick-pills anim" style="--d:14">
           <div class="luxo-pill-card">
             <div class="pill-label">Minimum Order (MOQ)</div>
             <div class="pill-val"><strong>100 - 300</strong> PCS</div>
@@ -164,27 +224,8 @@
           </div>
           <div class="luxo-pill-card">
             <div class="pill-label">OEM / ODM Support</div>
-            <div class="pill-val"><strong>Free CAD</strong> & 3D</div>
+            <div class="pill-val"><strong>Free CAD</strong> &amp; 3D</div>
           </div>
-        </div>
-      </div>
-
-      <div class="hero-stats-panel">
-        <div class="stats-card">
-          <div class="stat-number">30+</div>
-          <div class="stat-label" data-i18n="stats.experience">Years B2B Experience</div>
-        </div>
-        <div class="stats-card">
-          <div class="stat-number">50,000+</div>
-          <div class="stat-label" data-i18n="stats.capacity">m² Modern Factory Area</div>
-        </div>
-        <div class="stats-card">
-          <div class="stat-number">100%</div>
-          <div class="stat-label" data-i18n="stats.testing">Water & Air Pressure Tested</div>
-        </div>
-        <div class="stats-card">
-          <div class="stat-number">50+</div>
-          <div class="stat-label" data-i18n="stats.countries">Export Markets Worldwide</div>
         </div>
       </div>
     </div>
@@ -1173,6 +1214,85 @@
         <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Factory RFQ</button>
       </form>
     </div>
+  </div>
+
+  <!-- ===================================================================
+       SLIDE-IN NAV SHEET (Exact Prompt Spec Component)
+       =================================================================== -->
+  <div class="navsheet" id="navSheet" inert>
+    <div class="navsheet__scrim" data-nav-close></div>
+    <nav class="navsheet__panel" aria-label="Menu">
+      <ul class="navsheet__list">
+        <li style="--i:0">
+          <a class="navsheet__link" href="about.html">
+            <span>About Us &amp; Heritage</span>
+            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </li>
+        <li style="--i:1">
+          <a class="navsheet__link" href="products.html">
+            <span>Products Catalog</span>
+            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </li>
+        <li style="--i:2">
+          <a class="navsheet__link" href="about.html#certifications">
+            <span>cUPC &amp; CE Certifications</span>
+            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </li>
+        <li style="--i:3">
+          <a class="navsheet__link" href="faq.html">
+            <span>Contractor FAQ</span>
+            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </li>
+        <li style="--i:4">
+          <a class="navsheet__link" href="contact.html">
+            <span>Contact Factory Team</span>
+            <svg class="navsheet__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="navsheet__foot">
+        <button class="navsheet__cta" onclick="openRFQModal()">
+          <span>Talk to us · Fast Quote</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+
+        <div class="navsheet__socials">
+          <a href="mailto:sale01@kedah.cn" title="Direct Email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="https://wa.me/8613515055402" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/r/1EBMTs3Uxc/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
   </div>
 
   <!-- Client-side Scripts -->
