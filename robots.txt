@@ -1,4 +1,28 @@
+# Robots.txt for Fujian Kedah Kitchen & Bath Co., Ltd. (kedahkb.com)
 User-agent: *
 Allow: /
 
+# Allow Major AI Search & Generative Engine Crawlers (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemaps & LLMs Context
 Sitemap: https://kedahkb.com/sitemap.xml
