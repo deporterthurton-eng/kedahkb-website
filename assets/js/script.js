@@ -456,6 +456,10 @@ window.handleInquirySubmit = async function(e) {
   const msg = (i18n[currentLang] && i18n[currentLang].toastSent) || i18n.en.toastSent;
   window.showToast(msg);
   
+  if (typeof window.trackLeadConversion === 'function') {
+    window.trackLeadConversion(form.id || 'B2B_Inquiry_Form');
+  }
+
   if (submitBtn) {
     submitBtn.disabled = false;
     submitBtn.textContent = originalBtnText;
@@ -843,4 +847,105 @@ function filterHomeProducts(category, btnElement) {
   });
 }
 
+// ===================================================================
+// 11. Google Analytics Full-Funnel Conversion Tracking & Contact Listeners
+// ===================================================================
+(function() {
+  // Global helper for safe gtag execution
+  function trackEvent(action, category, label, value) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+        value: value
+      });
+    }
+  }
 
+  // Intercept all high-intent contact clicks across the entire site
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    
+    // 1. WhatsApp Clicks
+    if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+      trackEvent('contact', 'Engagement', 'WhatsApp_Chat_Click');
+    }
+    // 2. Direct Mail Clicks
+    else if (href.startsWith('mailto:')) {
+      trackEvent('contact', 'Engagement', 'Direct_Email_Click');
+    }
+    // 3. Direct Phone Clicks
+    else if (href.startsWith('tel:')) {
+      trackEvent('contact', 'Engagement', 'Phone_Call_Click');
+    }
+    // 4. Download PDF Spec Sheet / Certificate
+    else if (href.endsWith('.pdf')) {
+      trackEvent('file_download', 'Documentation', href.split('/').pop());
+    }
+  });
+
+  // Track Inquire Button Clicks
+  document.addEventListener('click', function(e) {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    const oc = btn.getAttribute('onclick') || '';
+    if (oc.includes('openRFQModal')) {
+      trackEvent('select_content', 'RFQ_Intent', 'Open_RFQ_Modal');
+    }
+  });
+
+  // Export helper for form completion
+  window.trackLeadConversion = function(formName) {
+    trackEvent('generate_lead', 'Conversion', formName || 'RFQ_Form_Submitted');
+  };
+})();
+
+// ===================================================================
+// 12. GDPR Cookie Consent Banner Engine
+// ===================================================================
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      const consent = localStorage.getItem('kedah_cookie_consent');
+      if (consent) return; // User already accepted or chose preferences
+
+      const banner = document.createElement('div');
+      banner.id = 'kedahCookieBanner';
+      banner.className = 'fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-md z-50 p-4 rounded-2xl bg-gray-950/95 backdrop-blur-md border border-white/10 text-white shadow-2xl transition-all duration-500 transform translate-y-12 opacity-0 flex flex-col gap-3 text-xs';
+      banner.innerHTML = `
+        <div class="flex items-start gap-3">
+          <span class="text-xl">🍪</span>
+          <div class="flex-1 text-gray-300 leading-relaxed text-[11px]">
+            We use technical cookies to optimize page performance and analyze overseas engineering inquiries. By using our website, you agree to our <a href="privacy.html" class="underline text-emerald-400 hover:text-emerald-300">Privacy Policy</a>.
+          </div>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-1 border-t border-white/10">
+          <button type="button" id="cookieDecline" class="px-3 py-1.5 rounded-full text-[11px] font-semibold text-gray-400 hover:text-white transition">Essential Only</button>
+          <button type="button" id="cookieAccept" class="px-4 py-1.5 rounded-full text-[11px] font-bold bg-emerald-500 hover:bg-emerald-400 text-white shadow-sm transition">Accept All</button>
+        </div>
+      `;
+      document.body.appendChild(banner);
+
+      // Trigger entrance animation after slight delay
+      setTimeout(() => {
+        banner.classList.remove('translate-y-12', 'opacity-0');
+        banner.classList.add('translate-y-0', 'opacity-100');
+      }, 1500);
+
+      // Bind actions
+      const dismiss = (choice) => {
+        try { localStorage.setItem('kedah_cookie_consent', choice); } catch(e) {}
+        banner.classList.remove('translate-y-0', 'opacity-100');
+        banner.classList.add('translate-y-12', 'opacity-0');
+        setTimeout(() => banner.remove(), 500);
+      };
+
+      document.getElementById('cookieAccept')?.addEventListener('click', () => dismiss('accepted'));
+      document.getElementById('cookieDecline')?.addEventListener('click', () => dismiss('essential'));
+    } catch(e) {
+      console.warn('Cookie banner init error:', e);
+    }
+  });
+})();
