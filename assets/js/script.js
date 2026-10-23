@@ -833,6 +833,14 @@ window.filterProducts = function(category) {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Canonical URL Normalization: seamlessly normalize /index.html to / for clean display & cache coherence
+  try {
+    if (window.location.pathname.endsWith('/index.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/') + window.location.search + window.location.hash;
+      window.history.replaceState(null, '', cleanPath);
+    }
+  } catch(e) {}
+
   // 1. Mobile Menu Toggle
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
